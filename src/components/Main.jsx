@@ -1,7 +1,9 @@
+import EditPanel from "./EditPanel.jsx";
+
 function Main() {
   return (
     <main>
-      <p>Main (todo)</p>
+      <EditPanel />
     </main>
   );
 }
