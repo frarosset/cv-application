@@ -1,9 +1,11 @@
 import EditPanel from "./EditPanel.jsx";
+import PreviewPanel from "./PreviewPanel.jsx";
 
 function Main() {
   return (
     <main>
       <EditPanel />
+      <PreviewPanel />
     </main>
   );
 }
