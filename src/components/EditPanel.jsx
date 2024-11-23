@@ -1,5 +1,6 @@
 import EditPersonalInfoPanel from "./EditPersonalInfoPanel.jsx";
 import EditEducationPanel from "./EditEducationPanel.jsx";
+import EditProfessionalExperience from "./EditProfessionalExperience.jsx";
 
 function EditPanel() {
   return (
@@ -7,6 +8,7 @@ function EditPanel() {
       <h2>Edit Panel</h2>
       <EditPersonalInfoPanel />
       <EditEducationPanel />
+      <EditProfessionalExperience />
     </div>
   );
 }
