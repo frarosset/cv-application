@@ -1,0 +1,32 @@
+{
+  "personalInfo": {
+    "name": {
+      "label": "Name",
+      "maxLength": 20,
+      "required": true,
+      "type": "text",
+      "placeholder": "John"
+    },
+    "surname": {
+      "label": "Surname",
+      "maxLength": 20,
+      "required": true,
+      "type": "text",
+      "placeholder": "Doe"
+    },
+    "title": {
+      "label": "Title",
+      "maxLength": 30,
+      "required": false,
+      "type": "text",
+      "placeholder": "Fullstack Web Developer"
+    },
+    "aboutMe": {
+      "label": "About Me",
+      "maxLength": 100,
+      "required": false,
+      "type": "textarea",
+      "placeholder": "I am ..."
+    }
+  }
+}
