@@ -1,5 +1,5 @@
-import Text from "./Text.jsx";
-import TextWithIcon from "./TextWithIcon.jsx";
+import Text from "../base/Text.jsx";
+import TextWithIcon from "../base/TextWithIcon.jsx";
 
 const textProperties = ["name", "surname", "title", "aboutMe"];
 const textWithIconsProperties = [

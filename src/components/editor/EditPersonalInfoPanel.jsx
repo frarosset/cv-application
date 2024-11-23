@@ -1,5 +1,5 @@
-import InputWithLabel from "./InputWithLabel.jsx";
-import inputProperties from "../data/inputProperties.json";
+import InputWithLabel from "../base/InputWithLabel.jsx";
+import inputProperties from "../../data/inputProperties.json";
 
 const orderedInputProps = ["name", "surname", "title", "aboutMe"];
 const inputProps = inputProperties.personalInfo;

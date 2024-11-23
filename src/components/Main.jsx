@@ -1,6 +1,6 @@
 import { useState } from "react";
-import EditPanel from "./EditPanel.jsx";
-import PreviewPanel from "./PreviewPanel.jsx";
+import EditPanel from "./editor/EditPanel.jsx";
+import PreviewPanel from "./preview/PreviewPanel.jsx";
 import sampleData from "../data/sampleData.json";
 
 function Main() {
