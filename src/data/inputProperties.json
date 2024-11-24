@@ -16,17 +16,60 @@
     },
     "title": {
       "label": "Title",
-      "maxLength": 30,
+      "maxLength": 50,
       "required": false,
       "type": "text",
       "placeholder": "Fullstack Web Developer"
     },
     "aboutMe": {
       "label": "About Me",
-      "maxLength": 100,
+      "maxLength": 500,
       "required": false,
       "type": "textarea",
       "placeholder": "I am ..."
+    },
+
+    "location": {
+      "label": "Location",
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "Random Place, Random Country"
+    },
+    "email": {
+      "label": "Email",
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "johndoe@example.com"
+    },
+    "phone": {
+      "label": "Phone",
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "000-000-0000"
+    },
+    "linkedin": {
+      "label": "Linkedin",
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "linkedin.com/in/johndoe.is.not.real"
+    },
+    "website": {
+      "label": "Website",
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "johndoe.example.com"
+    },
+    "github": {
+      "label": "Github",
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "github.com/johndoe.is.not.real"
     }
   }
 }

@@ -1,7 +1,19 @@
 import InputWithLabel from "../base/InputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 
-const orderedInputProps = ["name", "surname", "title", "aboutMe"];
+const orderedInputProps = [
+  "name",
+  "surname",
+  "title",
+  "aboutMe",
+  "location",
+  "email",
+  "phone",
+  "linkedin",
+  "website",
+  "github",
+];
+
 const inputProps = inputProperties.personalInfo;
 
 function EditPersonalInfoPanel({ personalInfo, setPersonalInfo }) {
