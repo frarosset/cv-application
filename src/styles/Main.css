@@ -1,0 +1,16 @@
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main .preview-panel {
+  flex: 1;
+}
+
+/* tablet or larger, or landscape (vs portrait), 641px (phone), 961px (tablet) */
+@media only screen and (min-width: 768px), (orientation: landscape) {
+  main {
+    flex-direction: row;
+  }
+}
