@@ -25,8 +25,11 @@
   /* Colors (background)*/
   --bg-col: var(--col-light-1);
   --header-bg-col: var(--col-accent-2);
-  --editor-bg-col: var(--col-light-3);
-  --editor-section-bg-col: var(--col-light-2);
+
+  --editor-bg-col: var(--col-light-4);
+  --editor-section-bg-col: var(--col-light-3);
+
+  --preview-bg-col: var(--col-light-2);
 
   /* Colors (text/icons)*/
   --col-txt: var(--col-dark-1);
@@ -72,6 +75,8 @@
   --input-padding: 2px;
   --label-input-gap: 0.5em;
   --label-width: 5em;
+
+  --preview-padding: var(--page-padding);
 
   /* Radius / borders */
   --input-border-size: 1px;

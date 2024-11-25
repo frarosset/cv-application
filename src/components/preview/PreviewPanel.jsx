@@ -1,4 +1,5 @@
 import PreviewPage from "./PreviewPage.jsx";
+import "../../styles/preview/PreviewPanel.css";
 
 function PreviewPanel(props) {
   return (

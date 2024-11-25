@@ -1,0 +1,13 @@
+.preview-panel {
+  background-color: var(--preview-bg-col);
+  padding: var(--preview-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-panel h2 {
+  display: none;
+  font-size: var(--h2-fontsize);
+  font-weight: bold;
+}
