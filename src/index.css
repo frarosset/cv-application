@@ -1,11 +1,13 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: var(--main-font), Inter, system-ui, Avenir, Helvetica, Arial,
+    sans-serif;
+  line-height: var(--txt-lineheight);
   font-weight: 400;
+  font-size: var(--txt-fontsize);
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--col-txt);
+  background-color: var(--bg-col);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,21 +15,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Reset */
+*,
+*:before,
+*:after {
+  font-family: inherit;
+  font-size: inherit; /* 100% */
+  line-height: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
 }
 
+/* Element-specific styles*/
+
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  margin: 0 auto;
+  min-height: 100vh; /*it is assumed the same for <html>*/
+  min-height: 100dvh; /* if supported */
+  height: 100%;
+
   min-width: 320px;
-  min-height: 100vh;
+  width: 100%;
+  /* or max-width -- this avoids horizontal scroll bars */
+
+  touch-action: manipulation; /* disable double tap to zoom on some browsers*/
+  /* user-select: none; */
+
+  display: flex;
+  overflow: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#root > * {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -47,14 +79,32 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--col-accent-2);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+a {
+  font-weight: 500;
+  color: var(--col-accent-2);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--col-accent-1);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p {
+  text-wrap: pretty; /*or balance */
+}
+
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -65,4 +115,23 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+/* Customize scrollbars */
+::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+  height: 4px; /* height of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scroll thumb */
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scroll thumb on hover */
 }
