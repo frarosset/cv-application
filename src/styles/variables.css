@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:300,400,500,700&display=swap");
 
 :root {
   /* Colors (palette)*/
@@ -24,6 +24,7 @@
 
   /* Colors (background)*/
   --bg-col: var(--col-light-1);
+  --header-bg-col: var(--col-accent-2);
 
   /* Colors (text/icons)*/
   --col-txt: var(--col-dark-1);
@@ -39,7 +40,7 @@
   --txt-fontsize: max(18px, 3vmin);
   --txt-lineheight: 1.2;
 
-  --h1-fontsize: 4rem;
+  --h1-fontsize: 2rem;
   --h2-fontsize: 2rem;
   --h3-fontsize: 1.1rem;
 
@@ -49,6 +50,9 @@
   /* --max-width: min(1440px, 100%); */
 
   /*Margins, gaps and paddings (+widths)*/
+  --page-padding-lr: 1.5rem;
+  --page-padding-ud: 1rem;
+  --page-padding: var(--page-padding-ud) var(--page-padding-lr);
 
   /* Radius / borders */
   /* --box-radius: max(6px, 0.9vmin); */
