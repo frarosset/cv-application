@@ -46,7 +46,7 @@
   --h2-font: "Urbanist";
 
   /* Font sizes */
-  --txt-fontsize: max(18px, 3vmin);
+  --txt-fontsize: max(18px, 2vmin);
   --txt-lineheight: 1.2;
 
   --h1-fontsize: 2rem;
@@ -91,11 +91,16 @@
 
   --textarea-rows: 6;
 
+  /* Preview page */
+  --preview-page-bg-col: white;
+  --a4-ar: 1/1.41421;
+  --preview-page-ar: var(--a4-ar);
+
   /* --box-radius: max(6px, 0.9vmin); */
 
   /* Shadows */
-  /* --txt-shadow: 0 3px 6px var(--col-black);
-  --box-shadow: 0 3px 9px var(--col-grey); */
+  /* --txt-shadow: 0 3px 6px var(--col-black);*/
+  --box-shadow: 0 0px 10px var(--col-dark-4);
 
   /* Animations on hover / active / ...*/
   /* --transition-time: 0.8s; */
