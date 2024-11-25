@@ -1,0 +1,10 @@
+.edit-panel {
+  background-color: var(--editor-bg-col);
+  padding: var(--editor-padding);
+}
+
+.edit-panel h2 {
+  display: none;
+  font-size: var(--h2-fontsize);
+  font-weight: bold;
+}

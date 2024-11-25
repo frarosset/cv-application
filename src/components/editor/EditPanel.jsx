@@ -1,6 +1,7 @@
 import EditPersonalInfoPanel from "./EditPersonalInfoPanel.jsx";
 import EditEducationPanel from "./EditEducationPanel.jsx";
 import EditProfessionalExperience from "./EditProfessionalExperience.jsx";
+import "../../styles/editor/EditPanel.css";
 
 function EditPanel(props) {
   return (

@@ -25,6 +25,7 @@
   /* Colors (background)*/
   --bg-col: var(--col-light-1);
   --header-bg-col: var(--col-accent-2);
+  --editor-bg-col: var(--col-light-3);
 
   /* Colors (text/icons)*/
   --col-txt: var(--col-dark-1);
@@ -53,6 +54,8 @@
   --page-padding-lr: 1.5rem;
   --page-padding-ud: 1rem;
   --page-padding: var(--page-padding-ud) var(--page-padding-lr);
+
+  --editor-padding: var(--page-padding-ud) 0;
 
   /* Radius / borders */
   /* --box-radius: max(6px, 0.9vmin); */
