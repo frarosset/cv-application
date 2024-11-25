@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+:root {
+  /* Colors (palette)*/
+  --col-light-1: #ffffff; /*white*/
+  --col-light-2: #fcf6f0;
+  --col-light-3: #ebe4dd;
+  --col-light-4: #c9c3bb;
+
+  --col-dark-1: #131c28; /*black*/
+  --col-dark-2: #353b44;
+  --col-dark-3: #595c61;
+  --col-dark-4: #808080;
+
+  --col-light-accent-1: #01615f;
+  --col-light-accent-2: #188f8b;
+
+  --col-dark-accent-1: #d4aa3a;
+  --col-dark-accent-2: #dcbf57;
+
+  /* light-theme (todo: dark) */
+  --col-accent-1: var(--col-light-accent-1);
+  --col-accent-2: var(--col-light-accent-2);
+
+  /* Colors (background)*/
+  --bg-col: var(--col-light-1);
+
+  /* Colors (text/icons)*/
+  --col-txt: var(--col-dark-1);
+  --col-txt-alt: var(--col-light-1);
+  --col-txt-secondary: var(--col-dark-4);
+
+  /* Font family */
+  --main-font: "Urbanist";
+  --h1-font: "Urbanist";
+  --h2-font: "Urbanist";
+
+  /* Font sizes */
+  --txt-fontsize: max(18px, 3vmin);
+  --txt-lineheight: 1.2;
+
+  --h1-fontsize: 4rem;
+  --h2-fontsize: 2rem;
+  --h3-fontsize: 1.1rem;
+
+  /* --icons-size: calc(var(--h3-fontsize) * var(--txt-lineheight)); */
+
+  /* Maximum width (including dashboard margin) */
+  /* --max-width: min(1440px, 100%); */
+
+  /*Margins, gaps and paddings (+widths)*/
+
+  /* Radius / borders */
+  /* --box-radius: max(6px, 0.9vmin); */
+
+  /* Shadows */
+  /* --txt-shadow: 0 3px 6px var(--col-black);
+  --box-shadow: 0 3px 9px var(--col-grey); */
+
+  /* Animations on hover / active / ...*/
+  /* --transition-time: 0.8s; */
+}
