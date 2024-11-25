@@ -1,5 +1,6 @@
 import InputWithLabel from "../base/InputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
+import "../../styles/editor/EditSectionPanel.css";
 
 const orderedInputProps = [
   "name",
@@ -25,7 +26,7 @@ function EditPersonalInfoPanel({ personalInfo, setPersonalInfo }) {
   };
 
   return (
-    <div className="edit-personal-info-panel">
+    <div className="edit-section-panel edit-personal-info-panel">
       <h3>Edit Personal Info</h3>
 
       <form>

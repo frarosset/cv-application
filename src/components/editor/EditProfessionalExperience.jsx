@@ -1,6 +1,8 @@
+import "../../styles/editor/EditSectionPanel.css";
+
 function EditProfessionalExperience() {
   return (
-    <div className="edit-professional-experience-panel">
+    <div className="edit-section-panel edit-professional-experience-panel">
       <h3>Edit Professional Experience</h3>
     </div>
   );

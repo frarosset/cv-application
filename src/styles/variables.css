@@ -26,6 +26,7 @@
   --bg-col: var(--col-light-1);
   --header-bg-col: var(--col-accent-2);
   --editor-bg-col: var(--col-light-3);
+  --editor-section-bg-col: var(--col-light-2);
 
   /* Colors (text/icons)*/
   --col-txt: var(--col-dark-1);
@@ -56,6 +57,11 @@
   --page-padding: var(--page-padding-ud) var(--page-padding-lr);
 
   --editor-padding: var(--page-padding-ud) 0;
+
+  --editor-section-padding: var(--page-padding);
+  --editor-section-gap: 1rem;
+  --editor-form-padding: 1rem;
+  --editor-form-gap: 0.5rem;
 
   /* Radius / borders */
   /* --box-radius: max(6px, 0.9vmin); */

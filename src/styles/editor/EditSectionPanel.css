@@ -1,0 +1,22 @@
+.edit-section-panel {
+  background-color: var(--editor-section-bg-col);
+  padding: var(--editor-section-padding);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--editor-section-gap);
+}
+
+.edit-section-panel h3 {
+  font-size: var(--h3-fontsize);
+  font-weight: bold;
+}
+
+.edit-section-panel form {
+  min-width: max-content;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--editor-form-gap);
+}
