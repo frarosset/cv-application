@@ -1,5 +1,6 @@
 import Input from "./Input.jsx";
 import TextArea from "./TextArea.jsx";
+import "../../styles/base/InputWithLabel.css";
 
 function InputWithLabel({
   id,

@@ -1,0 +1,81 @@
+.input-with-label {
+  display: flex;
+  gap: var(--label-input-gap);
+  align-items: baseline;
+}
+
+.input-with-label label {
+  text-align: right;
+  width: var(--label-width);
+  font-size: var(--label-fontsize);
+  font-weight: bold;
+  color: var(--label-color);
+}
+
+.input-with-label input,
+.input-with-label textarea {
+  flex: 1;
+  line-height: 1;
+  font-size: var(--input-fontsize);
+  background-color: transparent;
+
+  border: none;
+  padding: var(--input-padding);
+  color: var(--input-color);
+}
+
+.input-with-label input::placeholder,
+.input-with-label textarea::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+.input-with-label input {
+  border-bottom: var(--input-border);
+  margin-bottom: var(--input-border-delta);
+}
+
+.input-with-label textarea {
+  height: calc(var(--textarea-rows) * 1em + 2 * var(--input-padding));
+  border-right: var(--input-border);
+  /* padding-right: calc(var(--input-padding) + var(--input-border-delta)); */
+  margin-right: var(--input-border-delta);
+}
+
+/* hover / focus style */
+
+.input-with-label input:hover,
+.input-with-label textarea:hover {
+  border-color: var(--input-color-hover);
+}
+
+.input-with-label input:hover,
+.input-with-label input:focus {
+  border-width: var(--input-border-size-plus-delta);
+  margin-bottom: 0;
+}
+
+.input-with-label textarea:hover,
+.input-with-label textarea:focus {
+  border-width: var(--input-border-size-plus-delta);
+  /* padding-right: var(--input-padding); */
+  margin-right: 0;
+}
+
+.input-with-label input:focus,
+.input-with-label textarea:focus {
+  outline: none;
+  border-color: var(--input-color-focus);
+}
+
+/* highlight required inputs / textareas */
+
+.input-with-label label:before,
+.input-with-label label:before {
+  color: var(--input-color-required);
+  font-weight: bold;
+}
+
+.input-with-label:has(input:required) label:before,
+.input-with-label:has(textarea:required) label:before {
+  content: "*";
+}

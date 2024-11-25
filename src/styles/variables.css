@@ -33,6 +33,10 @@
   --col-txt-alt: var(--col-light-1);
   --col-txt-secondary: var(--col-dark-4);
 
+  --input-color: var(--col-txt);
+  --input-placeholder-color: var(--col-dark-4);
+  --label-color: var(--col-dark-2);
+
   /* Font family */
   --main-font: "Urbanist";
   --h1-font: "Urbanist";
@@ -45,6 +49,8 @@
   --h1-fontsize: 2rem;
   --h2-fontsize: 2rem;
   --h3-fontsize: 1.1rem;
+  --label-fontsize: 0.7rem;
+  --input-fontsize: 1rem;
 
   /* --icons-size: calc(var(--h3-fontsize) * var(--txt-lineheight)); */
 
@@ -63,7 +69,23 @@
   --editor-form-padding: 1rem;
   --editor-form-gap: 0.5rem;
 
+  --input-padding: 2px;
+  --label-input-gap: 0.5em;
+  --label-width: 5em;
+
   /* Radius / borders */
+  --input-border-size: 1px;
+  --input-border-delta: 2px;
+  --input-border: var(--input-border-size) solid var(--col-dark-4);
+  --input-border-size-plus-delta: calc(
+    var(--input-border-size) + var(--input-border-delta)
+  );
+  --input-color-focus: var(--col-accent-2);
+  --input-color-hover: var(--col-accent-1);
+  --input-color-required: var(--col-accent-1);
+
+  --textarea-rows: 6;
+
   /* --box-radius: max(6px, 0.9vmin); */
 
   /* Shadows */
