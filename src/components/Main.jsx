@@ -7,6 +7,9 @@ import "../styles/Main.css";
 function Main() {
   const [personalInfo, setPersonalInfo] = useState(sampleData.personalInfo);
   const [education, setEducation] = useState(sampleData.education);
+  const [professionalExperience, setProfessionalExperience] = useState(
+    sampleData.professionalExperience
+  );
 
   return (
     <main>
@@ -15,8 +18,14 @@ function Main() {
         setPersonalInfo={setPersonalInfo}
         education={education}
         setEducation={setEducation}
+        professionalExperience={professionalExperience}
+        setProfessionalExperience={setProfessionalExperience}
       />
-      <PreviewPanel personalInfo={personalInfo} education={education} />
+      <PreviewPanel
+        personalInfo={personalInfo}
+        education={education}
+        professionalExperience={professionalExperience}
+      />
     </main>
   );
 }
