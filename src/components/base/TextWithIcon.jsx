@@ -1,5 +1,6 @@
 import Icon from "./Icon.jsx";
 import Text from "./Text.jsx";
+import "../../styles/base/TextWithIcon.css";
 
 function TextWithIcon({ iconName, value, customClass = "" }) {
   return (

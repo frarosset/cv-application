@@ -1,0 +1,11 @@
+.text-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.text-with-icon .icon,
+.text-with-icon .icon svg {
+  width: 1em;
+  height: 1em;
+}
