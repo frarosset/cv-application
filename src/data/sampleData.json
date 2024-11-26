@@ -13,22 +13,25 @@
   },
   "education": [
     {
+      "id": 0,
       "institution": "University of Random City",
       "address": "Random City",
       "degree": "B.Sc. in Software Engineering",
-      "from-date-month": "September",
-      "from-date-year": 2023,
-      "to-date-month": "",
-      "to-date-year": 2024,
+      "fromDateMonth": "September",
+      "fromDateYear": 2023,
+      "toDateMonth": "",
+      "toDateYear": 2024,
       "ongoing": true
     },
     {
+      "id": 1,
       "institution": "High School of Random City",
       "address": "Random City",
-      "from-date-month": "",
-      "from-date-year": 2018,
-      "to-date-month": "",
-      "to-date-year": 2023,
+      "degree": "High School diploma",
+      "fromDateMonth": "",
+      "fromDateYear": 2018,
+      "toDateMonth": "",
+      "toDateYear": 2023,
       "ongoing": false
     }
   ]
