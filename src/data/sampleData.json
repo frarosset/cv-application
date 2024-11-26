@@ -34,5 +34,18 @@
       "toDateYear": 2023,
       "ongoing": false
     }
+  ],
+  "professionalExperience": [
+    {
+      "id": 0,
+      "institution": "Random Workplace",
+      "address": "Random City",
+      "role": "Junior Developer",
+      "fromDateMonth": "October",
+      "fromDateYear": 2024,
+      "toDateMonth": "",
+      "toDateYear": 2024,
+      "ongoing": true
+    }
   ]
 }
