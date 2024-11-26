@@ -1,0 +1,60 @@
+.preview-personal-info-panel {
+  display: grid;
+  grid-template-areas:
+    "contacts contacts contacts contacts"
+    ". name surname ."
+    ". title title ."
+    ". aboutMe aboutMe .";
+  grid-template-columns: var(--preview-page-padding) min-content 1fr var(
+      --preview-page-padding
+    );
+  grid-auto-rows: auto;
+}
+
+.preview-personal-info-panel h3 {
+  display: none;
+}
+
+.preview-personal-info-panel .contact-list {
+  grid-area: contacts;
+
+  background-color: var(--preview-page-accent-color);
+  color: var(--preview-page-white);
+
+  font-size: var(--preview-contacts-fontsize);
+  padding: var(--preview-contacts-padding);
+
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-auto-rows: auto;
+  grid-gap: var(--preview-contacts-gap);
+  justify-content: space-around;
+}
+
+.preview-personal-info-panel .text.name {
+  grid-area: name;
+  font-weight: 700;
+  font-size: var(--preview-full-name-fontsize);
+  color: var(--preview-page-accent-color);
+  padding-right: 0.1em;
+}
+
+.preview-personal-info-panel .text.surname {
+  grid-area: surname;
+  font-weight: 500;
+  font-size: var(--preview-full-name-fontsize);
+}
+
+.preview-personal-info-panel .text.title {
+  grid-area: title;
+  font-variant: small-caps;
+  font-size: var(--preview-title-fontsize);
+  color: var(--preview-sub-text-color);
+}
+
+.preview-personal-info-panel .text.aboutMe {
+  grid-area: aboutMe;
+  padding: var(--preview-page-gap) 0;
+  font-size: var(--preview-about-me-fontsize);
+  color: var(--preview-secondary-text-color);
+}

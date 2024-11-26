@@ -1,5 +1,6 @@
 import Text from "../base/Text.jsx";
 import TextWithIcon from "../base/TextWithIcon.jsx";
+import "../../styles/preview/PreviewPersonalInfoPanel.css";
 
 const textProperties = ["name", "surname", "title", "aboutMe"];
 const textWithIconsProperties = [

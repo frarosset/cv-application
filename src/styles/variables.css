@@ -95,6 +95,24 @@
   --preview-page-bg-col: white;
   --a4-ar: 1/1.41421;
   --preview-page-ar: var(--a4-ar);
+  --preview-page-padding: 5cqw;
+  --preview-page-gap: 3cqw;
+
+  --preview-page-accent-color: rgb(158, 11, 114);
+  --preview-page-white: white;
+
+  --preview-main-text-color: var(--col-dark-1);
+  --preview-sub-text-color: var(--col-dark-3);
+  --preview-secondary-text-color: var(--col-dark-4);
+
+  --preview-contacts-padding: 2cqw;
+  --preview-contacts-fontsize: 1.5cqw;
+  --preview-contacts-gap: 0.5em;
+
+  --preview-full-name-fontsize: 7cqw;
+
+  --preview-title-fontsize: 3cqw;
+  --preview-about-me-fontsize: 2.5cqw;
 
   /* --box-radius: max(6px, 0.9vmin); */
 
