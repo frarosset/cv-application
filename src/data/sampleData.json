@@ -10,5 +10,26 @@
     "website": "johndoe.example.com",
     "linkedin": "linkedin.com/in/johndoe.is.not.real",
     "github": "github.com/johndoe.is.not.real"
-  }
+  },
+  "education": [
+    {
+      "institution": "University of Random City",
+      "address": "Random City",
+      "degree": "B.Sc. in Software Engineering",
+      "from-date-month": "September",
+      "from-date-year": 2023,
+      "to-date-month": "",
+      "to-date-year": 2024,
+      "ongoing": true
+    },
+    {
+      "institution": "High School of Random City",
+      "address": "Random City",
+      "from-date-month": "",
+      "from-date-year": 2018,
+      "to-date-month": "",
+      "to-date-year": 2023,
+      "ongoing": false
+    }
+  ]
 }
