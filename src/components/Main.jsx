@@ -6,14 +6,17 @@ import "../styles/Main.css";
 
 function Main() {
   const [personalInfo, setPersonalInfo] = useState(sampleData.personalInfo);
+  const [education, setEducation] = useState(sampleData.education);
 
   return (
     <main>
       <EditPanel
         personalInfo={personalInfo}
         setPersonalInfo={setPersonalInfo}
+        education={education}
+        setEducation={setEducation}
       />
-      <PreviewPanel personalInfo={personalInfo} />
+      <PreviewPanel personalInfo={personalInfo} education={education} />
     </main>
   );
 }

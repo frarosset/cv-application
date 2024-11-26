@@ -11,7 +11,10 @@ function EditPanel(props) {
         personalInfo={props.personalInfo}
         setPersonalInfo={props.setPersonalInfo}
       />
-      <EditEducationPanel />
+      <EditEducationPanel
+        education={props.education}
+        setEducation={props.setEducation}
+      />
       <EditProfessionalExperience />
     </div>
   );

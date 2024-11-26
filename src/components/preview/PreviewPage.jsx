@@ -7,7 +7,7 @@ function PreviewPage(props) {
   return (
     <div className="preview-page">
       <PreviewPersonalInfoPanel personalInfo={props.personalInfo} />
-      <PreviewEducationPanel />
+      <PreviewEducationPanel education={props.education} />
       <PreviewProfessionalExperience />
     </div>
   );
