@@ -2,7 +2,8 @@
   display: grid;
   grid-template-areas:
     "role role dates"
-    "institution  address address";
+    "institution  address address"
+    "other other other";
 
   grid-template-columns: max-content 1fr max-content;
   align-items: baseline;
@@ -39,4 +40,8 @@
   grid-area: address;
   justify-self: start;
   color: var(--preview-sub-text-color);
+}
+
+.preview-item-with-dates .other-info {
+  grid-area: other;
 }
