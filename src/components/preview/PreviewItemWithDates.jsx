@@ -1,8 +1,10 @@
 import Text from "../base/Text.jsx";
+import PreviewListWithTextOnly from "./PreviewListWithTextOnly.jsx";
 import "../../styles/preview/PreviewItemWithDates.css";
 
 function PreviewItemWithDates({ itemData, customClass, textProperties }) {
   const datesValue = getDatesStr(itemData);
+  const otherInfo = itemData.otherInfo ? itemData.otherInfo : [];
 
   return (
     <li className={`preview-item-with-dates ${customClass}`}>
@@ -10,6 +12,8 @@ function PreviewItemWithDates({ itemData, customClass, textProperties }) {
         <Text key={prop} customClass={prop} value={itemData[prop]} />
       ))}
       <Text key={"dates"} customClass={"dates"} value={datesValue} />
+
+      <PreviewListWithTextOnly customClass={"other-info"} data={otherInfo} />
     </li>
   );
 }
