@@ -114,6 +114,9 @@
   --preview-title-fontsize: 3cqw;
   --preview-about-me-fontsize: 2.5cqw;
 
+  --preview-main-fontsize: 2.5cqw;
+  --preview-accent-fontsize: 3cqw;
+
   /* --box-radius: max(6px, 0.9vmin); */
 
   /* Shadows */

@@ -1,4 +1,5 @@
 import Text from "../base/Text.jsx";
+import "../../styles/preview/PreviewItemWithDates.css";
 
 function PreviewItemWithDates({ itemData, customClass, textProperties }) {
   const datesValue = getDatesStr(itemData);

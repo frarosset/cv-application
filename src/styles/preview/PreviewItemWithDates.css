@@ -1,0 +1,42 @@
+.preview-item-with-dates {
+  display: grid;
+  grid-template-areas:
+    "role role dates"
+    "institution  address address";
+
+  grid-template-columns: max-content 1fr max-content;
+  align-items: baseline;
+
+  font-size: var(--preview-main-fontsize);
+}
+
+.preview-item-with-dates .role,
+.preview-item-with-dates .degree {
+  grid-area: role;
+  font-weight: 600;
+  color: var(--preview-page-accent-color);
+  font-size: var(--preview-accent-fontsize);
+}
+
+.preview-item-with-dates .dates {
+  grid-area: dates;
+  color: var(--preview-sub-text-color);
+  padding-left: 3em;
+}
+
+.preview-item-with-dates .institution {
+  grid-area: institution;
+  font-weight: 500;
+  color: var(--preview-sub-text-color);
+}
+
+.preview-item-with-dates .address::before {
+  content: ", ";
+  color: var(--preview-sub-text-color);
+}
+
+.preview-item-with-dates .address {
+  grid-area: address;
+  justify-self: start;
+  color: var(--preview-sub-text-color);
+}

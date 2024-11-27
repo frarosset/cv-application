@@ -1,6 +1,6 @@
 import PreviewItemWithDates from "./PreviewItemWithDates.jsx";
 
-function PreviewListithDates({ data, customClass, textProperties }) {
+function PreviewListWithDates({ data, customClass, textProperties }) {
   return (
     <ul className={`preview-list-with-dates ${customClass}`}>
       {data.map((itemData) => (
@@ -15,4 +15,4 @@ function PreviewListithDates({ data, customClass, textProperties }) {
   );
 }
 
-export default PreviewListithDates;
+export default PreviewListWithDates;
