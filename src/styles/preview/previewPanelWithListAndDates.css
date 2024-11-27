@@ -1,0 +1,12 @@
+.preview-panel-with-list-and-dates {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--preview-page-padding);
+}
+
+.preview-panel-with-list-and-dates h3 {
+  border-bottom: 2px solid var(--preview-secondary-text-color);
+  color: var(--preview-main-text-color);
+  font-size: var(--preview-panel-title-fontsize);
+  font-weight: bold;
+}
