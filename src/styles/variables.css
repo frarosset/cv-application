@@ -117,6 +117,8 @@
   --preview-main-fontsize: 2.5cqw;
   --preview-accent-fontsize: 3cqw;
 
+  --preview-page-item-list-gap: 0.5em;
+
   /* --box-radius: max(6px, 0.9vmin); */
 
   /* Shadows */

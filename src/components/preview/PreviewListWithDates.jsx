@@ -1,4 +1,5 @@
 import PreviewItemWithDates from "./PreviewItemWithDates.jsx";
+import "../../styles/preview/PreviewListWithDates.css";
 
 function PreviewListWithDates({ data, customClass, textProperties }) {
   return (

@@ -1,0 +1,6 @@
+.preview-list-with-dates {
+  display: flex;
+  flex-direction: column;
+  gap: var(--preview-page-item-list-gap);
+  padding: var(--preview-page-item-list-gap) 0;
+}
