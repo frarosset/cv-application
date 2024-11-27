@@ -1,0 +1,22 @@
+.preview-item-with-text-only {
+  padding-top: var(--preview-page-item-list-item-padding-top);
+}
+
+.preview-item-with-text-only-text-blocks {
+  display: block;
+}
+
+.preview-item-with-text-only-text-blocks .text.heading {
+  color: var(--preview-secondary-text-color);
+  font-weight: 500;
+  display: inline;
+}
+
+.preview-item-with-text-only-text-blocks .text.heading::after {
+  content: " ";
+}
+
+.preview-item-with-text-only-text-blocks .text {
+  color: var(--preview-secondary-text-color);
+  display: inline;
+}

@@ -1,4 +1,5 @@
 import Text from "../base/Text.jsx";
+import "../../styles/preview/PreviewItemWithTextOnly.css";
 
 function PreviewItemWithTextOnly({ itemData, customClass }) {
   return (
