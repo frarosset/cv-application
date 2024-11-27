@@ -1,4 +1,5 @@
 import PreviewItemWithTextOnly from "./PreviewItemWithTextOnly.jsx";
+import "../../styles/preview/PreviewListWithTextOnly.css";
 
 function PreviewListWithTextOnly({ data, customClass }) {
   return (
