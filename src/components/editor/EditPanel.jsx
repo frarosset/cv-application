@@ -17,19 +17,21 @@ function EditPanel(props) {
   return (
     <div className="edit-panel">
       <h2>Edit Panel</h2>
-      {renderSetCurrentPanelButtons(setCurrentPanel)}
+      {renderSetCurrentPanelButtons(setCurrentPanel, currentPanel)}
       {renderCurrentPanel(currentPanel, props)}
     </div>
   );
 }
 
-function renderSetCurrentPanelButtons(setCurrentPanel) {
+function renderSetCurrentPanelButtons(setCurrentPanel, currentPanel) {
   return (
     <div className="edit-panel-buttons">
       {panelsInfo.map(({ name, iconName }) => (
         <Button
           key={name}
-          customCssClass={`edit-panel-button ${name}`}
+          customCssClass={`edit-panel-button ${name} ${
+            name == currentPanel ? "current" : ""
+          }`}
           iconName={iconName}
           onClickCallback={() => setCurrentPanel(name)}
         ></Button>
