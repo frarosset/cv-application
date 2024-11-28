@@ -6,6 +6,10 @@ import LinkedinIcon from "../../assets/icons/linkedin.svg?react";
 import WebsiteIcon from "../../assets/icons/globe.svg?react";
 import GithubIcon from "../../assets/icons/github.svg?react";
 
+import UserIcon from "../../assets/icons/user.svg?react";
+import BookOpenIcon from "../../assets/icons/book-open.svg?react";
+import BriefcaseIcon from "../../assets/icons/briefcase.svg?react";
+
 const IconSvgComponents = {
   email: EmailIcon,
   location: LocationIcon,
@@ -13,6 +17,9 @@ const IconSvgComponents = {
   linkedin: LinkedinIcon,
   website: WebsiteIcon,
   github: GithubIcon,
+  user: UserIcon,
+  bookOpen: BookOpenIcon,
+  briefcase: BriefcaseIcon,
 };
 
 function Icon({ name }) {

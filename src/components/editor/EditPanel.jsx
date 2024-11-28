@@ -1,8 +1,15 @@
 import { useState } from "react";
+import Button from "../base/Button.jsx";
 import EditPersonalInfoPanel from "./EditPersonalInfoPanel.jsx";
 import EditEducationPanel from "./EditEducationPanel.jsx";
 import EditProfessionalExperience from "./EditProfessionalExperience.jsx";
 import "../../styles/editor/EditPanel.css";
+
+const panelsInfo = [
+  { name: "personal-info", iconName: "user" },
+  { name: "education", iconName: "bookOpen" },
+  { name: "professional-experience", iconName: "briefcase" },
+];
 
 function EditPanel(props) {
   const [currentPanel, setCurrentPanel] = useState("personal-info");
@@ -10,7 +17,23 @@ function EditPanel(props) {
   return (
     <div className="edit-panel">
       <h2>Edit Panel</h2>
+      {renderSetCurrentPanelButtons(setCurrentPanel)}
       {renderCurrentPanel(currentPanel, props)}
+    </div>
+  );
+}
+
+function renderSetCurrentPanelButtons(setCurrentPanel) {
+  return (
+    <div className="edit-panel-buttons">
+      {panelsInfo.map(({ name, iconName }) => (
+        <Button
+          key={name}
+          customCssClass={`edit-panel-button ${name}`}
+          iconName={iconName}
+          onClickCallback={() => setCurrentPanel(name)}
+        ></Button>
+      ))}
     </div>
   );
 }
