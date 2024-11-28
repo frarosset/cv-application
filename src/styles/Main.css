@@ -9,3 +9,8 @@ main {
 main .preview-panel {
   flex: 1;
 }
+
+main.has-overflow-y .edit-panel,
+main.has-overflow-y .preview-panel {
+  min-width: 100vw;
+}
