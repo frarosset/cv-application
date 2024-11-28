@@ -10,7 +10,20 @@ main .preview-panel {
   flex: 1;
 }
 
+/* Modify layout when base layout has overflow */
+
 main.has-overflow-y .edit-panel,
 main.has-overflow-y .preview-panel {
   min-width: 100vw;
+}
+
+main.has-overflow-y .edit-panel {
+  padding-right: var(--editor-padding-ud);
+}
+
+/* tablet or larger, or landscape (vs portrait), 641px (phone), 961px (tablet) */
+@media only screen and (min-width: 768px) {
+  main.has-overflow-y .edit-section-panel {
+    max-width: 80vw;
+  }
 }

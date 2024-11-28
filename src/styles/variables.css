@@ -26,10 +26,10 @@
   --bg-col: var(--col-light-1);
   --header-bg-col: var(--col-accent-2);
 
-  --editor-bg-col: var(--col-light-4);
-  --editor-section-bg-col: var(--col-light-3);
+  --editor-bg-col: var(--col-light-3);
+  --editor-section-bg-col: var(--col-light-2);
 
-  --preview-bg-col: var(--col-light-2);
+  --preview-bg-col: var(--col-light-3);
 
   /* Colors (text/icons)*/
   --col-txt: var(--col-dark-1);
@@ -39,6 +39,7 @@
   --input-color: var(--col-txt);
   --input-placeholder-color: var(--col-dark-4);
   --label-color: var(--col-dark-2);
+  --edit-section-highlight-color: var(--col-accent-1);
 
   /* Font family */
   --main-font: "Urbanist";
@@ -65,7 +66,8 @@
   --page-padding-ud: 1rem;
   --page-padding: var(--page-padding-ud) var(--page-padding-lr);
 
-  --editor-padding: var(--page-padding-ud) 0;
+  --editor-padding-ud: var(--page-padding-ud);
+  --editor-padding: var(--editor-padding-ud) 0;
 
   --editor-section-padding: var(--page-padding);
   --editor-section-gap: 1rem;

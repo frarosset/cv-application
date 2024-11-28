@@ -1,6 +1,7 @@
 .edit-panel {
   background-color: var(--editor-bg-col);
   padding: var(--editor-padding);
+  z-index: 1;
 }
 
 .edit-panel h2 {
