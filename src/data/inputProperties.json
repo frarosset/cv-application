@@ -71,5 +71,28 @@
       "type": "text",
       "placeholder": "github.com/johndoe.is.not.real"
     }
+  },
+  "education": {
+    "degree": {
+      "label": "Degree",
+      "maxLength": 50,
+      "required": true,
+      "type": "text",
+      "placeholder": "B.Sc. in Software Engineering"
+    },
+    "institution": {
+      "label": "Institution",
+      "maxLength": 50,
+      "required": true,
+      "type": "text",
+      "placeholder": "University of Random City"
+    },
+    "address": {
+      "label": "Address",
+      "maxLength": 50,
+      "required": true,
+      "type": "text",
+      "placeholder": "Random City"
+    }
   }
 }
