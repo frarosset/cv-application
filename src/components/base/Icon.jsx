@@ -9,6 +9,7 @@ import GithubIcon from "../../assets/icons/github.svg?react";
 import UserIcon from "../../assets/icons/user.svg?react";
 import BookOpenIcon from "../../assets/icons/book-open.svg?react";
 import BriefcaseIcon from "../../assets/icons/briefcase.svg?react";
+import AddNew from "../../assets/icons/plus.svg?react";
 
 const IconSvgComponents = {
   email: EmailIcon,
@@ -20,6 +21,7 @@ const IconSvgComponents = {
   user: UserIcon,
   bookOpen: BookOpenIcon,
   briefcase: BriefcaseIcon,
+  addNew: AddNew,
 };
 
 function Icon({ name }) {
