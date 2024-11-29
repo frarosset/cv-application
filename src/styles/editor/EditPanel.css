@@ -2,10 +2,63 @@
   background-color: var(--editor-bg-col);
   padding: var(--editor-padding);
   z-index: 1;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .edit-panel h2 {
   display: none;
   font-size: var(--h2-fontsize);
   font-weight: bold;
+}
+
+.edit-panel .edit-panel-buttons {
+  /* put this above the section panels (to better handling shadows) */
+  z-index: 1;
+  margin: 0 var(--editor-section-padding-lr);
+
+  display: flex;
+}
+
+.edit-panel .edit-panel-button svg {
+  height: var(--editor-section-button-icon-size);
+  width: var(--editor-section-button-icon-size);
+}
+
+.edit-panel .edit-panel-button {
+  flex: 0 0 1;
+  min-width: 0;
+
+  background-color: var(--editor-section-button-color);
+  border: none !important;
+  outline: none !important;
+
+  padding: var(--editor-section-button-padding);
+  border-radius: var(--editor-form-gap) var(--editor-form-gap) 0 0;
+  box-shadow: var(--box-shadow);
+  /* hide shadow below the bitton */
+  --len: calc(-1 * (var(--box-shadow-blur) + var(--box-shadow-spread)));
+  clip-path: inset(var(--len) var(--len) 0px var(--len));
+}
+
+/* when hover is supporte */
+@media not all and (hover: none) {
+  .edit-panel .edit-panel-button:hover {
+    background-color: var(--editor-section-button-color-secondary);
+    color: var(--edit-section-highlight-color-secondary);
+  }
+}
+
+/* .edit-panel .edit-panel-button:active, */
+.edit-panel .edit-panel-button:focus,
+.edit-panel .edit-panel-button:focus-visible {
+  background-color: var(--editor-section-button-color-secondary);
+  color: var(--edit-section-highlight-color-secondary);
+}
+
+.edit-panel .edit-panel-button.current {
+  background-color: var(--editor-section-bg-col) !important;
+  color: var(--edit-section-highlight-color);
+  pointer-events: none;
 }

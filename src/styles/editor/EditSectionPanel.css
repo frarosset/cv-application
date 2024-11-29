@@ -8,7 +8,11 @@
   flex-direction: column;
   gap: var(--editor-section-gap);
 
-  max-height: 100%;
+  --editor-section-buttons-height: calc(
+    2 * var(--editor-section-button-padding-tb) +
+      var(--editor-section-button-icon-size)
+  );
+  max-height: calc(100% - var(--editor-section-buttons-height));
 }
 
 .edit-section-panel h3 {
@@ -19,8 +23,6 @@
 }
 
 .edit-section-panel form {
-  min-width: max-content;
-
   display: flex;
   flex-direction: column;
   gap: var(--editor-form-gap);
