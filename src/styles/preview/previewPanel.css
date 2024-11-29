@@ -2,7 +2,7 @@
   background-color: var(--preview-bg-col);
   padding: var(--preview-padding);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 

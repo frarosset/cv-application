@@ -87,6 +87,7 @@
   --label-input-gap: 0.5em;
   --label-width: 5em;
 
+  --preview-padding-lr: var(--page-padding-lr);
   --preview-padding: var(--page-padding);
 
   /* Radius / borders */
@@ -104,7 +105,7 @@
 
   /* Preview page */
   --preview-page-bg-col: white;
-  --a4-ar: 1/1.41421;
+  --a4-ar: calc(1 / 1.41421);
   --preview-page-ar: var(--a4-ar);
   --preview-page-padding: 5cqw;
   --preview-page-gap: 3cqw;

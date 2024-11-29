@@ -27,3 +27,9 @@ main.has-overflow-y .edit-panel {
     max-width: 80vw;
   }
 }
+
+main.has-overflow-y .preview-page {
+  /* note: this assumes .preview-page has no siblings */
+  --var: calc((100vw - 2 * var(--preview-padding-lr)) / var(--preview-page-ar));
+  max-height: var(--var);
+}
