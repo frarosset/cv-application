@@ -45,6 +45,8 @@
   --editor-section-button-color: var(--col-light-4);
   --editor-section-button-color-secondary: var(--col-light-3);
 
+  --disabled-button-opacity: 0.5;
+
   /* Font family */
   --main-font: "Urbanist";
   --h1-font: "Urbanist";
@@ -79,9 +81,15 @@
   --editor-form-padding: 1rem;
   --editor-form-gap: 0.5rem;
   --editor-section-button-icon-size: 1em;
+  --editor-section-button-icon-larger-size: 1.5em;
   --editor-section-button-padding-tb: min(2%, 0.4em);
   --editor-section-button-padding: var(--editor-section-button-padding-tb)
     min(4%, 0.8em);
+  --editor-section-button-icon-new-item-padding: 0.5em;
+  --editor-section-button-item-padding: 0.3em 0.5em;
+  --editor-section-button-item-gap: 0.5em;
+  --editor-section-button-new-item-padding: 0.5em;
+  --editor-section-button-item-min-width: 3em;
 
   --input-padding: 2px;
   --label-input-gap: 0.5em;
@@ -102,6 +110,9 @@
   --input-color-required: var(--col-accent-1);
 
   --textarea-rows: 6;
+
+  --button-small-outline-size: 1px;
+  --button-large-outline-size: 3px;
 
   /* Preview page */
   --preview-page-bg-col: white;

@@ -1,4 +1,5 @@
 import Button from "../base/Button.jsx";
+import "../../styles/editor/EditListSelectionButtons.css";
 
 // It assumes there is an external list of items, each of which has a .id
 // property. This list is passed as a prop.
