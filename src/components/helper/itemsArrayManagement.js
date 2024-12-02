@@ -41,6 +41,22 @@ function editItemAtIdx(itemIdx, property, value, array, setArray) {
   setArray(copiedArray);
 }
 
+function moveItemBy(itemId, displacement, array, setArray) {
+  const itemIdx = array.findIndex((x) => x.id === itemId);
+
+  if (itemIdx !== -1) {
+    const newItemIdx = Math.max(
+      0,
+      Math.min(array.length - 1, itemIdx + displacement)
+    );
+
+    const copiedArray = JSON.parse(JSON.stringify(array));
+    copiedArray.splice(newItemIdx, 0, copiedArray.splice(itemIdx, 1)[0]);
+
+    setArray(copiedArray);
+  }
+}
+
 function setValueFor(itemId, property, array, setArray, setItemId) {
   // returns a callback to set a value for the property "property" for the item with id "itemId"
   return (value) => {
@@ -54,4 +70,4 @@ function setValueFor(itemId, property, array, setArray, setItemId) {
   };
 }
 
-export { getItem, deleteItem, addNewItem, setValueFor };
+export { getItem, moveItemBy, deleteItem, addNewItem, setValueFor };
