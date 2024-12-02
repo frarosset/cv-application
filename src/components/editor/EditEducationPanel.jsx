@@ -4,6 +4,7 @@ import EditItemPositionInList from "./EditItemPositionInList.jsx";
 import {
   getItem,
   deleteItem,
+  moveItemBy,
   setValueFor,
 } from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
@@ -23,6 +24,10 @@ function EditEducationPanel({ education, setEducation }) {
 
   const deleteItemCallback = () =>
     deleteItem(currentItemId, education, setEducation, setCurrentItemId);
+  const moveItemBackCallback = () =>
+    moveItemBy(currentItemId, -1, education, setEducation);
+  const moveItemForthCallback = () =>
+    moveItemBy(currentItemId, 1, education, setEducation);
 
   return (
     <div
@@ -37,7 +42,13 @@ function EditEducationPanel({ education, setEducation }) {
 
       {showForm && (
         <>
-          <EditItemPositionInList {...{ deleteItemCallback }} />
+          <EditItemPositionInList
+            {...{
+              deleteItemCallback,
+              moveItemBackCallback,
+              moveItemForthCallback,
+            }}
+          />
           <form>
             <ArrayOfInputWithLabel
               {...{ orderedInputProps, inputProps }}

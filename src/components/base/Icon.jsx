@@ -12,6 +12,8 @@ import BriefcaseIcon from "../../assets/icons/briefcase.svg?react";
 
 import AddNew from "../../assets/icons/plus.svg?react";
 import Delete from "../../assets/icons/trash.svg?react";
+import MoveBack from "../../assets/icons/arrow-left-circle.svg?react";
+import MoveForth from "../../assets/icons/arrow-right-circle.svg?react";
 
 const IconSvgComponents = {
   email: EmailIcon,
@@ -25,6 +27,8 @@ const IconSvgComponents = {
   briefcase: BriefcaseIcon,
   addNew: AddNew,
   delete: Delete,
+  moveBack: MoveBack,
+  moveForth: MoveForth,
 };
 
 function Icon({ name }) {
