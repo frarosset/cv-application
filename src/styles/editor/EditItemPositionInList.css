@@ -1,0 +1,46 @@
+.edit-item-position-in-list-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: calc(var(--editor-section-button-item-gap));
+}
+
+.delete-item-from-list-button {
+  background-color: var(--editor-section-bg-col);
+  color: var(--col-txt);
+
+  aspect-ratio: 1;
+  min-height: 0;
+  border-radius: 50%;
+  border: none !important;
+
+  padding: var(--editor-section-button-item-padding);
+}
+
+.delete-item-from-list-button .icon,
+.delete-item-from-list-button svg {
+  height: var(--editor-section-button-icon-size);
+  width: var(--editor-section-button-icon-size);
+}
+
+/* hide if item is empty (no item to edit) */
+body:has(.empty-item) .edit-item-position-in-list-buttons {
+  visibility: hidden;
+}
+
+body:has(.empty-item) .edit-item-position-in-list-buttons {
+  pointer-events: none;
+}
+
+/* when hover is supported */
+@media not all and (hover: none) {
+  .delete-item-from-list-button:hover {
+    color: var(--edit-section-highlight-color-secondary);
+  }
+}
+
+.delete-item-from-list-button:focus,
+.delete-item-from-list-button:focus-visible {
+  color: var(--edit-section-highlight-color-secondary);
+  outline: none;
+}

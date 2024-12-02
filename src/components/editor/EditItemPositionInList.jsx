@@ -1,5 +1,5 @@
 import Button from "../base/Button.jsx";
-// import "../../styles/editor/EditListSelectionButtons.css";
+import "../../styles/editor/EditItemPositionInList.css";
 
 function EditItemPositionInList({ deleteItemCallback }) {
   return (
