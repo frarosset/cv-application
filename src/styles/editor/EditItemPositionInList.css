@@ -5,7 +5,7 @@
   gap: calc(var(--editor-section-button-item-gap));
 }
 
-.delete-item-from-list-button {
+.edit-item-position-in-list-button {
   background-color: var(--editor-section-bg-col);
   color: var(--col-txt);
 
@@ -17,8 +17,8 @@
   padding: var(--editor-section-button-item-padding);
 }
 
-.delete-item-from-list-button .icon,
-.delete-item-from-list-button svg {
+.edit-item-position-in-list-button .icon,
+.edit-item-position-in-list-button svg {
   height: var(--editor-section-button-icon-size);
   width: var(--editor-section-button-icon-size);
 }
@@ -34,13 +34,16 @@ body:has(.empty-item) .edit-item-position-in-list-buttons {
 
 /* when hover is supported */
 @media not all and (hover: none) {
-  .delete-item-from-list-button:hover {
+  .edit-item-position-in-list-button:hover {
     color: var(--edit-section-highlight-color-secondary);
   }
 }
 
-.delete-item-from-list-button:focus,
-.delete-item-from-list-button:focus-visible {
-  color: var(--edit-section-highlight-color-secondary);
+.edit-item-position-in-list-button:focus,
+.edit-item-position-in-list-button:focus-visible {
   outline: none;
+}
+
+.edit-item-position-in-list-button:focus-visible {
+  color: var(--edit-section-highlight-color-secondary);
 }

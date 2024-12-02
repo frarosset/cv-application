@@ -9,17 +9,17 @@ function EditItemPositionInList({
   return (
     <div className="edit-item-position-in-list-buttons">
       <Button
-        customCssClass={`move-item-back-in-list-button`}
+        customCssClass={`edit-item-position-in-list-button move-item-back-in-list-button`}
         iconName={"moveBack"}
         onClickCallback={moveItemBackCallback}
       ></Button>
       <Button
-        customCssClass={`move-item-forth-in-list-button`}
+        customCssClass={`edit-item-position-in-list-button move-item-forth-in-list-button`}
         iconName={"moveForth"}
         onClickCallback={moveItemForthCallback}
       ></Button>
       <Button
-        customCssClass={`delete-item-from-list-button`}
+        customCssClass={`edit-item-position-in-list-button delete-item-from-list-button`}
         iconName={"delete"}
         onClickCallback={deleteItemCallback}
       ></Button>
