@@ -11,7 +11,8 @@ const inputProps = inputProperties.education;
 function EditEducationPanel({ education, setEducation }) {
   const [currentItemId, setCurrentItemId] = useState(null);
 
-  const [currentItem, showForm] = getItem(currentItemId, education);
+  const showForm = currentItemId != null;
+  const currentItem = getItem(currentItemId, education);
 
   return (
     <div className="edit-section-panel edit-education-panel">
