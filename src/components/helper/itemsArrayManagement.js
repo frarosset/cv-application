@@ -22,6 +22,18 @@ function addNewItem(array, setArray, setItemId, initItemData = {}) {
   return newItem;
 }
 
+function deleteItem(itemId, array, setArray, setItemId) {
+  const itemIdx = array.findIndex((x) => x.id === itemId);
+
+  if (itemIdx !== -1) {
+    const copiedArray = JSON.parse(JSON.stringify(array));
+    copiedArray.splice(itemIdx, 1);
+
+    setArray(copiedArray);
+    setItemId(null);
+  }
+}
+
 function editItemAtIdx(itemIdx, property, value, array, setArray) {
   const copiedArray = JSON.parse(JSON.stringify(array));
   copiedArray[itemIdx][property] = value;
@@ -42,4 +54,4 @@ function setValueFor(itemId, property, array, setArray, setItemId) {
   };
 }
 
-export { getItem, addNewItem, setValueFor };
+export { getItem, deleteItem, addNewItem, setValueFor };
