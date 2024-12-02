@@ -1,7 +1,7 @@
 import { useState } from "react";
 import EditListSelectionButtons from "./EditListSelectionButtons.jsx";
-import InputWithLabel from "../base/InputWithLabel.jsx";
 import { getItem, setValueFor } from "../helper/itemsArrayManagement.js";
+import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
 
@@ -24,26 +24,19 @@ function EditEducationPanel({ education, setEducation }) {
 
       {showForm && (
         <form>
-          {orderedInputProps.map((prop) => (
-            <InputWithLabel
-              key={prop}
-              id={prop}
-              name={prop}
-              label={inputProps[prop].label}
-              value={currentItem[prop]}
-              placeholder={inputProps[prop].placeholder}
-              setValue={setValueFor(
+          <ArrayOfInputWithLabel
+            {...{ orderedInputProps, inputProps }}
+            item={currentItem}
+            setValueFor={(prop) =>
+              setValueFor(
                 currentItemId,
                 prop,
                 education,
                 setEducation,
                 setCurrentItemId
-              )}
-              type={inputProps[prop].type}
-              maxLength={inputProps[prop].maxLength}
-              required={inputProps[prop].required}
-            />
-          ))}
+              )
+            }
+          />
         </form>
       )}
     </div>

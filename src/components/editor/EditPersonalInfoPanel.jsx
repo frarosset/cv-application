@@ -1,4 +1,4 @@
-import InputWithLabel from "../base/InputWithLabel.jsx";
+import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
 
@@ -18,10 +18,10 @@ const orderedInputProps = [
 const inputProps = inputProperties.personalInfo;
 
 function EditPersonalInfoPanel({ personalInfo, setPersonalInfo }) {
-  const setValueFor = (property) => (value) => {
+  const setValueFor = (prop) => (value) => {
     setPersonalInfo({
       ...personalInfo,
-      [property]: value,
+      [prop]: value,
     });
   };
 
@@ -30,20 +30,10 @@ function EditPersonalInfoPanel({ personalInfo, setPersonalInfo }) {
       <h3>Edit Personal Info</h3>
 
       <form>
-        {orderedInputProps.map((prop) => (
-          <InputWithLabel
-            key={prop}
-            id={prop}
-            name={prop}
-            label={inputProps[prop].label}
-            value={personalInfo[prop]}
-            placeholder={inputProps[prop].placeholder}
-            setValue={setValueFor(prop)}
-            type={inputProps[prop].type}
-            maxLength={inputProps[prop].maxLength}
-            required={inputProps[prop].required}
-          />
-        ))}
+        <ArrayOfInputWithLabel
+          {...{ orderedInputProps, inputProps, setValueFor }}
+          item={personalInfo}
+        />
       </form>
     </div>
   );
