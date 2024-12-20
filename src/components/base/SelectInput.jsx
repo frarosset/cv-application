@@ -9,6 +9,7 @@ function SelectInput({
   setValue,
   placeholder = "",
   required = false,
+  disabled = false,
 }) {
   return (
     <select
@@ -19,6 +20,7 @@ function SelectInput({
       onChange={(e) => {
         setValue(e.target.value);
       }}
+      disabled={disabled}
     >
       <option disabled value={valueToShowPlaceholder}>
         {placeholder}
