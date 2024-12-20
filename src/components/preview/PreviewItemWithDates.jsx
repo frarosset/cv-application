@@ -31,7 +31,7 @@ function getDatesStr({
 }
 
 function getDateStr(year, month = "") {
-  return `${month || ""} ${year}`;
+  return `${month != null ? month : ""} ${year != null ? year : ""}`;
 }
 
 export default PreviewItemWithDates;
