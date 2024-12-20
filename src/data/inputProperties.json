@@ -93,6 +93,21 @@
       "required": true,
       "type": "text",
       "placeholder": "Random City"
+    },
+    "fromToDate": {
+      "type": "date-month-year-interval",
+      "fromDateProp": "fromDate",
+      "toDateProp": "toDate"
+    },
+    "fromDate": {
+      "type": "date-month-year",
+      "label": "From",
+      "required": true
+    },
+    "toDate": {
+      "type": "date-month-year",
+      "label": "To",
+      "required": true
     }
   }
 }

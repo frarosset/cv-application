@@ -11,7 +11,7 @@ import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
 
-const orderedInputProps = ["degree", "institution", "address"];
+const orderedInputProps = ["degree", "institution", "address", "fromToDate"];
 const inputProps = inputProperties.education;
 
 function EditEducationPanel({ education, setEducation }) {
@@ -19,8 +19,8 @@ function EditEducationPanel({ education, setEducation }) {
 
   const showForm = currentItemId != null;
   const currentItem = getItem(currentItemId, education);
-  const emptyItem = Object.keys(currentItem).length === 0;
-  const emptyItemClass = emptyItem && "empty-item";
+  const isEmptyItem = Object.keys(currentItem).length === 0;
+  const emptyItemClass = isEmptyItem && "empty-item";
 
   const deleteItemCallback = () =>
     deleteItem(currentItemId, education, setEducation, setCurrentItemId);
@@ -28,6 +28,9 @@ function EditEducationPanel({ education, setEducation }) {
     moveItemBy(currentItemId, -1, education, setEducation);
   const moveItemForthCallback = () =>
     moveItemBy(currentItemId, 1, education, setEducation);
+
+  const setValueForCallback = (prop) =>
+    setValueFor(currentItemId, prop, education, setEducation, setCurrentItemId);
 
   return (
     <div
@@ -53,15 +56,7 @@ function EditEducationPanel({ education, setEducation }) {
             <ArrayOfInputWithLabel
               {...{ orderedInputProps, inputProps }}
               item={currentItem}
-              setValueFor={(prop) =>
-                setValueFor(
-                  currentItemId,
-                  prop,
-                  education,
-                  setEducation,
-                  setCurrentItemId
-                )
-              }
+              setValueFor={setValueForCallback}
             />
           </form>
         </>
