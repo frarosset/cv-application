@@ -7,6 +7,7 @@ function Input({
   type = "text",
   maxLength = null,
   required = false,
+  checked = null,
 }) {
   return (
     <input
@@ -16,10 +17,15 @@ function Input({
       placeholder={placeholder}
       type={type}
       onChange={(e) => {
-        setValue(e.target.value);
+        setValue(
+          type != "checkbox" && type != "radio"
+            ? e.target.value
+            : e.target.checked
+        );
       }}
       maxLength={maxLength}
       required={required}
+      checked={checked}
     />
   );
 }
