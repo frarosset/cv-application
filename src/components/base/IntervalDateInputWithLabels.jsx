@@ -10,8 +10,13 @@ function IntervalDateInputWithLabels({
   item,
   setValueFor,
 }) {
-  const constraints = computeConstraints(fromDateProp, toDateProp, item);
   const isOngoing = item[ongoingProp] != null ? item[ongoingProp] : false;
+  const constraints = computeConstraints(
+    fromDateProp,
+    toDateProp,
+    item,
+    isOngoing
+  );
 
   return (
     <>
@@ -30,6 +35,7 @@ function IntervalDateInputWithLabels({
           fromYear={constraints[prop].fromYear}
           toMonth={constraints[prop].toMonth}
           toYear={constraints[prop].toYear}
+          disabled={constraints[prop].disabled}
         />
       ))}
       <InputWithLabel
@@ -46,15 +52,15 @@ function IntervalDateInputWithLabels({
   );
 }
 
-function computeConstraints(fromDateProp, toDateProp, item) {
+function computeConstraints(fromDateProp, toDateProp, item, isOngoing) {
   const fromMonth = item[`${fromDateProp}Month`];
   const fromYear = item[`${fromDateProp}Year`];
   const toMonth = item[`${toDateProp}Month`];
   const toYear = item[`${toDateProp}Year`];
 
   return {
-    [fromDateProp]: { toYear, toMonth },
-    [toDateProp]: { fromYear, fromMonth },
+    [fromDateProp]: { toYear, toMonth, disabled: false },
+    [toDateProp]: { fromYear, fromMonth, disabled: isOngoing },
   };
 }
 
