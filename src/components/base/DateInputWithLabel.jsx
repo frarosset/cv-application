@@ -28,6 +28,7 @@ function DateInputWithLabel({
   fromYear,
   toMonth,
   toYear,
+  disabled,
 }) {
   const idMonth = `${id}Month`;
   const idYear = `${id}Year`;
@@ -54,6 +55,7 @@ function DateInputWithLabel({
       placeholder={"month"}
       required={required}
       aria-label={`${label} month`}
+      disabled={disabled}
     />
   );
 
@@ -67,6 +69,7 @@ function DateInputWithLabel({
       placeholder={"year"}
       required={required}
       aria-label={`${label} year`}
+      disabled={disabled}
     />
   );
 
