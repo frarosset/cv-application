@@ -1,4 +1,7 @@
 import DateInputWithLabel from "../base/DateInputWithLabel.jsx";
+import InputWithLabel from "./InputWithLabel.jsx";
+
+const ongoingProp = "ongoing";
 
 function IntervalDateInputWithLabels({
   fromDateProp = "fromDate",
@@ -8,6 +11,8 @@ function IntervalDateInputWithLabels({
   setValueFor,
 }) {
   const constraints = computeConstraints(fromDateProp, toDateProp, item);
+  const isOngoing = item[ongoingProp] != null ? item[ongoingProp] : false;
+
   return (
     <>
       {[fromDateProp, toDateProp].map((prop) => (
@@ -27,6 +32,16 @@ function IntervalDateInputWithLabels({
           toYear={constraints[prop].toYear}
         />
       ))}
+      <InputWithLabel
+        key={ongoingProp}
+        id={ongoingProp}
+        name={ongoingProp}
+        label={inputProps[ongoingProp].label}
+        setValue={setValueFor(ongoingProp)}
+        type={inputProps[ongoingProp].type}
+        required={inputProps[ongoingProp].required}
+        checked={isOngoing}
+      />
     </>
   );
 }

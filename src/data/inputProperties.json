@@ -108,6 +108,11 @@
       "type": "date-month-year",
       "label": "To",
       "required": true
+    },
+    "ongoing": {
+      "type": "checkbox",
+      "label": "Ongoing",
+      "required": false
     }
   }
 }
