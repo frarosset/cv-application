@@ -43,7 +43,14 @@ function IntervalDateInputWithLabels({
         id={ongoingProp}
         name={ongoingProp}
         label={inputProps[ongoingProp].label}
-        setValue={setValueFor(ongoingProp)}
+        setValue={(val) => {
+          if (val) {
+            // reset to date input
+            setValueFor(`${toDateProp}Month`)(null);
+            setValueFor(`${toDateProp}Year`)(null);
+          }
+          setValueFor(ongoingProp)(val);
+        }}
         type={inputProps[ongoingProp].type}
         required={inputProps[ongoingProp].required}
         checked={isOngoing}
