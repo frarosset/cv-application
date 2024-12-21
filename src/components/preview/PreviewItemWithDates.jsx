@@ -13,7 +13,11 @@ function PreviewItemWithDates({ itemData, customClass, textProperties }) {
       ))}
       <Text key={"dates"} customClass={"dates"} value={datesValue} />
 
-      <PreviewListWithTextOnly customClass={"other-info"} data={otherInfo} />
+      <PreviewListWithTextOnly
+        customClass={"other-info"}
+        data={otherInfo}
+        textProperties={["heading", "text"]}
+      />
     </li>
   );
 }
