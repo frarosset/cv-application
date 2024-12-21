@@ -19,10 +19,10 @@ const inputProps = inputProperties.personalInfo;
 
 function EditPersonalInfoPanel({ personalInfo, setPersonalInfo }) {
   const setValueFor = (prop) => (value) => {
-    setPersonalInfo({
+    setPersonalInfo((personalInfo) => ({
       ...personalInfo,
       [prop]: value,
-    });
+    }));
   };
 
   return (

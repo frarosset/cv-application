@@ -11,63 +11,81 @@ function getItem(itemId, array) {
   return itemIdx !== -1 ? array[itemIdx] : {};
 }
 
-function addNewItem(array, setArray, setItemId, initItemData = {}) {
-  const copiedArray = JSON.parse(JSON.stringify(array));
+function addNewItemHelper(array, setItemId, initItemData) {
   const newItem = initItem(initItemData);
-  copiedArray.push(newItem);
-
-  setArray(copiedArray);
+  array.push(newItem);
   setItemId(newItem.id);
-
-  return newItem;
 }
 
-function deleteItem(itemId, array, setArray, setItemId) {
-  const itemIdx = array.findIndex((x) => x.id === itemId);
-
-  if (itemIdx !== -1) {
+function addNewItem(setArray, setItemId, initItemData = {}) {
+  setArray((array) => {
     const copiedArray = JSON.parse(JSON.stringify(array));
-    copiedArray.splice(itemIdx, 1);
 
-    setArray(copiedArray);
-    setItemId(null);
-  }
+    addNewItemHelper(copiedArray, setItemId, initItemData);
+
+    return copiedArray;
+  });
 }
 
-function editItemAtIdx(itemIdx, property, value, array, setArray) {
-  const copiedArray = JSON.parse(JSON.stringify(array));
-  copiedArray[itemIdx][property] = value;
-
-  setArray(copiedArray);
-}
-
-function moveItemBy(itemId, displacement, array, setArray) {
-  const itemIdx = array.findIndex((x) => x.id === itemId);
-
-  if (itemIdx !== -1) {
-    const newItemIdx = Math.max(
-      0,
-      Math.min(array.length - 1, itemIdx + displacement)
-    );
-
-    const copiedArray = JSON.parse(JSON.stringify(array));
-    copiedArray.splice(newItemIdx, 0, copiedArray.splice(itemIdx, 1)[0]);
-
-    setArray(copiedArray);
-  }
-}
-
-function setValueFor(itemId, property, array, setArray, setItemId) {
-  // returns a callback to set a value for the property "property" for the item with id "itemId"
-  return (value) => {
+function deleteItem(itemId, setArray, setItemId) {
+  setArray((array) => {
     const itemIdx = array.findIndex((x) => x.id === itemId);
 
-    if (itemIdx == -1) {
-      addNewItem(array, setArray, setItemId, { [property]: value });
-    } else {
-      editItemAtIdx(itemIdx, property, value, array, setArray);
+    if (itemIdx !== -1) {
+      const copiedArray = JSON.parse(JSON.stringify(array));
+      copiedArray.splice(itemIdx, 1);
+
+      setItemId(null);
+
+      return copiedArray;
     }
+
+    // no edit: return the original array
+    return array;
+  });
+}
+
+function editItem(itemId, property, value, setArray, setItemId) {
+  setArray((array) => {
+    const itemIdx = array.findIndex((x) => x.id === itemId);
+    const copiedArray = JSON.parse(JSON.stringify(array));
+
+    if (itemIdx !== -1) {
+      copiedArray[itemIdx][property] = value;
+    } else {
+      // add new item
+      addNewItemHelper(copiedArray, setItemId, { [property]: value });
+    }
+
+    return copiedArray;
+  });
+}
+
+function moveItemBy(itemId, displacement, setArray) {
+  setArray((array) => {
+    const itemIdx = array.findIndex((x) => x.id === itemId);
+
+    if (itemIdx !== -1) {
+      const newItemIdx = Math.max(
+        0,
+        Math.min(array.length - 1, itemIdx + displacement)
+      );
+
+      const copiedArray = JSON.parse(JSON.stringify(array));
+      copiedArray.splice(newItemIdx, 0, copiedArray.splice(itemIdx, 1)[0]);
+      return copiedArray;
+    }
+
+    // no edit: return the original array
+    return array;
+  });
+}
+
+function setValueForSetter(itemId, property, setArray, setItemId) {
+  // returns a callback to set a value for the property "property" for the item with id "itemId"
+  return (value) => {
+    editItem(itemId, property, value, setArray, setItemId);
   };
 }
 
-export { getItem, moveItemBy, deleteItem, addNewItem, setValueFor };
+export { getItem, moveItemBy, deleteItem, addNewItem, setValueForSetter };

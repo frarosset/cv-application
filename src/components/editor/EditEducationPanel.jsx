@@ -5,7 +5,7 @@ import {
   getItem,
   deleteItem,
   moveItemBy,
-  setValueFor,
+  setValueForSetter,
 } from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
@@ -23,14 +23,14 @@ function EditEducationPanel({ education, setEducation }) {
   const emptyItemClass = isEmptyItem && "empty-item";
 
   const deleteItemCallback = () =>
-    deleteItem(currentItemId, education, setEducation, setCurrentItemId);
+    deleteItem(currentItemId, setEducation, setCurrentItemId);
   const moveItemBackCallback = () =>
-    moveItemBy(currentItemId, -1, education, setEducation);
+    moveItemBy(currentItemId, -1, setEducation);
   const moveItemForthCallback = () =>
-    moveItemBy(currentItemId, 1, education, setEducation);
+    moveItemBy(currentItemId, 1, setEducation);
 
   const setValueForCallback = (prop) =>
-    setValueFor(currentItemId, prop, education, setEducation, setCurrentItemId);
+    setValueForSetter(currentItemId, prop, setEducation, setCurrentItemId);
 
   return (
     <div
