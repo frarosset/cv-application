@@ -38,7 +38,7 @@ function EditListSelectionButtons({
         {list.length == 0 ? (
           <p>{emptyListText}</p>
         ) : (
-          list.map(({ id }, idx) => (
+          list.map((id, idx) => (
             <Button
               key={id}
               customCssClass={`edit-list-selection-item-button ${id} ${setCurrentClass(

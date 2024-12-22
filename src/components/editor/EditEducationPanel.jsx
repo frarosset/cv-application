@@ -18,19 +18,33 @@ function EditEducationPanel({ education, setEducation }) {
   const [currentItemId, setCurrentItemId] = useState(null);
 
   const showForm = currentItemId != null;
-  const currentItem = getItem(currentItemId, education);
+  let currentItem = getItem(education, ["byId", currentItemId]);
+  if (typeof currentItem !== "object") currentItem = {};
   const isEmptyItem = Object.keys(currentItem).length === 0;
   const emptyItemClass = isEmptyItem && "empty-item";
 
   const deleteItemCallback = () =>
-    deleteItem(currentItemId, setEducation, setCurrentItemId);
+    deleteItem(
+      currentItemId,
+      setEducation,
+      setCurrentItemId,
+      ["allIds"],
+      ["byId"]
+    );
   const moveItemBackCallback = () =>
-    moveItemBy(currentItemId, -1, setEducation);
+    moveItemBy(currentItemId, -1, setEducation, ["allIds"], ["byId"]);
   const moveItemForthCallback = () =>
-    moveItemBy(currentItemId, 1, setEducation);
+    moveItemBy(currentItemId, 1, setEducation, ["allIds"], ["byId"]);
 
   const setValueForCallback = (prop) =>
-    setValueForSetter(currentItemId, prop, setEducation, setCurrentItemId);
+    setValueForSetter(
+      currentItemId,
+      prop,
+      setEducation,
+      setCurrentItemId,
+      ["allIds"],
+      ["byId"]
+    );
 
   return (
     <div
@@ -38,9 +52,10 @@ function EditEducationPanel({ education, setEducation }) {
     >
       <h3>Edit Education</h3>
       <EditListSelectionButtons
-        list={education}
+        list={education.allIds}
         currentItemId={currentItemId}
         setCurrentItemId={setCurrentItemId}
+        emptyListText={"Insert new items"}
       />
 
       {showForm && (
