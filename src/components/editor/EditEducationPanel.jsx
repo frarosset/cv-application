@@ -8,6 +8,7 @@ import {
   setValueForSetter,
 } from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
+import EditOtherInfoListInputWithLabel from "./EditOtherInfoListInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
 
@@ -73,6 +74,14 @@ function EditEducationPanel({ education, setEducation }) {
               item={currentItem}
               setValueFor={setValueForCallback}
             />
+            {!isEmptyItem && (
+              <EditOtherInfoListInputWithLabel
+                inputProps={inputProps}
+                otherInfo={currentItem.otherInfo}
+                setState={setEducation}
+                pathInState={["byId", currentItemId, "otherInfo"]}
+              />
+            )}
           </form>
         </>
       )}

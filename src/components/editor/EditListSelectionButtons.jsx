@@ -15,7 +15,7 @@ import "../../styles/editor/EditListSelectionButtons.css";
 const newItemId = -1;
 
 function EditListSelectionButtons({
-  list,
+  list = [],
   currentItemId,
   setCurrentItemId,
   emptyListText = "",

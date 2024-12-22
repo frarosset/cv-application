@@ -24,11 +24,8 @@
 }
 
 /* hide if item is empty (no item to edit) */
-body:has(.empty-item) .edit-item-position-in-list-buttons {
+.empty-item > .edit-item-position-in-list-buttons {
   visibility: hidden;
-}
-
-body:has(.empty-item) .edit-item-position-in-list-buttons {
   pointer-events: none;
 }
 

@@ -113,6 +113,27 @@
       "type": "checkbox",
       "label": "Ongoing",
       "required": false
+    },
+    "otherInfo": {
+      "type": "other-info",
+      "heading": "otherInfoHeading",
+      "text": "otherInfoText"
+    },
+    "otherInfoHeading": {
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "Thesis (optional heading)",
+      "prop": "heading",
+      "text": "Heading"
+    },
+    "otherInfoText": {
+      "maxLength": 500,
+      "required": true,
+      "type": "textarea",
+      "placeholder": "Lorem ipsum dolor sit amet",
+      "prop": "text",
+      "text": "Description"
     }
   }
 }
