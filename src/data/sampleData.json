@@ -11,58 +11,70 @@
     "linkedin": "linkedin.com/in/johndoe.is.not.real",
     "github": "github.com/johndoe.is.not.real"
   },
-  "education": [
-    {
-      "id": 0,
-      "institution": "University of Random City",
-      "address": "Random City",
-      "degree": "B.Sc. in Software Engineering",
-      "fromDateMonth": "September",
-      "fromDateYear": 2023,
-      "toDateMonth": "",
-      "toDateYear": 2024,
-      "ongoing": true,
-      "otherInfo": [
-        {
-          "id": 0,
-          "heading": "Lorem ipsum",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        },
-        {
-          "id": 1,
-          "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+  "education": {
+    "allIds": [0, 1],
+    "byId": {
+      "0": {
+        "id": 0,
+        "institution": "University of Random City",
+        "address": "Random City",
+        "degree": "B.Sc. in Software Engineering",
+        "fromDateMonth": "September",
+        "fromDateYear": 2023,
+        "toDateMonth": "",
+        "toDateYear": 2024,
+        "ongoing": true,
+        "otherInfo": {
+          "allIds": [0, 1],
+          "byId": {
+            "0": {
+              "id": 0,
+              "heading": "Lorem ipsum",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "1": {
+              "id": 1,
+              "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            }
+          }
         }
-      ]
-    },
-    {
-      "id": 1,
-      "institution": "High School of Random City",
-      "address": "Random City",
-      "degree": "High School diploma",
-      "fromDateMonth": "",
-      "fromDateYear": 2018,
-      "toDateMonth": "",
-      "toDateYear": 2023,
-      "ongoing": false
+      },
+      "1": {
+        "id": 1,
+        "institution": "High School of Random City",
+        "address": "Random City",
+        "degree": "High School diploma",
+        "fromDateMonth": "",
+        "fromDateYear": 2018,
+        "toDateMonth": "",
+        "toDateYear": 2023,
+        "ongoing": false
+      }
     }
-  ],
-  "professionalExperience": [
-    {
-      "id": 0,
-      "institution": "Random Workplace",
-      "address": "Random City",
-      "role": "Junior Developer",
-      "fromDateMonth": "October",
-      "fromDateYear": 2024,
-      "toDateMonth": "",
-      "toDateYear": 2024,
-      "ongoing": true,
-      "otherInfo": [
-        {
-          "id": 0,
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "professionalExperience": {
+    "allIds": [0],
+    "byId": {
+      "0": {
+        "id": 0,
+        "institution": "Random Workplace",
+        "address": "Random City",
+        "role": "Junior Developer",
+        "fromDateMonth": "October",
+        "fromDateYear": 2024,
+        "toDateMonth": "",
+        "toDateYear": 2024,
+        "ongoing": true,
+        "otherInfo": {
+          "allIds": [0],
+          "byId": {
+            "0": {
+              "id": 0,
+              "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+          }
         }
-      ]
+      }
     }
-  ]
+  }
 }
