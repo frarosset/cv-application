@@ -4,11 +4,11 @@ import "../../styles/preview/PreviewListWithDates.css";
 function PreviewListWithDates({ data, customClass, textProperties }) {
   return (
     <ul className={`preview-list-with-dates ${customClass}`}>
-      {data.map((itemData) => (
+      {data.allIds.map((id) => (
         <PreviewItemWithDates
-          key={itemData.id}
+          key={id}
           customClass={customClass}
-          itemData={itemData}
+          itemData={data.byId[id]}
           textProperties={textProperties}
         />
       ))}

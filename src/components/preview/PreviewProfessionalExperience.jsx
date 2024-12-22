@@ -4,7 +4,7 @@ import "../../styles/preview/previewPanelWithListAndDates.css";
 const textProperties = ["institution", "address", "role"];
 
 function PreviewProfessionalExperience({ professionalExperience }) {
-  if (professionalExperience.length > 0) {
+  if (professionalExperience.allIds.length > 0) {
     return (
       <div className="preview-panel-with-list-and-dates preview-professional-experience-panel">
         <h3>Professional Experience</h3>

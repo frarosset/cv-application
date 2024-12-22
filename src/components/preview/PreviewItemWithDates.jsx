@@ -4,7 +4,7 @@ import "../../styles/preview/PreviewItemWithDates.css";
 
 function PreviewItemWithDates({ itemData, customClass, textProperties }) {
   const datesValue = getDatesStr(itemData);
-  const otherInfo = itemData.otherInfo ? itemData.otherInfo : [];
+  const otherInfo = itemData.otherInfo ? itemData.otherInfo : { allIds: [] };
 
   return (
     <li className={`preview-item-with-dates ${customClass}`}>

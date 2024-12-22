@@ -4,11 +4,11 @@ import "../../styles/preview/PreviewListWithTextOnly.css";
 function PreviewListWithTextOnly({ data, customClass, textProperties }) {
   return (
     <ul className={`preview-list-with-text-only ${customClass}`}>
-      {data.map((itemData) => (
+      {data.allIds.map((id) => (
         <PreviewItemWithTextOnly
-          key={itemData.id}
+          key={id}
           customClass={customClass}
-          itemData={itemData}
+          itemData={data.byId[id]}
           textProperties={textProperties}
         />
       ))}
