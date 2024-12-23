@@ -1,0 +1,69 @@
+.editor-other-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--editor-form-gap);
+}
+
+/* custom .editor-other-info-selection styles */
+
+.editor-other-info-selection {
+  display: flex;
+  gap: var(--label-input-gap);
+  align-items: center;
+}
+
+.editor-other-info-selection h4 {
+  text-align: right;
+  min-width: var(--label-width);
+  font-size: var(--label-fontsize);
+  font-weight: bold;
+  color: var(--label-color);
+  font-variant: small-caps;
+}
+
+/* custom .edit-list-selection styles */
+
+.editor-other-info .edit-list-selection-buttons {
+  padding-bottom: var(--editor-form-gap);
+}
+
+.editor-other-info .edit-list-selection-new-item-button {
+  border-radius: var(--button-border-radius);
+  padding: var(--editor-section-button-small-padding);
+  align-self: center;
+}
+
+.editor-other-info .edit-list-selection-new-item-button .icon,
+.editor-other-info .edit-list-selection-new-item-button svg {
+  height: calc(var(--input-fontsize) * var(--txt-lineheight));
+  width: calc(var(--input-fontsize) * var(--txt-lineheight));
+}
+
+.editor-other-info .edit-list-selection-item-button {
+  padding: var(--editor-section-button-small-padding);
+  font-size: var(--input-fontsize);
+  line-height: 1;
+  min-width: 2.2em;
+}
+
+/* custom .editor-other-info-heading styles */
+
+.editor-other-info-heading {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  gap: var(--editor-section-button-small-padding);
+}
+
+.editor-other-info-heading .input-with-label {
+  flex: 1;
+  max-width: 100%;
+}
+
+/* tablet or larger, or landscape (vs portrait), 641px (phone), 961px (tablet) */
+@media only screen and (min-width: 512px) {
+  .editor-other-info-heading {
+    flex-direction: row;
+  }
+}

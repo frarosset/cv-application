@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: calc(var(--editor-section-button-item-gap));
+  gap: calc(var(--editor-section-button-item-gap-small));
 }
 
 .edit-item-position-in-list-button {

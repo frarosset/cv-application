@@ -8,6 +8,7 @@ import {
 import InputWithLabel from "../base/InputWithLabel.jsx";
 import EditListSelectionButtons from "./EditListSelectionButtons.jsx";
 import EditItemPositionInList from "./EditItemPositionInList.jsx";
+import "../../styles/editor/EditOtherInfoListInputWithLabel.css";
 
 function EditOtherInfoListInputWithLabel({
   inputProps,
@@ -48,38 +49,40 @@ function EditOtherInfoListInputWithLabel({
     );
 
   return (
-    <div className={`other-info ${emptyItemClass}`}>
-      <div className={"other-info-info-selection"}>
-        <p>Other info</p>
+    <div className={`editor-other-info ${emptyItemClass}`}>
+      <div className={"editor-other-info-selection"}>
+        <h4>Other info</h4>
         <EditListSelectionButtons
           list={otherInfo.allIds}
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
-          emptyListText={"Insert other info"}
+          emptyListText={"(empty)"}
         />
       </div>
       {showForm && (
         <>
-          <EditItemPositionInList
-            {...{
-              deleteItemCallback,
-              moveItemBackCallback,
-              moveItemForthCallback,
-            }}
-          />
-          <InputWithLabel
-            id={`${otherInfoHeadingProp}-${info.id}`}
-            name={`${otherInfoHeadingProp}-${info.id}`}
-            label={inputProps[otherInfoHeadingProp].text}
-            value={info[inputProps[otherInfoHeadingProp].prop]}
-            placeholder={inputProps[otherInfoHeadingProp].placeholder}
-            setValue={(val) => {
-              setValueForCallback(inputProps[otherInfoHeadingProp].prop)(val);
-            }}
-            type={inputProps[otherInfoHeadingProp].type}
-            maxLength={inputProps[otherInfoHeadingProp].maxLength}
-            required={inputProps[otherInfoHeadingProp].required}
-          />
+          <div className={"editor-other-info-heading"}>
+            <InputWithLabel
+              id={`${otherInfoHeadingProp}-${info.id}`}
+              name={`${otherInfoHeadingProp}-${info.id}`}
+              label={inputProps[otherInfoHeadingProp].text}
+              value={info[inputProps[otherInfoHeadingProp].prop]}
+              placeholder={inputProps[otherInfoHeadingProp].placeholder}
+              setValue={(val) => {
+                setValueForCallback(inputProps[otherInfoHeadingProp].prop)(val);
+              }}
+              type={inputProps[otherInfoHeadingProp].type}
+              maxLength={inputProps[otherInfoHeadingProp].maxLength}
+              required={inputProps[otherInfoHeadingProp].required}
+            />
+            <EditItemPositionInList
+              {...{
+                deleteItemCallback,
+                moveItemBackCallback,
+                moveItemForthCallback,
+              }}
+            />
+          </div>
           <InputWithLabel
             id={`${otherInfoTextProp}-${info.id}`}
             name={`${otherInfoTextProp}-${info.id}`}

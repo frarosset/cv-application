@@ -93,8 +93,10 @@
   --editor-section-button-icon-new-item-padding: 0.5em;
   --editor-section-button-item-padding: 0.3em 0.5em;
   --editor-section-button-item-gap: 0.5em;
+  --editor-section-button-item-gap-small: 0.1em;
   --editor-section-button-new-item-padding: 0.5em;
   --editor-section-button-item-min-width: 3em;
+  --editor-section-button-small-padding: 0.3em;
 
   --input-padding-tb: 2px;
   --input-padding: var(--input-padding-tb) 4px;
