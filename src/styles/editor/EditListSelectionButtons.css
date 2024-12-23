@@ -2,12 +2,19 @@
   display: flex;
   align-items: center;
   gap: calc(2 * var(--editor-section-button-item-gap));
+  width: 100%;
 }
 
 .edit-list-selection-items-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: var(--editor-section-button-item-gap);
+  flex: 1;
+}
+
+.other-info .edit-list-selection-items-buttons p {
+  width: 100%;
+  text-align: left;
 }
 
 .edit-list-selection-new-item-button {
