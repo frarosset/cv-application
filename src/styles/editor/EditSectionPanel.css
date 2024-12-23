@@ -22,7 +22,14 @@
   text-align: right;
 }
 
+.edit-section-panel > div {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
 .edit-section-panel form {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: var(--editor-form-gap);

@@ -52,39 +52,41 @@ function EditEducationPanel({ education, setEducation }) {
       className={`edit-section-panel edit-education-panel ${emptyItemClass}`}
     >
       <h3>Edit Education</h3>
-      <EditListSelectionButtons
-        list={education.allIds}
-        currentItemId={currentItemId}
-        setCurrentItemId={setCurrentItemId}
-        emptyListText={"Insert new items"}
-      />
+      <div>
+        <EditListSelectionButtons
+          list={education.allIds}
+          currentItemId={currentItemId}
+          setCurrentItemId={setCurrentItemId}
+          emptyListText={"Insert new items"}
+        />
 
-      {showForm && (
-        <>
-          <EditItemPositionInList
-            {...{
-              deleteItemCallback,
-              moveItemBackCallback,
-              moveItemForthCallback,
-            }}
-          />
-          <form>
-            <ArrayOfInputWithLabel
-              {...{ orderedInputProps, inputProps }}
-              item={currentItem}
-              setValueFor={setValueForCallback}
+        {showForm && (
+          <>
+            <EditItemPositionInList
+              {...{
+                deleteItemCallback,
+                moveItemBackCallback,
+                moveItemForthCallback,
+              }}
             />
-            {!isEmptyItem && (
-              <EditOtherInfoListInputWithLabel
-                inputProps={inputProps}
-                otherInfo={currentItem.otherInfo}
-                setState={setEducation}
-                pathInState={["byId", currentItemId, "otherInfo"]}
+            <form>
+              <ArrayOfInputWithLabel
+                {...{ orderedInputProps, inputProps }}
+                item={currentItem}
+                setValueFor={setValueForCallback}
               />
-            )}
-          </form>
-        </>
-      )}
+              {!isEmptyItem && (
+                <EditOtherInfoListInputWithLabel
+                  inputProps={inputProps}
+                  otherInfo={currentItem.otherInfo}
+                  setState={setEducation}
+                  pathInState={["byId", currentItemId, "otherInfo"]}
+                />
+              )}
+            </form>
+          </>
+        )}
+      </div>
     </div>
   );
 }
