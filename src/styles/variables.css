@@ -31,6 +31,11 @@
 
   --preview-bg-col: var(--col-light-3);
 
+  --input-bg-color: var(--col-light-1);
+  --input-color-focus: var(--col-accent-2);
+  --input-color-hover: var(--col-accent-1);
+  --input-color-required: var(--col-accent-1);
+
   /* Colors (text/icons)*/
   --col-txt: var(--col-dark-1);
   --col-txt-alt: var(--col-light-1);
@@ -91,23 +96,23 @@
   --editor-section-button-new-item-padding: 0.5em;
   --editor-section-button-item-min-width: 3em;
 
-  --input-padding: 2px;
+  --input-padding-tb: 2px;
+  --input-padding: var(--input-padding-tb) 4px;
   --label-input-gap: 0.5em;
-  --label-width: 5em;
+  --label-width: 6em;
 
   --preview-padding-lr: var(--page-padding-lr);
   --preview-padding: var(--page-padding);
 
   /* Radius / borders */
+  --button-border-radius: 8px;
+  --input-border-radius: 5px;
   --input-border-size: 1px;
   --input-border-delta: 2px;
   --input-border: var(--input-border-size) solid var(--col-dark-4);
   --input-border-size-plus-delta: calc(
     var(--input-border-size) + var(--input-border-delta)
   );
-  --input-color-focus: var(--col-accent-2);
-  --input-color-hover: var(--col-accent-1);
-  --input-color-required: var(--col-accent-1);
 
   --textarea-rows: 6;
 
@@ -153,6 +158,7 @@
   --box-shadow-spread: 0px;
   --box-shadow: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
     var(--col-dark-4);
+  --input-shadow: 0 0 4px var(--col-dark-4);
 
   /* Animations on hover / active / ...*/
   /* --transition-time: 0.8s; */
