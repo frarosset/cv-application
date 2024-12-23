@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "../base/Button.jsx";
 import EditPersonalInfoPanel from "./EditPersonalInfoPanel.jsx";
 import EditEducationPanel from "./EditEducationPanel.jsx";
-import EditProfessionalExperience from "./EditProfessionalExperience.jsx";
+import EditProfessionalExperiencePanel from "./EditProfessionalExperiencePanel.jsx";
 import "../../styles/editor/EditPanel.css";
 
 const panelsInfo = [
@@ -58,7 +58,7 @@ function renderCurrentPanel(currentPanel, props) {
       );
     case "professional-experience":
       return (
-        <EditProfessionalExperience
+        <EditProfessionalExperiencePanel
           professionalExperience={props.professionalExperience}
           setProfessionalExperience={props.setProfessionalExperience}
         />
