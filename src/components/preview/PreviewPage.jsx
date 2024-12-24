@@ -1,6 +1,7 @@
 import PreviewPersonalInfoPanel from "./PreviewPersonalInfoPanel.jsx";
 import PreviewEducationPanel from "./PreviewEducationPanel.jsx";
 import PreviewProfessionalExperience from "./PreviewProfessionalExperience.jsx";
+import PreviewSkillsPanel from "./PreviewSkillsPanel.jsx";
 import "../../styles/preview/PreviewPage.css";
 
 function PreviewPage(props) {
@@ -11,6 +12,7 @@ function PreviewPage(props) {
       <PreviewProfessionalExperience
         professionalExperience={props.professionalExperience}
       />
+      <PreviewSkillsPanel skills={props.skills} />
     </div>
   );
 }
