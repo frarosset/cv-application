@@ -76,5 +76,25 @@
         }
       }
     }
+  },
+  "skills": {
+    "allIds": [0, 1, 2],
+    "byId": {
+      "0": {
+        "id": 0,
+        "heading": "Frontend Development",
+        "text": "React, Redux, JavaScript, HTML5, CSS3, Webpack, Vite, Tailwind CSS"
+      },
+      "1": {
+        "id": 1,
+        "heading": "Backend Development",
+        "text": "Node.js, Express"
+      },
+      "2": {
+        "id": 2,
+        "heading": "Testing",
+        "text": "Jest, Vitest"
+      }
+    }
   }
 }
