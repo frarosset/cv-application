@@ -20,3 +20,14 @@
   color: var(--preview-secondary-text-color);
   display: inline;
 }
+
+.skills .preview-item-with-text-only-text-blocks .text.heading {
+  font-weight: 600;
+  color: var(--preview-page-accent-color);
+  font-size: var(--preview-accent-fontsize);
+}
+
+.skills .preview-item-with-text-only-text-blocks .text {
+  color: var(--preview-secondary-text-color);
+  font-size: var(--preview-about-me-fontsize);
+}

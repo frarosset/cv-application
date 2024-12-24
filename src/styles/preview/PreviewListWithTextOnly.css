@@ -1,4 +1,4 @@
-.preview-item-with-dates ul.other-info {
+.preview-item-with-dates .preview-list-with-text-only {
   list-style: disc;
   color: var(--preview-sub-text-color);
   padding-left: var(--preview-page-item-list-padding-left);
