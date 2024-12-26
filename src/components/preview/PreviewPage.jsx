@@ -2,6 +2,7 @@ import PreviewPersonalInfoPanel from "./PreviewPersonalInfoPanel.jsx";
 import PreviewEducationPanel from "./PreviewEducationPanel.jsx";
 import PreviewProfessionalExperience from "./PreviewProfessionalExperience.jsx";
 import PreviewSkillsPanel from "./PreviewSkillsPanel.jsx";
+import PreviewLanguagesPanel from "./PreviewLanguagesPanel.jsx";
 import "../../styles/preview/PreviewPage.css";
 
 function PreviewPage(props) {
@@ -13,6 +14,7 @@ function PreviewPage(props) {
         professionalExperience={props.professionalExperience}
       />
       <PreviewSkillsPanel skills={props.skills} />
+      <PreviewLanguagesPanel languages={props.languages} />
     </div>
   );
 }

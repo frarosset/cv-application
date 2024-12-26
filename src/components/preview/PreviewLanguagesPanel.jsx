@@ -3,14 +3,14 @@ import "../../styles/preview/PreviewListWithTextOnly.css";
 
 const textProperties = ["heading", "text"];
 
-function PreviewSkillsPanel({ skills }) {
-  if (skills.allIds.length > 0) {
+function PreviewLanguagesPanel({ languages }) {
+  if (languages.allIds.length > 0) {
     return (
-      <div className="preview-panel-with-list-and-dates preview-skills-panel">
-        <h3>Skills</h3>
+      <div className="preview-panel-with-list-and-dates preview-languages-panel">
+        <h3>Languages</h3>
         <PreviewListWithTextOnly
-          customClass={"skills"}
-          data={skills}
+          customClass={"languages"}
+          data={languages}
           textProperties={textProperties}
         />
       </div>
@@ -18,4 +18,4 @@ function PreviewSkillsPanel({ skills }) {
   }
 }
 
-export default PreviewSkillsPanel;
+export default PreviewLanguagesPanel;
