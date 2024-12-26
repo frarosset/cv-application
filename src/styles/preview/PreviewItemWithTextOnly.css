@@ -1,33 +1,34 @@
-.preview-item-with-text-only {
-  padding-top: var(--preview-page-item-list-item-padding-top);
-}
-
-.preview-item-with-text-only-text-blocks {
-  display: block;
+.preview-item-with-text-only-text-blocks .text {
+  color: var(--preview-secondary-text-color);
 }
 
 .preview-item-with-text-only-text-blocks .text.heading {
-  color: var(--preview-secondary-text-color);
   font-weight: 500;
-  display: inline;
+  float: left;
 }
 
-.preview-item-with-text-only-text-blocks .text.heading::after {
-  content: " ";
+.other-info .preview-item-with-text-only-text-blocks .text.heading::after {
+  content: ": ";
+  white-space: pre;
 }
 
-.preview-item-with-text-only-text-blocks .text {
-  color: var(--preview-secondary-text-color);
-  display: inline;
+.languages .preview-item-with-text-only-text-blocks .text:not(.heading)::before,
+.skills .preview-item-with-text-only-text-blocks .text:not(.heading)::before {
+  content: " - ";
+  white-space: pre;
 }
 
-.skills .preview-item-with-text-only-text-blocks .text.heading {
+.skills .preview-item-with-text-only-text-blocks .text,
+.languages .preview-item-with-text-only-text-blocks .text {
+  font-size: var(--preview-about-me-fontsize);
+}
+
+.skills .preview-item-with-text-only-text-blocks .text.heading,
+.languages .preview-item-with-text-only-text-blocks .text.heading {
   font-weight: 600;
   color: var(--preview-page-accent-color);
   font-size: var(--preview-accent-fontsize);
-}
-
-.skills .preview-item-with-text-only-text-blocks .text {
-  color: var(--preview-secondary-text-color);
-  font-size: var(--preview-about-me-fontsize);
+  margin-top: calc(
+    -1 * (var(--preview-accent-fontsize) - var(--preview-about-me-fontsize)) - 1px
+  );
 }

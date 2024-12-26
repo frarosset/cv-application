@@ -11,3 +11,7 @@
 
   color: var(--preview-main-text-color);
 }
+
+.preview-page:last-child {
+  padding-bottom: var(--preview-page-padding);
+}

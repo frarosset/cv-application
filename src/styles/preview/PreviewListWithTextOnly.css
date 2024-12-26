@@ -1,5 +1,13 @@
+.preview-list-with-text-only {
+  padding: var(--preview-page-item-list-gap) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--preview-page-item-list-item-padding-top);
+}
+
 .preview-item-with-dates .preview-list-with-text-only {
   list-style: disc;
   color: var(--preview-sub-text-color);
+  padding: 0;
   padding-left: var(--preview-page-item-list-padding-left);
 }
