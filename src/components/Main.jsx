@@ -14,6 +14,7 @@ function Main() {
     sampleData.professionalExperience
   );
   const [skills, setSkills] = useState(sampleData.skills);
+  const [languages, setLanguages] = useState(sampleData.languages);
 
   /* *************************************************************************** */
   // A base layout style might be  specified. This is used to set a hasOVerflowXCssClass
@@ -47,12 +48,15 @@ function Main() {
         setProfessionalExperience={setProfessionalExperience}
         skills={skills}
         setSkills={setSkills}
+        languages={languages}
+        setLanguages={setLanguages}
       />
       <PreviewPanel
         personalInfo={personalInfo}
         education={education}
         professionalExperience={professionalExperience}
         skills={skills}
+        languages={languages}
       />
     </main>
   );

@@ -96,5 +96,15 @@
         "text": "Jest, Vitest"
       }
     }
+  },
+  "languages": {
+    "allIds": [0],
+    "byId": {
+      "0": {
+        "id": 0,
+        "heading": "English",
+        "text": "Professional knowledge (C1 level)"
+      }
+    }
   }
 }
