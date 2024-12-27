@@ -217,5 +217,23 @@
       "prop": "text",
       "label": "Details"
     }
+  },
+  "languages": {
+    "heading": {
+      "maxLength": 50,
+      "required": true,
+      "type": "text",
+      "placeholder": "English",
+      "prop": "heading",
+      "label": "Language"
+    },
+    "text": {
+      "maxLength": 500,
+      "required": false,
+      "type": "textarea",
+      "placeholder": "Professional knowledge (C1 level)",
+      "prop": "text",
+      "label": "Details"
+    }
   }
 }
