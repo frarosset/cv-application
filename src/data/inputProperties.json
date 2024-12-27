@@ -235,5 +235,46 @@
       "prop": "text",
       "label": "Details"
     }
+  },
+  "coursesAndCertificates": {
+    "name": {
+      "label": "Name",
+      "maxLength": 50,
+      "required": true,
+      "type": "text",
+      "placeholder": "B.Sc. in Software Engineering"
+    },
+    "issuer": {
+      "label": "Issuer",
+      "maxLength": 50,
+      "required": true,
+      "type": "text",
+      "placeholder": "University of Random City"
+    },
+    "address": {
+      "label": "Address",
+      "maxLength": 50,
+      "required": false,
+      "type": "text",
+      "placeholder": "Random City"
+    },
+    "date": {
+      "type": "date-month-year-single",
+      "label": "Date",
+      "required": true
+    },
+    "ongoing": {
+      "type": "checkbox",
+      "label": "Ongoing",
+      "required": false
+    },
+    "description": {
+      "maxLength": 500,
+      "required": false,
+      "type": "textarea",
+      "placeholder": "Lorem ipsum dolor sit amet",
+      "prop": "text",
+      "label": "Description"
+    }
   }
 }

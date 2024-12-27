@@ -11,6 +11,7 @@ import BookOpenIcon from "../../assets/icons/book-open.svg?react";
 import BriefcaseIcon from "../../assets/icons/briefcase.svg?react";
 import StarIcon from "../../assets/icons/star.svg?react";
 import FlagIcon from "../../assets/icons/flag.svg?react";
+import FileText from "../../assets/icons/file-text.svg?react";
 
 import AddNew from "../../assets/icons/plus.svg?react";
 import Delete from "../../assets/icons/trash.svg?react";
@@ -29,6 +30,7 @@ const IconSvgComponents = {
   briefcase: BriefcaseIcon,
   star: StarIcon,
   flag: FlagIcon,
+  fileText: FileText,
   addNew: AddNew,
   delete: Delete,
   moveBack: MoveBack,

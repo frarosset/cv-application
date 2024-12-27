@@ -1,6 +1,7 @@
 import InputWithLabel from "./InputWithLabel.jsx";
-import DateInputWithLabel from "../base/DateInputWithLabel.jsx";
-import IntervalDateInputWithLabels from "../base/IntervalDateInputWithLabels.jsx";
+import DateInputWithLabel from "./DateInputWithLabel.jsx";
+import IntervalDateInputWithLabels from "./IntervalDateInputWithLabels.jsx";
+import SingleDateInputWithLabels from "./SingleDateInputWithLabels.jsx";
 
 function ArrayOfInputWithLabel({
   orderedInputProps,
@@ -38,6 +39,14 @@ function ArrayOfInputWithLabel({
               {...{ item, inputProps, setValueFor }}
             />
           );
+        } else if (inputProps[prop].type === "date-month-year-single") {
+          return (
+            <SingleDateInputWithLabels
+              key={prop}
+              dateProp={inputProps[prop].dateProp}
+              {...{ item, inputProps, setValueFor }}
+            />
+          );
         } else {
           return (
             <InputWithLabel
@@ -51,6 +60,7 @@ function ArrayOfInputWithLabel({
               type={inputProps[prop].type}
               maxLength={inputProps[prop].maxLength}
               required={inputProps[prop].required}
+              checked={item[prop]}
             />
           );
         }
