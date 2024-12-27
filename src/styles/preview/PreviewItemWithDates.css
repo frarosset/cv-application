@@ -2,7 +2,7 @@
   display: grid;
   grid-template-areas:
     "role role dates"
-    "institution  address address"
+    "institution address address"
     "other other other";
 
   grid-template-columns: max-content 1fr max-content;
@@ -12,7 +12,8 @@
 }
 
 .preview-item-with-dates .role,
-.preview-item-with-dates .degree {
+.preview-item-with-dates .degree,
+.preview-item-with-dates .name {
   grid-area: role;
   font-weight: 600;
   color: var(--preview-page-accent-color);
@@ -25,7 +26,8 @@
   padding-left: 3em;
 }
 
-.preview-item-with-dates .institution {
+.preview-item-with-dates .institution,
+.preview-item-with-dates .issuer {
   grid-area: institution;
   font-weight: 500;
   color: var(--preview-sub-text-color);
@@ -42,6 +44,8 @@
   color: var(--preview-sub-text-color);
 }
 
-.preview-item-with-dates .other-info {
+.preview-item-with-dates .other-info,
+.preview-item-with-dates .description {
   grid-area: other;
+  color: var(--preview-secondary-text-color);
 }
