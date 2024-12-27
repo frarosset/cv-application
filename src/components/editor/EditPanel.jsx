@@ -3,12 +3,14 @@ import Button from "../base/Button.jsx";
 import EditPersonalInfoPanel from "./EditPersonalInfoPanel.jsx";
 import EditEducationPanel from "./EditEducationPanel.jsx";
 import EditProfessionalExperiencePanel from "./EditProfessionalExperiencePanel.jsx";
+import EditSkillsPanel from "./EditSkillsPanel.jsx";
 import "../../styles/editor/EditPanel.css";
 
 const panelsInfo = [
   { name: "personal-info", iconName: "user" },
   { name: "education", iconName: "bookOpen" },
   { name: "professional-experience", iconName: "briefcase" },
+  { name: "skills", iconName: "star" },
 ];
 
 function EditPanel(props) {
@@ -62,6 +64,10 @@ function renderCurrentPanel(currentPanel, props) {
           professionalExperience={props.professionalExperience}
           setProfessionalExperience={props.setProfessionalExperience}
         />
+      );
+    case "skills":
+      return (
+        <EditSkillsPanel skills={props.skills} setSkills={props.setSkills} />
       );
     default:
       return null;

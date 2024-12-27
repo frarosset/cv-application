@@ -138,18 +138,18 @@
   },
   "professionalExperience": {
     "role": {
-      "label": "Degree",
+      "label": "Role",
       "maxLength": 50,
       "required": true,
       "type": "text",
-      "placeholder": "B.Sc. in Software Engineering"
+      "placeholder": "Software Engineer"
     },
     "institution": {
       "label": "Institution",
       "maxLength": 50,
       "required": true,
       "type": "text",
-      "placeholder": "University of Random City"
+      "placeholder": "Random Company"
     },
     "address": {
       "label": "Address",
@@ -187,7 +187,7 @@
       "maxLength": 50,
       "required": false,
       "type": "text",
-      "placeholder": "Thesis (optional heading)",
+      "placeholder": "Responsibilities  (optional)",
       "prop": "heading",
       "text": "Heading"
     },
@@ -198,6 +198,24 @@
       "placeholder": "Lorem ipsum dolor sit amet",
       "prop": "text",
       "text": "Description"
+    }
+  },
+  "skills": {
+    "heading": {
+      "maxLength": 50,
+      "required": true,
+      "type": "text",
+      "placeholder": "Frontend Development",
+      "prop": "heading",
+      "label": "Category"
+    },
+    "text": {
+      "maxLength": 500,
+      "required": false,
+      "type": "textarea",
+      "placeholder": "Javascript, React, CSS, HTML",
+      "prop": "text",
+      "label": "Details"
     }
   }
 }
