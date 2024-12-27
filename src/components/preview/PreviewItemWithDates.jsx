@@ -13,25 +13,39 @@ function PreviewItemWithDates({ itemData, customClass, textProperties }) {
       ))}
       <Text key={"dates"} customClass={"dates"} value={datesValue} />
 
-      <PreviewListWithTextOnly
-        customClass={"other-info"}
-        data={otherInfo}
-        textProperties={["heading", "text"]}
-      />
+      {otherInfo.allIds.length > 0 && (
+        <PreviewListWithTextOnly
+          customClass={"other-info"}
+          data={otherInfo}
+          textProperties={["heading", "text"]}
+        />
+      )}
     </li>
   );
 }
 
 function getDatesStr({
+  dateYear,
+  dateMonth,
   fromDateYear,
   fromDateMonth,
   toDateYear,
   toDateMonth,
   ongoing,
 }) {
-  const fromDateStr = getDateStr(fromDateYear, fromDateMonth);
-  const toDateStr = ongoing ? "present" : getDateStr(toDateYear, toDateMonth);
-  return `${fromDateStr} - ${toDateStr}`;
+  if ([dateYear, dateMonth].some((str) => str != null)) {
+    // one date only
+    return ongoing ? "ongoing" : getDateStr(dateYear, dateMonth);
+  } else if (
+    [fromDateYear, fromDateMonth, toDateYear, toDateMonth].some(
+      (str) => str != null
+    )
+  ) {
+    // interval of dates
+    const fromDateStr = getDateStr(fromDateYear, fromDateMonth);
+    const toDateStr = ongoing ? "present" : getDateStr(toDateYear, toDateMonth);
+    return `${fromDateStr} - ${toDateStr}`;
+  } else return "";
 }
 
 function getDateStr(year, month = "") {
