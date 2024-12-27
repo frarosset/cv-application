@@ -15,7 +15,7 @@ import "../../styles/editor/EditSectionPanel.css";
 const orderedInputProps = ["role", "institution", "address", "fromToDate"];
 const inputProps = inputProperties.professionalExperience;
 
-function EditProfessionalExperience({
+function EditProfessionalExperiencePanel({
   professionalExperience,
   setProfessionalExperience,
 }) {
@@ -107,4 +107,4 @@ function EditProfessionalExperience({
   );
 }
 
-export default EditProfessionalExperience;
+export default EditProfessionalExperiencePanel;

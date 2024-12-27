@@ -3,7 +3,7 @@ import "../../styles/preview/previewPanelWithListAndDates.css";
 
 const textProperties = ["institution", "address", "role"];
 
-function PreviewProfessionalExperience({ professionalExperience }) {
+function PreviewProfessionalExperiencePanel({ professionalExperience }) {
   if (professionalExperience.allIds.length > 0) {
     return (
       <div className="preview-panel-with-list-and-dates preview-professional-experience-panel">
@@ -19,4 +19,4 @@ function PreviewProfessionalExperience({ professionalExperience }) {
   }
 }
 
-export default PreviewProfessionalExperience;
+export default PreviewProfessionalExperiencePanel;
