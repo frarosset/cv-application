@@ -106,5 +106,20 @@
         "text": "Professional knowledge (C1 level)"
       }
     }
+  },
+  "coursesAndCertificates": {
+    "allIds": [0],
+    "byId": {
+      "0": {
+        "id": 0,
+        "name": "Some Random Course",
+        "issuer": "Random issuer",
+        "address": "online",
+        "dateMonth": "September",
+        "dateYear": 2023,
+        "ongoing": true,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    }
   }
 }
