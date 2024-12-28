@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import useIsOverflow from "../customHooks/useIsOverflow.js";
 import EditPanel from "./editor/EditPanel.jsx";
 import PreviewPanel from "./preview/PreviewPanel.jsx";
+import Button from "./base/Button.jsx";
 import sampleData from "../data/sampleData.json";
 import "../styles/Main.css";
 
@@ -64,6 +65,15 @@ function Main() {
         languages={languages}
         coursesAndCertificates={coursesAndCertificates}
       />
+      <div className="group-of-btns">
+        <Button
+          customCssClass={"download-btn"}
+          iconName={"download"}
+          onClickCallback={() => {
+            console.log("document downloaded (todo)");
+          }}
+        />
+      </div>
     </main>
   );
 }

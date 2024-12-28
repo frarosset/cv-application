@@ -13,6 +13,8 @@ import StarIcon from "../../assets/icons/star.svg?react";
 import FlagIcon from "../../assets/icons/flag.svg?react";
 import FileText from "../../assets/icons/file-text.svg?react";
 
+import Download from "../../assets/icons/download.svg?react";
+
 import AddNew from "../../assets/icons/plus.svg?react";
 import Delete from "../../assets/icons/trash.svg?react";
 import MoveBack from "../../assets/icons/arrow-left-circle.svg?react";
@@ -31,6 +33,7 @@ const IconSvgComponents = {
   star: StarIcon,
   flag: FlagIcon,
   fileText: FileText,
+  download: Download,
   addNew: AddNew,
   delete: Delete,
   moveBack: MoveBack,
