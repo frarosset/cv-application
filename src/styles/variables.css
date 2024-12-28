@@ -36,6 +36,8 @@
   --input-color-hover: var(--col-accent-1);
   --input-color-required: var(--col-accent-1);
 
+  --round-btn-bg-color: var(--col-accent-2);
+
   /* Colors (text/icons)*/
   --col-txt: var(--col-dark-1);
   --col-txt-alt: var(--col-light-1);
@@ -50,7 +52,10 @@
   --editor-section-button-color: var(--col-light-4);
   --editor-section-button-color-secondary: var(--col-light-3);
 
+  --round-btn-color: var(--col-txt-alt);
+
   --disabled-button-opacity: 0.5;
+  --round-btn-opacity: 0.8;
 
   /* Font family */
   --main-font: "Urbanist";
@@ -105,6 +110,9 @@
 
   --preview-padding-lr: var(--page-padding-lr);
   --preview-padding: var(--page-padding);
+
+  --round-btn-padding: 1rem;
+  --round-btn-size: 1.5rem;
 
   /* Radius / borders */
   --button-border-radius: 8px;

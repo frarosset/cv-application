@@ -33,3 +33,62 @@ main.has-overflow-y .preview-page {
   --var: calc((100vw - 2 * var(--preview-padding-lr)) / var(--preview-page-ar));
   max-height: var(--var);
 }
+
+main .group-of-btns {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100dvw;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--page-padding-ud);
+}
+
+main.has-overflow-y .group-of-btns {
+  padding-bottom: calc(var(--page-padding-ud) + 4px); /* incude scrollbar size*/
+}
+
+main .download-btn {
+  color: var(--round-btn-color);
+  background-color: var(--round-btn-bg-color);
+  opacity: var(--round-btn-opacity);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--round-btn-padding);
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+main .download-btn span,
+main .download-btn svg {
+  width: var(--round-btn-size);
+  height: var(--round-btn-size);
+}
+
+/* when hover is supported */
+@media not all and (hover: none) {
+  main .download-btn:hover {
+    opacity: 1;
+    box-shadow: var(--box-shadow);
+  }
+  main .download-btn:hover span {
+    transform: scale(1.1);
+  }
+}
+
+main .download-btn:active {
+  opacity: 1;
+  box-shadow: var(--box-shadow);
+}
+main .download-btn:active span {
+  transform: scale(1);
+}
+
+main .download-btn:focus {
+  outline: none;
+}
+
+main .download-btn:focus-visible {
+  outline: 2px solid var(--round-btn-color);
+}
