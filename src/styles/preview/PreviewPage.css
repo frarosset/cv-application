@@ -12,6 +12,31 @@
   color: var(--preview-main-text-color);
 }
 
-.preview-page:last-child {
-  padding-bottom: var(--preview-page-padding);
+/* show top/bottom padding when not saving pdf (otherwise, this is already included when saving into pdf) */
+.preview-page:not(.printing) {
+  padding: 5% 0;
 }
+
+/* hide scrollbars when saving pdf*/
+.preview-page.printing::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- NOT WORKING --------------------------------- */
+/* .preview-page,
+.preview-page * */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+span,
+img,
+svg,
+li {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+/* ------------------------------------------------- */
