@@ -27,7 +27,7 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
             value && (
               <TextWithIcon
                 key={prop}
-                iconName={prop}
+                iconName={{ name: `${prop}White`, format: "png" }}
                 customClass={prop}
                 value={value}
               />

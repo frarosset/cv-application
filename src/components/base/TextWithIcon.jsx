@@ -5,7 +5,7 @@ import "../../styles/base/TextWithIcon.css";
 function TextWithIcon({ iconName, value, customClass = "" }) {
   return (
     <div className={`text-with-icon ${customClass}`}>
-      <Icon name={iconName} />
+      <Icon {...iconName} />
       <Text customClass={customClass} value={value} />
     </div>
   );

@@ -5,7 +5,12 @@
 }
 
 .text-with-icon .icon,
-.text-with-icon .icon svg {
-  width: 1em;
-  height: 1em;
+.text-with-icon .icon svg,
+.text-with-icon .icon img {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.text-with-icon .text- {
+  vertical-align: center;
 }
