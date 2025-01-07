@@ -8,7 +8,7 @@ import "../../styles/preview/PreviewPage.css";
 
 function PreviewPage(props) {
   return (
-    <div className="preview-page">
+    <div className="preview-page" style={{ fontFamily: "Poppins" }}>
       <PreviewPersonalInfoPanel personalInfo={props.personalInfo} />
       <PreviewEducationPanel education={props.education} />
       <PreviewProfessionalExperiencePanel

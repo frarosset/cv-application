@@ -1,5 +1,11 @@
 import Button from "../base/Button.jsx";
 import { jsPDF } from "jspdf";
+import fonts from "./getFontFaces.js";
+
+// to download a div as pdf, the jsPdf library is used,
+// in particular the .html method
+// see: https://parallax.github.io/jsPDF/docs/module-html.html#~html
+// To embed custom fonts, see: https://github.com/parallax/jsPDF/pull/3040
 
 const printingClass = "printing";
 
@@ -21,6 +27,7 @@ function downloadPdf(filename) {
   let doc = new jsPDF({
     unit: "px",
     hotfixes: ["px_scaling"],
+    putOnlyUsedFonts: true,
   });
 
   const source = document.querySelector(".preview-page");
@@ -29,6 +36,7 @@ function downloadPdf(filename) {
   const marginTBInPixels = Math.round(height * 0.05);
 
   source.classList.add(printingClass);
+  const fontFamily = source.style.fontFamily;
 
   const options = {
     background: "#fff",
@@ -42,7 +50,9 @@ function downloadPdf(filename) {
     html2canvas: {
       dpi: 300,
       letterRendering: true,
+      useCORS: true,
     },
+    fontFaces: fonts[fontFamily],
     callback: (doc) => {
       doc.save(filename + ".pdf");
       window.open(doc.output("bloburl"));
