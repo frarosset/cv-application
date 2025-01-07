@@ -17,6 +17,7 @@
 
 .edit-section-panel h3 {
   font-size: var(--h3-fontsize);
+  font-family: var(--h3-font);
   color: var(--edit-section-highlight-color);
   font-weight: bold;
   text-align: right;

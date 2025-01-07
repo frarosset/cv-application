@@ -30,6 +30,7 @@
 .preview-item-with-dates .issuer {
   grid-area: institution;
   font-weight: 500;
+  font-style: italic;
   color: var(--preview-sub-text-color);
 }
 
@@ -41,6 +42,7 @@
 .preview-item-with-dates .address {
   grid-area: address;
   justify-self: start;
+  font-style: italic;
   color: var(--preview-sub-text-color);
 }
 

@@ -10,6 +10,7 @@
   container-name: preview-page;
 
   color: var(--preview-main-text-color);
+  font-family: var(--page-font);
 }
 
 /* show top/bottom padding when not saving pdf (otherwise, this is already included when saving into pdf) */

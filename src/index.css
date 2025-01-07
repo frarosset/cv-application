@@ -1,6 +1,5 @@
 :root {
-  font-family: var(--main-font), Inter, system-ui, Avenir, Helvetica, Arial,
-    sans-serif;
+  font-family: var(--main-font);
   line-height: var(--txt-lineheight);
   font-weight: 400;
   font-size: var(--txt-fontsize);

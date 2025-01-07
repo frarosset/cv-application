@@ -9,6 +9,7 @@
 
 .edit-panel h2 {
   display: none;
+  font-family: var(--h2-font);
   font-size: var(--h2-fontsize);
   font-weight: bold;
 }
