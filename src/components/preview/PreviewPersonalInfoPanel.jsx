@@ -2,7 +2,8 @@ import Text from "../base/Text.jsx";
 import TextWithIcon from "../base/TextWithIcon.jsx";
 import "../../styles/preview/PreviewPersonalInfoPanel.css";
 
-const textProperties = ["name", "surname", "title", "aboutMe"];
+const textPropertiesFullName = ["name", "surname"];
+const textPropertiesOther = ["title", "aboutMe"];
 const textWithIconsProperties = [
   "location",
   "email",
@@ -16,7 +17,12 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
   return (
     <div className="preview-personal-info-panel">
       <h3>Personal Info</h3>
-      {textProperties.map((prop) => (
+      <div className="full-name">
+        {textPropertiesFullName.map((prop) => (
+          <Text key={prop} customClass={prop} value={personalInfo[prop]} />
+        ))}
+      </div>
+      {textPropertiesOther.map((prop) => (
         <Text key={prop} customClass={prop} value={personalInfo[prop]} />
       ))}
 
