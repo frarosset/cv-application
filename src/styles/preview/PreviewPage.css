@@ -11,6 +11,7 @@
 
   color: var(--preview-main-text-color);
   font-family: var(--page-font);
+  letter-spacing: -0.0005em; /* fix for letter spacing when using jsPdf */
 }
 
 /* show top/bottom padding when not saving pdf (otherwise, this is already included when saving into pdf) */
