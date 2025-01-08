@@ -164,6 +164,8 @@
   --preview-page-item-list-item-padding-top: 0.3em;
   --preview-page-item-list-gap: 0.5em;
 
+  --preview-contacts-cols: 3;
+
   /* --box-radius: max(6px, 0.9vmin); */
 
   /* Shadows */

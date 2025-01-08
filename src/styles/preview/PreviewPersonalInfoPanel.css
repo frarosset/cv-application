@@ -25,10 +25,12 @@
   padding: var(--preview-contacts-padding);
 
   display: grid;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(var(--preview-contacts-cols), max-content);
   grid-auto-rows: auto;
-  grid-gap: var(--preview-contacts-gap);
+  gap: var(--preview-contacts-gap);
   justify-content: space-around;
+
+  overflow: hidden;
 }
 
 .preview-personal-info-panel .full-name {

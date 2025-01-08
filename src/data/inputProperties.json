@@ -31,7 +31,7 @@
 
     "location": {
       "label": "Location",
-      "maxLength": 50,
+      "maxLength": 60,
       "required": false,
       "type": "text",
       "placeholder": "Random Place, Random Country"
@@ -45,7 +45,7 @@
     },
     "phone": {
       "label": "Phone",
-      "maxLength": 50,
+      "maxLength": 20,
       "required": false,
       "type": "text",
       "placeholder": "000-000-0000"
