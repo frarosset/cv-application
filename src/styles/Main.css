@@ -36,9 +36,10 @@ main.has-overflow-y .preview-page {
 
 main .group-of-btns {
   position: fixed;
-  left: 0;
+  /* left: 0; */
+  right: 0;
   bottom: 0;
-  width: 100dvw;
+  /* width: 100dvw; */
   z-index: 1;
   display: flex;
   justify-content: flex-end;
