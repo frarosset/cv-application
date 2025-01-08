@@ -40,35 +40,35 @@
       "label": "Email",
       "maxLength": 50,
       "required": false,
-      "type": "text",
+      "type": "email",
       "placeholder": "johndoe@example.com"
     },
     "phone": {
       "label": "Phone",
       "maxLength": 20,
       "required": false,
-      "type": "text",
+      "type": "tel",
       "placeholder": "000-000-0000"
     },
     "linkedin": {
       "label": "Linkedin",
       "maxLength": 50,
       "required": false,
-      "type": "text",
+      "type": "url",
       "placeholder": "linkedin.com/in/johndoe.is.not.real"
     },
     "website": {
       "label": "Website",
       "maxLength": 50,
       "required": false,
-      "type": "text",
+      "type": "url",
       "placeholder": "johndoe.example.com"
     },
     "github": {
       "label": "Github",
       "maxLength": 50,
       "required": false,
-      "type": "text",
+      "type": "url",
       "placeholder": "github.com/johndoe.is.not.real"
     }
   },
