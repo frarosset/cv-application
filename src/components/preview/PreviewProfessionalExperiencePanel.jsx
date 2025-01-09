@@ -1,7 +1,7 @@
 import PreviewListWithDates from "./PreviewListWithDates.jsx";
 import "../../styles/preview/previewPanelWithListAndDates.css";
 
-const textProperties = ["institution", "address", "role"];
+const textProperties = [["institution", "address"], "role"];
 
 function PreviewProfessionalExperiencePanel({ professionalExperience }) {
   if (professionalExperience.allIds.length > 0) {

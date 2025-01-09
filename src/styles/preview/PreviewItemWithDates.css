@@ -1,11 +1,11 @@
 .preview-item-with-dates {
   display: grid;
   grid-template-areas:
-    "role role dates"
-    "institution address address"
-    "other other other";
+    "role dates"
+    "where where"
+    "other other";
 
-  grid-template-columns: max-content 1fr max-content;
+  grid-template-columns: 1fr max-content;
   align-items: baseline;
 
   font-size: var(--preview-main-fontsize);
@@ -26,12 +26,17 @@
   padding-left: 3em;
 }
 
+.preview-item-with-dates .institution-address,
+.preview-item-with-dates .issuer-address {
+  grid-area: where;
+}
+
 .preview-item-with-dates .institution,
 .preview-item-with-dates .issuer {
-  grid-area: institution;
   font-weight: 500;
   font-style: italic;
   color: var(--preview-sub-text-color);
+  display: inline;
 }
 
 .preview-item-with-dates .address::before {
@@ -40,10 +45,9 @@
 }
 
 .preview-item-with-dates .address {
-  grid-area: address;
-  justify-self: start;
   font-style: italic;
   color: var(--preview-sub-text-color);
+  display: inline;
 }
 
 .preview-item-with-dates .other-info,

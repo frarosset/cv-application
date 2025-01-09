@@ -1,10 +1,10 @@
 .preview-item-with-text-only-text-blocks .text {
   color: var(--preview-secondary-text-color);
+  display: inline;
 }
 
 .preview-item-with-text-only-text-blocks .text.heading {
   font-weight: 500;
-  float: left;
 }
 
 .other-info .preview-item-with-text-only-text-blocks .text.heading::after {

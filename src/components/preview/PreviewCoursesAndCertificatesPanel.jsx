@@ -1,7 +1,7 @@
 import PreviewListWithDates from "./PreviewListWithDates.jsx";
 import "../../styles/preview/previewPanelWithListAndDates.css";
 
-const textProperties = ["name", "issuer", "address", "description"];
+const textProperties = ["name", ["issuer", "address"], "description"];
 
 function PreviewCoursesAndCertificatesPanel({ coursesAndCertificates }) {
   if (coursesAndCertificates.allIds.length > 0) {

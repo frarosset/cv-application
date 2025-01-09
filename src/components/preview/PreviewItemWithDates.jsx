@@ -8,9 +8,24 @@ function PreviewItemWithDates({ itemData, customClass, textProperties }) {
 
   return (
     <li className={`preview-item-with-dates ${customClass}`}>
-      {textProperties.map((prop) => (
-        <Text key={prop} customClass={prop} value={itemData[prop]} />
-      ))}
+      {textProperties.map((prop) => {
+        if (typeof prop === "string") {
+          return <Text key={prop} customClass={prop} value={itemData[prop]} />;
+        } else {
+          const subpropStr = prop.join("-");
+          return (
+            <div key={subpropStr} className={subpropStr}>
+              {prop.map((subprop) => (
+                <Text
+                  key={subprop}
+                  customClass={subprop}
+                  value={itemData[subprop]}
+                />
+              ))}
+            </div>
+          );
+        }
+      })}
       <Text key={"dates"} customClass={"dates"} value={datesValue} />
 
       {otherInfo.allIds.length > 0 && (
