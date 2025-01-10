@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import useIsOverflow from "../customHooks/useIsOverflow.js";
 import EditPanel from "./editor/EditPanel.jsx";
 import PreviewPanel from "./preview/PreviewPanel.jsx";
+import PrintButton from "./functionalities/PrintButton.jsx";
 import DownloadButton from "./functionalities/DownloadButton.jsx";
 import sampleData from "../data/sampleData.json";
 import "../styles/Main.css";
@@ -66,6 +67,7 @@ function Main() {
         coursesAndCertificates={coursesAndCertificates}
       />
       <div className="group-of-btns">
+        <PrintButton />
         <DownloadButton
           filename={`cv_of_${personalInfo.name}_${personalInfo.surname}`}
         />

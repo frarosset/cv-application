@@ -30,6 +30,7 @@ import FlagIcon from "../../assets/icons/flag.svg?react";
 import FileText from "../../assets/icons/file-text.svg?react";
 
 import Download from "../../assets/icons/download.svg?react";
+import Printer from "../../assets/icons/printer.svg?react";
 
 import AddNew from "../../assets/icons/plus.svg?react";
 import Delete from "../../assets/icons/trash.svg?react";
@@ -51,6 +52,7 @@ const IconComponents = {
     flag: FlagIcon,
     fileText: FileText,
     download: Download,
+    printer: Printer,
     addNew: AddNew,
     delete: Delete,
     moveBack: MoveBack,
