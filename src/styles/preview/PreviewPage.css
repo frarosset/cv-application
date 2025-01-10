@@ -17,6 +17,7 @@
 /* show top/bottom padding when not saving pdf (otherwise, this is already included when saving into pdf) */
 .preview-page:not(.printing) {
   padding: 5% 0;
+  padding-top: 0;
   overflow: hidden auto;
 }
 
@@ -25,9 +26,50 @@
   display: none;
 }
 
-/* --- NOT WORKING --------------------------------- */
-/* .preview-page,
-.preview-page * */
+/* --- PRINT STYLES --------------------------------- */
+@page {
+  /* size: A4; */
+  margin: 5% 0;
+}
+
+/* remove the top margin on the first page only */
+@page :first {
+  margin-top: 0px;
+}
+
+@media print {
+  html,
+  body,
+  body * {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    visibility: hidden;
+  }
+
+  /* hide scrollbars when saving pdf*/
+  .preview-page::-webkit-scrollbar {
+    display: none;
+  }
+
+  .preview-page,
+  .preview-page * {
+    visibility: visible;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .preview-page {
+    margin: 0;
+    padding: 0 !important;
+    box-shadow: none !important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: visible !important;
+  }
+}
+
 p,
 h1,
 h2,
