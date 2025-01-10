@@ -67,7 +67,7 @@ function Main() {
       />
       <div className="group-of-btns">
         <DownloadButton
-          filename={`cv_of_${personalInfo.surname}_${personalInfo.name}`}
+          filename={`cv_of_${personalInfo.name}_${personalInfo.surname}`}
         />
       </div>
     </main>

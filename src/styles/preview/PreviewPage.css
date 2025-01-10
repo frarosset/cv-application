@@ -4,7 +4,7 @@
   height: 100%;
 
   aspect-ratio: var(--preview-page-ar);
-  overflow: hidden auto;
+  overflow: visible;
 
   container-type: inline-size;
   container-name: preview-page;
@@ -17,6 +17,7 @@
 /* show top/bottom padding when not saving pdf (otherwise, this is already included when saving into pdf) */
 .preview-page:not(.printing) {
   padding: 5% 0;
+  overflow: hidden auto;
 }
 
 /* hide scrollbars when saving pdf*/

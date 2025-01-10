@@ -34,8 +34,6 @@ function downloadPdf(filename) {
   const height = doc.internal.pageSize.getHeight();
   const width = doc.internal.pageSize.getWidth();
   const marginTBInPixels = Math.round(height * 0.05);
-
-  source.classList.add(printingClass);
   const fontFamily = source.style.fontFamily;
 
   const options = {
@@ -51,12 +49,15 @@ function downloadPdf(filename) {
       dpi: 300,
       letterRendering: true,
       useCORS: true,
+      onclone: (doc, element) => {
+        // this allows to modify the html to be exported for printing, without actually showing any difference in the dom
+        element.querySelector(".preview-page").classList.add(printingClass);
+      },
     },
     fontFaces: fonts[fontFamily],
     callback: (doc) => {
       doc.save(filename + ".pdf");
       window.open(doc.output("bloburl"));
-      source.classList.remove(printingClass);
     },
   };
 
