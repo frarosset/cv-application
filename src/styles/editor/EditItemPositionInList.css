@@ -34,6 +34,10 @@
   .edit-item-position-in-list-button:hover {
     color: var(--edit-section-highlight-color-secondary);
   }
+
+  .edit-item-position-in-list-button:hover svg {
+    transform: scale(1.1);
+  }
 }
 
 .edit-item-position-in-list-button:focus,
@@ -43,4 +47,8 @@
 
 .edit-item-position-in-list-button:focus-visible {
   color: var(--edit-section-highlight-color-secondary);
+}
+
+.edit-item-position-in-list-button:active svg {
+  transform: scale(1);
 }

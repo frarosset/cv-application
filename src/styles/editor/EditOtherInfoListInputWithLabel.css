@@ -9,7 +9,7 @@
 .editor-other-info-selection {
   display: flex;
   gap: var(--label-input-gap);
-  align-items: center;
+  align-items: flex-start;
 }
 
 .editor-other-info-selection h4 {
@@ -19,24 +19,30 @@
   font-weight: bold;
   color: var(--label-color);
   font-variant: small-caps;
+  margin-top: var(--max-shadow-outline-size);
+  line-height: calc(
+    var(--input-fontsize) + 2 * var(--editor-section-button-small-padding)
+  );
+  vertical-align: center;
 }
 
 /* custom .edit-list-selection styles */
 
 .editor-other-info .edit-list-selection-buttons {
-  padding-bottom: var(--editor-form-gap);
+  gap: var(--editor-section-button-item-gap);
 }
 
 .editor-other-info .edit-list-selection-new-item-button {
   border-radius: var(--button-border-radius);
   padding: var(--editor-section-button-small-padding);
-  align-self: center;
+  align-self: flex-start;
+  margin-top: var(--max-shadow-outline-size);
 }
 
 .editor-other-info .edit-list-selection-new-item-button .icon,
 .editor-other-info .edit-list-selection-new-item-button svg {
-  height: calc(var(--input-fontsize) * var(--txt-lineheight));
-  width: calc(var(--input-fontsize) * var(--txt-lineheight));
+  height: var(--input-fontsize);
+  width: var(--input-fontsize);
 }
 
 .editor-other-info .edit-list-selection-item-button {

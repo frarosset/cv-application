@@ -1,6 +1,10 @@
 .edit-panel {
   background-color: var(--editor-bg-col);
   padding: var(--editor-padding);
+  padding-bottom: calc(
+    2 * (var(--page-padding-ud) + var(--round-btn-padding)) +
+      var(--round-btn-size)
+  );
   z-index: 1;
   width: 40vw;
   display: flex;
@@ -39,7 +43,7 @@
   border-radius: var(--editor-form-gap) var(--editor-form-gap) 0 0;
   box-shadow: var(--box-shadow);
   /* hide shadow below the bitton */
-  --len: calc(-1 * (var(--box-shadow-blur) + var(--box-shadow-spread)));
+  --len: calc(-1 * var(--box-shadow-size));
   clip-path: inset(var(--len) var(--len) 0px var(--len));
 }
 
@@ -49,6 +53,14 @@
     background-color: var(--editor-section-button-color-secondary);
     color: var(--edit-section-highlight-color-secondary);
   }
+
+  .edit-panel .edit-panel-button:hover svg {
+    transform: scale(1.1);
+  }
+}
+
+.edit-panel .edit-panel-button:active svg {
+  transform: scale(1);
 }
 
 /* .edit-panel .edit-panel-button:active, */

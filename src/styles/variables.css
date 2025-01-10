@@ -172,9 +172,16 @@
   /* --txt-shadow: 0 3px 6px var(--col-black);*/
   --box-shadow-blur: 10px;
   --box-shadow-spread: 0px;
+  --box-shadow-size: calc(var(--box-shadow-blur) + var(--box-shadow-spread));
   --box-shadow: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
     var(--col-dark-4);
   --input-shadow: 0 0 4px var(--col-dark-4);
+
+  --max-shadow-outline-size: max(
+    var(--box-shadow-size),
+    var(--button-small-outline-size),
+    var(--button-large-outline-size)
+  );
 
   /* Animations on hover / active / ...*/
   /* --transition-time: 0.8s; */

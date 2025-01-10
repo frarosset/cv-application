@@ -5,16 +5,30 @@
   width: 100%;
 }
 
+.edit-list-selection-buttons:not(form .edit-list-selection-buttons) {
+  max-height: 30%;
+}
+
 .edit-list-selection-items-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: var(--editor-section-button-item-gap);
   flex: 1;
+
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  padding: var(--max-shadow-outline-size);
 }
 
-.other-info .edit-list-selection-items-buttons p {
+.edit-list-selection-items-buttons p {
   width: 100%;
   text-align: left;
+  padding: var(--editor-section-button-item-padding);
+  font-style: italic;
+  line-height: 1;
+  color: var(--col-txt-secondary);
 }
 
 .edit-list-selection-new-item-button {
@@ -51,31 +65,53 @@
 @media not all and (hover: none) {
   .edit-list-selection-new-item-button:hover {
     background-color: var(--edit-section-highlight-color);
-    outline: var(--button-small-outline-size) solid
-      var(--edit-section-highlight-color);
+    /* outline: var(--button-small-outline-size) solid
+      var(--edit-section-highlight-color); */
   }
 
   .edit-list-selection-item-button:hover {
     background-color: var(--editor-section-button-color-secondary);
     color: var(--edit-section-highlight-color-secondary);
-    outline: var(--button-small-outline-size) solid
-      var(--edit-section-highlight-color);
+    /* outline: var(--button-small-outline-size) solid
+      var(--edit-section-highlight-color); */
   }
+
+  .edit-list-selection-new-item-button:hover,
+  .edit-list-selection-item-button:hover {
+    /* outline: var(--button-small-outline-size) solid
+      var(--edit-section-highlight-color); */
+    box-shadow: var(--box-shadow);
+  }
+
+  .edit-list-selection-new-item-button:hover svg {
+    transform: scale(1.1);
+  }
+}
+
+.edit-list-selection-new-item-button:active,
+.edit-list-selection-item-button:active {
+  box-shadow: var(--box-shadow);
+}
+
+.edit-list-selection-new-item-button:active svg {
+  transform: scale(1);
 }
 
 .edit-list-selection-new-item-button:focus,
 .edit-list-selection-new-item-button:focus-visible {
   background-color: var(--edit-section-highlight-color);
-  outline: var(--button-small-outline-size) solid
-    var(--edit-section-highlight-color);
+  /* outline: var(--button-small-outline-size) solid */
+  /* var(--edit-section-highlight-color); */
+  outline: none;
 }
 
 .edit-list-selection-item-button:focus,
 .edit-panel .edit-panel-button:focus-visible {
   background-color: var(--editor-section-button-color-secondary);
   color: var(--edit-section-highlight-color-secondary);
-  outline: var(--button-small-outline-size) solid
-    var(--edit-section-highlight-color);
+  /* outline: var(--button-small-outline-size) solid */
+  /* var(--edit-section-highlight-color); */
+  outline: none;
 }
 
 .edit-list-selection-new-item-button.current {
@@ -88,8 +124,9 @@
 .edit-list-selection-item-button.current {
   background-color: var(--edit-section-highlight-color);
   color: var(--col-txt-alt);
-  font-weight: normal;
-  outline: var(--button-large-outline-size) solid
-    var(--edit-section-highlight-color);
+  font-weight: bold;
+  /* outline: var(--button-large-outline-size) solid
+    var(--edit-section-highlight-color); */
   pointer-events: none;
+  /* outline: none; */
 }
