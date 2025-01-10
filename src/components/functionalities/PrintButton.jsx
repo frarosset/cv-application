@@ -6,7 +6,7 @@ import Button from "../base/Button.jsx";
 function PrintButton() {
   return (
     <Button
-      customCssClass={"download-btn normally-hidden"}
+      customCssClass={"print-btn functionality-btn normally-hidden"}
       iconName={"printer"}
       onClickCallback={() => {
         window.print();

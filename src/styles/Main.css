@@ -44,13 +44,14 @@ main .group-of-btns {
   display: flex;
   justify-content: flex-end;
   padding: var(--page-padding-ud);
+  gap: 0.5em;
 }
 
 main.has-overflow-y .group-of-btns {
   padding-bottom: calc(var(--page-padding-ud) + 4px); /* incude scrollbar size*/
 }
 
-main .download-btn {
+main .functionality-btn {
   color: var(--round-btn-color);
   background-color: var(--round-btn-bg-color);
   opacity: var(--round-btn-opacity);
@@ -61,35 +62,54 @@ main .download-btn {
   border-radius: 50%;
   aspect-ratio: 1;
 }
-main .download-btn span,
-main .download-btn svg {
+main .functionality-btn span,
+main .functionality-btn svg {
   width: var(--round-btn-size);
   height: var(--round-btn-size);
 }
 
 /* when hover is supported */
 @media not all and (hover: none) {
-  main .download-btn:hover {
-    opacity: 1;
+  main .functionality-btn:hover {
+    opacity: 1 !important;
     box-shadow: var(--box-shadow);
   }
-  main .download-btn:hover span {
+  main .functionality-btn:hover span {
     transform: scale(1.1);
   }
 }
 
-main .download-btn:active {
-  opacity: 1;
+main .functionality-btn:active {
+  opacity: 1 !important;
   box-shadow: var(--box-shadow);
 }
-main .download-btn:active span {
+main .functionality-btn:active span {
   transform: scale(1);
 }
 
-main .download-btn:focus {
+main .functionality-btn:focus {
   outline: none;
 }
 
-main .download-btn:focus-visible {
+main .functionality-btn:focus-visible {
   outline: 2px solid var(--round-btn-color);
+}
+
+/* some functionality buttons are shown only on hover */
+
+main .functionality-btn.normally-hidden {
+  transform: scale(0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.25s, opacity 0.25s;
+}
+
+main .group-of-btns:hover .functionality-btn.normally-hidden {
+  visibility: visible;
+  opacity: var(--round-btn-opacity);
+}
+
+main .group-of-btns:hover .functionality-btn.normally-hidden {
+  visibility: visible;
+  opacity: var(--round-btn-opacity);
 }

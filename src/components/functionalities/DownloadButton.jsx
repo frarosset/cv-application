@@ -12,7 +12,7 @@ const printingClass = "printing";
 function DownloadButton({ filename }) {
   return (
     <Button
-      customCssClass={"download-btn"}
+      customCssClass={"download-btn functionality-btn"}
       iconName={"download"}
       onClickCallback={() => {
         downloadPdf(filename);
