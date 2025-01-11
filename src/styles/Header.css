@@ -1,10 +1,13 @@
 header {
   background-color: var(--header-bg-col);
   padding: var(--page-padding);
+  box-shadow: var(--box-shadow);
+  z-index: 10;
 }
 
 header h1 {
   font-size: var(--h1-fontsize);
   font-family: var(--h1-font);
   font-weight: bold;
+  color: var(--h1-color);
 }

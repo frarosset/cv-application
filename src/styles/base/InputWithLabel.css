@@ -25,6 +25,7 @@
   padding: var(--input-padding);
   color: var(--input-color);
   min-width: 0;
+  font-weight: var(--input-font-weight);
 }
 
 .input-with-label input[type="checkbox"] {

@@ -27,7 +27,7 @@
   --col-dark-accent-1: #d4aa3a;
   --col-dark-accent-2: #dcbf57;
 
-  /* light-theme (todo: dark) */
+  /* light-theme */
   --col-accent-1: var(--col-light-accent-1);
   --col-accent-2: var(--col-light-accent-2);
 
@@ -44,6 +44,7 @@
   --input-color-focus: var(--col-accent-2);
   --input-color-hover: var(--col-accent-1);
   --input-color-required: var(--col-accent-1);
+  --input-font-weight: 300;
 
   --round-btn-bg-color: var(--col-accent-2);
 
@@ -52,8 +53,10 @@
   --col-txt-alt: var(--col-light-1);
   --col-txt-secondary: var(--col-dark-4);
 
+  --h1-color: var(--col-dark-1);
+
   --input-color: var(--col-txt);
-  --input-placeholder-color: var(--col-dark-4);
+  --input-placeholder-color: var(--col-txt-secondary);
   --label-color: var(--col-dark-2);
   --edit-section-highlight-color: var(--col-accent-1);
   --edit-section-highlight-color-secondary: var(--col-accent-2);
@@ -70,7 +73,7 @@
   --txt-fontsize: max(18px, 1vmin);
   --txt-lineheight: 1.2;
 
-  --h1-fontsize: 2rem;
+  --h1-fontsize: min(2rem, 5vw);
   --h2-fontsize: 2rem;
   --h3-fontsize: 1.1rem;
   --label-fontsize: 0.7rem;
@@ -172,10 +175,11 @@
   /* --txt-shadow: 0 3px 6px var(--col-black);*/
   --box-shadow-blur: 10px;
   --box-shadow-spread: 0px;
+  --box-shadow-color: var(--col-dark-4);
   --box-shadow-size: calc(var(--box-shadow-blur) + var(--box-shadow-spread));
   --box-shadow: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
-    var(--col-dark-4);
-  --input-shadow: 0 0 4px var(--col-dark-4);
+    var(--box-shadow-color);
+  --input-shadow: 0 0 4px var(--box-shadow-color);
 
   --max-shadow-outline-size: max(
     var(--box-shadow-size),
@@ -185,4 +189,35 @@
 
   /* Animations on hover / active / ...*/
   /* --transition-time: 0.8s; */
+}
+
+:root:has(.dark-theme) {
+  /* dark-theme */
+  --col-accent-1: var(--col-dark-accent-1);
+  --col-accent-2: var(--col-dark-accent-2);
+
+  /* Colors (background)*/
+  --bg-col: var(--col-dark-2);
+  --header-bg-col: var(--col-dark-2);
+
+  --editor-bg-col: var(--col-dark-1);
+  --editor-section-bg-col: var(--col-dark-2);
+
+  --preview-bg-col: var(--col-dark-1);
+
+  --input-bg-color: var(--col-dark-3);
+  --input-font-weight: 300;
+
+  /* Colors (text/icons)*/
+  --col-txt: var(--col-light-2);
+  --col-txt-alt: var(--col-dark-1);
+  --col-txt-secondary: var(--col-light-4);
+
+  --h1-color: var(--col-accent-2);
+  --label-color: var(--col-light-3);
+
+  --editor-section-button-color: var(--col-dark-3);
+  --editor-section-button-color-secondary: var(--col-dark-4);
+
+  --box-shadow-color: black;
 }
