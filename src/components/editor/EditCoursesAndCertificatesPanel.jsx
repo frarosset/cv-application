@@ -69,6 +69,7 @@ function EditCoursesAndCertificatesPanel({
       <div>
         <EditListSelectionButtons
           list={coursesAndCertificates.allIds}
+          getLabel={(id) => coursesAndCertificates.byId[id].name}
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}

@@ -54,6 +54,7 @@ function EditLanguagesPanel({ languages, setLanguages }) {
       <div>
         <EditListSelectionButtons
           list={languages.allIds}
+          getLabel={(id) => languages.byId[id].heading}
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}

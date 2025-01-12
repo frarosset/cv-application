@@ -54,6 +54,11 @@ function EditOtherInfoListInputWithLabel({
         <h4>Other info</h4>
         <EditListSelectionButtons
           list={otherInfo.allIds}
+          getLabel={(id) => {
+            const heading = otherInfo.byId[id].heading;
+            const text = otherInfo.byId[id].text;
+            return `${heading ? heading + ": " : ""}${text ? text : ""}`;
+          }}
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"(empty)"}

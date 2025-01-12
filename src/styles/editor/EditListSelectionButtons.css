@@ -3,6 +3,7 @@
   align-items: center;
   gap: calc(2 * var(--editor-section-button-item-gap));
   width: 100%;
+  min-width: 0;
 }
 
 .edit-list-selection-buttons:not(form .edit-list-selection-buttons) {
@@ -59,6 +60,13 @@
   min-width: var(--editor-section-button-item-min-width);
 
   border: none !important;
+
+  /* https://stackoverflow.com/questions/7993067/text-overflow-ellipsis-not-working */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: min(100%, 15em);
+  display: block;
+  overflow: hidden;
 }
 
 /* when hover is supported */
@@ -124,7 +132,12 @@
 .edit-list-selection-item-button.current {
   background-color: var(--edit-section-highlight-color);
   color: var(--col-txt-alt);
-  font-weight: bold;
+
+  /* see: https://www.sitepoint.com/quick-tip-fixing-font-weight-problem-hover-states/ */
+  /* font-weight: bold; */
+  text-shadow: 0 0 0.9px var(--col-txt-alt), 0 0 0.9px var(--col-txt-alt),
+    0 0 0.9px var(--col-txt-alt);
+
   /* outline: var(--button-large-outline-size) solid
     var(--edit-section-highlight-color); */
   pointer-events: none;

@@ -29,7 +29,7 @@
 /* custom .edit-list-selection styles */
 
 .editor-other-info .edit-list-selection-buttons {
-  gap: var(--editor-section-button-item-gap);
+  gap: 0; /* var(--editor-section-button-item-gap); */
 }
 
 .editor-other-info .edit-list-selection-new-item-button {

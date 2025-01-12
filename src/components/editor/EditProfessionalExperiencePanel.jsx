@@ -71,6 +71,7 @@ function EditProfessionalExperiencePanel({
       <div>
         <EditListSelectionButtons
           list={professionalExperience.allIds}
+          getLabel={(id) => professionalExperience.byId[id].role}
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}

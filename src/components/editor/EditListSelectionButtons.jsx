@@ -16,13 +16,13 @@ const newItemId = -1;
 
 function EditListSelectionButtons({
   list = [],
+  getLabel = () => {},
   currentItemId,
   setCurrentItemId,
   emptyListText = "",
 }) {
   const setCurrentClass = (thisItemId) =>
     thisItemId == currentItemId ? "current" : "";
-
   return (
     <div className="edit-list-selection-buttons">
       <Button
@@ -38,16 +38,20 @@ function EditListSelectionButtons({
         {list.length == 0 ? (
           <p>{emptyListText}</p>
         ) : (
-          list.map((id, idx) => (
-            <Button
-              key={id}
-              customCssClass={`edit-list-selection-item-button ${id} ${setCurrentClass(
-                id
-              )}`}
-              text={`#${idx}`}
-              onClickCallback={() => setCurrentItemId(id)}
-            ></Button>
-          ))
+          list.map((id, idx) => {
+            const textLabel = getLabel(id);
+            const btnLabel = textLabel ? textLabel : `#${idx + 1}`;
+            return (
+              <Button
+                key={id}
+                customCssClass={`edit-list-selection-item-button ${id} ${setCurrentClass(
+                  id
+                )}`}
+                text={btnLabel}
+                onClickCallback={() => setCurrentItemId(id)}
+              ></Button>
+            );
+          })
         )}
       </div>
     </div>

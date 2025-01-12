@@ -55,6 +55,7 @@ function EditEducationPanel({ education, setEducation }) {
       <div>
         <EditListSelectionButtons
           list={education.allIds}
+          getLabel={(id) => education.byId[id].degree}
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}

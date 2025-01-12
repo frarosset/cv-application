@@ -52,6 +52,7 @@ function EditSkillsPanel({ skills, setSkills }) {
       <div>
         <EditListSelectionButtons
           list={skills.allIds}
+          getLabel={(id) => skills.byId[id].heading}
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}
