@@ -103,9 +103,16 @@ function deleteItem(
 
       const allIdsArr = getItem(copiedObject, allIdsPath);
       const itemIdx = allIdsArr.findIndex((id) => id === itemId);
+
+      // select the next item to show
+      const nextId =
+        allIdsArr.length > 1
+          ? allIdsArr[itemIdx > 0 ? itemIdx - 1 : itemIdx + 1]
+          : null;
+
       allIdsArr.splice(itemIdx, 1);
 
-      setItemId(null);
+      setItemId(nextId);
 
       return copiedObject;
     }
