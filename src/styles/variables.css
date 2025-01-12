@@ -187,6 +187,12 @@
     var(--button-large-outline-size)
   );
 
+  --header-btn-bg-col: transparent;
+  --header-btn-col: var(--col-light-1);
+  --dark-theme-btn-hightlight-bg-col: var(--col-dark-2);
+  --dark-theme-btn-hightlight-col: var(--col-dark-accent-2);
+  --dark-theme-btn-hightlight-box-shadow-col: black;
+
   /* Animations on hover / active / ...*/
   /* --transition-time: 0.8s; */
 }
@@ -220,4 +226,8 @@
   --editor-section-button-color-secondary: var(--col-dark-4);
 
   --box-shadow-color: black;
+
+  --dark-theme-btn-hightlight-bg-col: var(--col-light-1);
+  --dark-theme-btn-hightlight-col: var(--col-light-accent-2);
+  --dark-theme-btn-hightlight-box-shadow-col: var(--col-dark-4);
 }
