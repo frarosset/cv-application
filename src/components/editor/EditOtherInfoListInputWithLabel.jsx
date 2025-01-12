@@ -16,7 +16,9 @@ function EditOtherInfoListInputWithLabel({
   setState,
   pathInState,
 }) {
-  const [currentItemId, setCurrentItemId] = useState(null);
+  const [currentItemId, setCurrentItemId] = useState(
+    otherInfo.allIds.length ? otherInfo.allIds[0] : null
+  );
 
   const otherInfoHeadingProp = inputProps.otherInfo.heading;
   const otherInfoTextProp = inputProps.otherInfo.text;

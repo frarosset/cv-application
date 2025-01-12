@@ -16,7 +16,9 @@ const orderedInputProps = ["degree", "institution", "address", "fromToDate"];
 const inputProps = inputProperties.education;
 
 function EditEducationPanel({ education, setEducation }) {
-  const [currentItemId, setCurrentItemId] = useState(null);
+  const [currentItemId, setCurrentItemId] = useState(
+    education.allIds.length ? education.allIds[0] : null
+  );
 
   const showForm = currentItemId != null;
   let currentItem = getItem(education, ["byId", currentItemId]);

@@ -15,7 +15,9 @@ const orderedInputProps = ["heading", "text"];
 const inputProps = inputProperties.skills;
 
 function EditSkillsPanel({ skills, setSkills }) {
-  const [currentItemId, setCurrentItemId] = useState(null);
+  const [currentItemId, setCurrentItemId] = useState(
+    skills.allIds.length ? skills.allIds[0] : null
+  );
 
   const showForm = currentItemId != null;
   let currentItem = getItem(skills, ["byId", currentItemId]);

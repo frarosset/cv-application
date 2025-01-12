@@ -19,7 +19,11 @@ function EditProfessionalExperiencePanel({
   professionalExperience,
   setProfessionalExperience,
 }) {
-  const [currentItemId, setCurrentItemId] = useState(null);
+  const [currentItemId, setCurrentItemId] = useState(
+    professionalExperience.allIds.length
+      ? professionalExperience.allIds[0]
+      : null
+  );
 
   const showForm = currentItemId != null;
   let currentItem = getItem(professionalExperience, ["byId", currentItemId]);

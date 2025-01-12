@@ -15,7 +15,9 @@ const orderedInputProps = ["heading", "text"];
 const inputProps = inputProperties.languages;
 
 function EditLanguagesPanel({ languages, setLanguages }) {
-  const [currentItemId, setCurrentItemId] = useState(null);
+  const [currentItemId, setCurrentItemId] = useState(
+    languages.allIds.length ? languages.allIds[0] : null
+  );
 
   const showForm = currentItemId != null;
   let currentItem = getItem(languages, ["byId", currentItemId]);

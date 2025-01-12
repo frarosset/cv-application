@@ -18,7 +18,11 @@ function EditCoursesAndCertificatesPanel({
   coursesAndCertificates,
   setCoursesAndCertificates,
 }) {
-  const [currentItemId, setCurrentItemId] = useState(null);
+  const [currentItemId, setCurrentItemId] = useState(
+    coursesAndCertificates.allIds.length
+      ? coursesAndCertificates.allIds[0]
+      : null
+  );
 
   const showForm = currentItemId != null;
   let currentItem = getItem(coursesAndCertificates, ["byId", currentItemId]);
