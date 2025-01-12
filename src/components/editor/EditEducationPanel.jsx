@@ -12,7 +12,14 @@ import EditOtherInfoListInputWithLabel from "./EditOtherInfoListInputWithLabel.j
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
 
-const orderedInputProps = ["degree", "institution", "address", "fromToDate"];
+const orderedInputProps = [
+  "degree",
+  "institution",
+  "address",
+  "",
+  "fromToDate",
+  "",
+];
 const inputProps = inputProperties.education;
 
 function EditEducationPanel({ education, setEducation }) {

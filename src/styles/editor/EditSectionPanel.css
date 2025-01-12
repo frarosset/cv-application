@@ -44,3 +44,7 @@
   border-top: 2px solid var(--editor-bg-col);
   border-bottom: 2px solid var(--editor-bg-col);
 }
+
+.edit-section-panel form .form-divider {
+  height: 1.4em;
+}

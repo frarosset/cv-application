@@ -12,7 +12,15 @@ function ArrayOfInputWithLabel({
   return (
     <>
       {orderedInputProps.map((prop) => {
-        if (inputProps[prop].type === "date-month-year") {
+        if (prop == "") {
+          // add just a space
+          return (
+            <div
+              key={`${prop} ${crypto.randomUUID()}`}
+              className="form-divider"
+            />
+          );
+        } else if (inputProps[prop].type === "date-month-year") {
           return (
             <DateInputWithLabel
               key={prop}

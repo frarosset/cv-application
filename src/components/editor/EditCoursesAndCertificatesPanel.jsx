@@ -11,7 +11,15 @@ import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
 
-const orderedInputProps = ["name", "issuer", "address", "date", "description"];
+const orderedInputProps = [
+  "name",
+  "issuer",
+  "address",
+  "",
+  "date",
+  "",
+  "description",
+];
 const inputProps = inputProperties.coursesAndCertificates;
 
 function EditCoursesAndCertificatesPanel({
