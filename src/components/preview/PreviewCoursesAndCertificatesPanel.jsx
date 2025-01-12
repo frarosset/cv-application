@@ -13,6 +13,7 @@ function PreviewCoursesAndCertificatesPanel({ coursesAndCertificates }) {
           customClass={"courses-and-certificates"}
           data={coursesAndCertificates}
           textProperties={textProperties}
+          typeOfDates="single"
         />
       </div>
     );

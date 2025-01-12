@@ -2,8 +2,13 @@ import Text from "../base/Text.jsx";
 import PreviewListWithTextOnly from "./PreviewListWithTextOnly.jsx";
 import "../../styles/preview/PreviewItemWithDates.css";
 
-function PreviewItemWithDates({ itemData, customClass, textProperties }) {
-  const datesValue = getDatesStr(itemData);
+function PreviewItemWithDates({
+  itemData,
+  customClass,
+  textProperties,
+  typeOfDates = "interval",
+}) {
+  const datesValue = getDatesStr(itemData, typeOfDates);
   const otherInfo = itemData.otherInfo ? itemData.otherInfo : { allIds: [] };
 
   return (
@@ -39,23 +44,22 @@ function PreviewItemWithDates({ itemData, customClass, textProperties }) {
   );
 }
 
-function getDatesStr({
-  dateYear,
-  dateMonth,
-  fromDateYear,
-  fromDateMonth,
-  toDateYear,
-  toDateMonth,
-  ongoing,
-}) {
-  if ([dateYear, dateMonth].some((str) => str != null)) {
+function getDatesStr(
+  {
+    dateYear,
+    dateMonth,
+    fromDateYear,
+    fromDateMonth,
+    toDateYear,
+    toDateMonth,
+    ongoing,
+  },
+  typeOfDates
+) {
+  if (typeOfDates == "single") {
     // one date only
     return ongoing ? "ongoing" : getDateStr(dateYear, dateMonth);
-  } else if (
-    [fromDateYear, fromDateMonth, toDateYear, toDateMonth].some(
-      (str) => str != null
-    )
-  ) {
+  } else if (typeOfDates == "interval") {
     // interval of dates
     const fromDateStr = getDateStr(fromDateYear, fromDateMonth);
     const toDateStr = ongoing ? "present" : getDateStr(toDateYear, toDateMonth);
