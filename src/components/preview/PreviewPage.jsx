@@ -7,6 +7,13 @@ import PreviewCoursesAndCertificatesPanel from "./PreviewCoursesAndCertificatesP
 import "../../styles/preview/PreviewPage.css";
 
 function PreviewPage(props) {
+  // Personalize the page
+  // Accent color
+  document.documentElement.style.setProperty(
+    "--preview-page-accent-color",
+    props.personalization.accentColor
+  );
+
   return (
     <div className="preview-page" style={{ fontFamily: "Poppins" }}>
       <PreviewPersonalInfoPanel personalInfo={props.personalInfo} />

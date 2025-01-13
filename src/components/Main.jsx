@@ -20,6 +20,9 @@ function Main() {
   const [coursesAndCertificates, setCoursesAndCertificates] = useState(
     sampleData.coursesAndCertificates
   );
+  const [personalization, setPersonalization] = useState(
+    sampleData.personalization
+  );
 
   /* *************************************************************************** */
   // A base layout style might be  specified. This is used to set a hasOVerflowXCssClass
@@ -65,6 +68,7 @@ function Main() {
         skills={skills}
         languages={languages}
         coursesAndCertificates={coursesAndCertificates}
+        personalization={personalization}
       />
       <div className="group-of-btns">
         <PrintButton />
