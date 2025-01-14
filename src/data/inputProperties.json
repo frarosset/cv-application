@@ -285,6 +285,13 @@
       "label": "Format",
       "options": ["A4", "Letter"]
     },
+    "mainFont": {
+      "required": true,
+      "type": "select",
+      "value": "Poppins",
+      "label": "Main Font",
+      "options": ["Poppins"]
+    },
     "accentColor": {
       "required": true,
       "type": "color",
