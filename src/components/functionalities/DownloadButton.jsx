@@ -9,13 +9,13 @@ import fonts from "./getFontFaces.js";
 
 const printingClass = "printing";
 
-function DownloadButton({ filename, format = "a4" }) {
+function DownloadButton({ filename, format = "a4", fontFaces = [] }) {
   return (
     <Button
       customCssClass={"download-btn functionality-btn"}
       iconName={"download"}
       onClickCallback={() => {
-        downloadPdf(filename, format);
+        downloadPdf(filename, format, fontFaces);
       }}
     />
   );
@@ -23,7 +23,7 @@ function DownloadButton({ filename, format = "a4" }) {
 
 export default DownloadButton;
 
-function downloadPdf(filename, format) {
+function downloadPdf(filename, format, fontFaces) {
   let doc = new jsPDF({
     unit: "px",
     hotfixes: ["px_scaling"],
@@ -35,7 +35,7 @@ function downloadPdf(filename, format) {
   const height = doc.internal.pageSize.getHeight();
   const width = doc.internal.pageSize.getWidth();
   const marginTBInPixels = Math.round(height * 0.05);
-  const fontFamily = source.style.fontFamily;
+  // const fontFamily = source.style.fontFamily;
 
   const options = {
     background: "#fff",
@@ -55,7 +55,10 @@ function downloadPdf(filename, format) {
         element.querySelector(".preview-page").classList.add(printingClass);
       },
     },
-    fontFaces: fonts[fontFamily],
+    fontFaces: fontFaces.reduce((arr, font) => {
+      arr.push(...fonts[font]);
+      return arr;
+    }, []),
     callback: (doc) => {
       doc.save(filename + ".pdf");
       window.open(doc.output("bloburl"));

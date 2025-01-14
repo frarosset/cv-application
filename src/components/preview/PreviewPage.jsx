@@ -16,7 +16,7 @@ function PreviewPage(props) {
   applyPagePersonalization(props.personalization);
 
   return (
-    <div className="preview-page" style={{ fontFamily: "Poppins" }}>
+    <div className="preview-page">
       <PreviewPersonalInfoPanel personalInfo={props.personalInfo} />
       <PreviewEducationPanel education={props.education} />
       <PreviewProfessionalExperiencePanel
@@ -42,6 +42,12 @@ function applyPagePersonalization(settings) {
   document.documentElement.style.setProperty(
     "--preview-page-ar",
     formatAr[settings.format.toLowerCase()]
+  );
+
+  // Fonts
+  document.documentElement.style.setProperty(
+    "--preview-page-main-font",
+    settings.mainFont
   );
 
   // Colors

@@ -10,7 +10,7 @@
   container-name: preview-page;
 
   color: var(--preview-heading-text-color);
-  font-family: var(--page-font);
+  font-family: var(--preview-page-main-font);
   letter-spacing: -0.0005em; /* fix for letter spacing when using jsPdf */
 }
 

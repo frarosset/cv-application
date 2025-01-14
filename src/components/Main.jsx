@@ -77,6 +77,7 @@ function Main() {
         <DownloadButton
           filename={`cv_of_${personalInfo.name}_${personalInfo.surname}`}
           format={personalization.format}
+          fontFaces={[personalization.mainFont]}
         />
       </div>
     </main>
