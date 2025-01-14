@@ -13,20 +13,7 @@ const formatAr = {
 
 function PreviewPage(props) {
   // Personalize the page
-  // Accent color
-  document.documentElement.style.setProperty(
-    "--preview-page-accent-color",
-    props.personalization.accentColor
-  );
-  // Page format
-  document.documentElement.style.setProperty(
-    "--preview-page-format",
-    props.personalization.format
-  );
-  document.documentElement.style.setProperty(
-    "--preview-page-ar",
-    formatAr[props.personalization.format.toLowerCase()]
-  );
+  applyPagePersonalization(props.personalization);
 
   return (
     <div className="preview-page" style={{ fontFamily: "Poppins" }}>
@@ -45,3 +32,36 @@ function PreviewPage(props) {
 }
 
 export default PreviewPage;
+
+function applyPagePersonalization(settings) {
+  // Page format
+  document.documentElement.style.setProperty(
+    "--preview-page-format",
+    settings.format
+  );
+  document.documentElement.style.setProperty(
+    "--preview-page-ar",
+    formatAr[settings.format.toLowerCase()]
+  );
+
+  // Colors
+  document.documentElement.style.setProperty(
+    "--preview-page-accent-color",
+    settings.accentColor
+  );
+
+  document.documentElement.style.setProperty(
+    "--preview-heading-text-color",
+    settings.headingColor
+  );
+
+  document.documentElement.style.setProperty(
+    "--preview-detail-text-color",
+    settings.detailColor
+  );
+
+  document.documentElement.style.setProperty(
+    "--preview-text-color",
+    settings.textColor
+  );
+}

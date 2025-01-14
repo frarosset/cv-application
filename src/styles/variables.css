@@ -139,15 +139,16 @@
   /* Preview page */
   --preview-page-bg-col: white;
   /* --a4-ar: calc(1 / 1.41421); */
+  /* --preview-page-format: "A4" */
   /* --preview-page-ar: var(--a4-ar); */
   --preview-page-padding: 5cqw;
   --preview-page-gap: 3cqw;
 
   /* --preview-page-accent-color: rgb(158, 11, 114); */
 
-  --preview-heading-text-color: var(--col-dark-1);
+  /* --preview-heading-text-color: var(--col-dark-1);
   --preview-detail-text-color: var(--col-dark-3);
-  --preview-text-color: var(--col-dark-4);
+  --preview-text-color: var(--col-dark-4); */
 
   --preview-contacts-padding: 2cqw;
   --preview-contacts-fontsize: 1.5cqw;

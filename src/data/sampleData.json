@@ -123,7 +123,10 @@
     }
   },
   "personalization": {
+    "format": "A4",
     "accentColor": "#9E0B90",
-    "format": "A4"
+    "headingColor": "#131c28",
+    "detailColor": "#595c61",
+    "textColor": "#808080"
   }
 }
