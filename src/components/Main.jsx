@@ -60,6 +60,8 @@ function Main() {
         setLanguages={setLanguages}
         coursesAndCertificates={coursesAndCertificates}
         setCoursesAndCertificates={setCoursesAndCertificates}
+        personalization={personalization}
+        setPersonalization={setPersonalization}
       />
       <PreviewPanel
         personalInfo={personalInfo}

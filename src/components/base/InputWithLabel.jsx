@@ -1,5 +1,6 @@
 import Input from "./Input.jsx";
 import TextArea from "./TextArea.jsx";
+import SelectInput from "./SelectInput.jsx";
 import "../../styles/base/InputWithLabel.css";
 
 function InputWithLabel({
@@ -13,6 +14,7 @@ function InputWithLabel({
   maxLength = null,
   required = false,
   checked = false,
+  options = [],
 }) {
   const inputOfType =
     type === "textarea" ? (
@@ -24,6 +26,16 @@ function InputWithLabel({
         setValue={setValue}
         maxLength={maxLength}
         required={required}
+      />
+    ) : type === "select" ? (
+      <SelectInput
+        id={id}
+        name={name}
+        value={value}
+        placeholder={placeholder}
+        setValue={setValue}
+        required={required}
+        options={options}
       />
     ) : (
       <Input

@@ -28,6 +28,7 @@ import BriefcaseIcon from "../../assets/icons/briefcase.svg?react";
 import StarIcon from "../../assets/icons/star.svg?react";
 import FlagIcon from "../../assets/icons/flag.svg?react";
 import FileText from "../../assets/icons/file-text.svg?react";
+import PenTool from "../../assets/icons/pen-tool.svg?react";
 
 import Download from "../../assets/icons/download.svg?react";
 import Printer from "../../assets/icons/printer.svg?react";
@@ -53,6 +54,7 @@ const IconComponents = {
     star: StarIcon,
     flag: FlagIcon,
     fileText: FileText,
+    penTool: PenTool,
     download: Download,
     printer: Printer,
     sun: Sun,

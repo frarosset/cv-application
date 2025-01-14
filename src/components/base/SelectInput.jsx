@@ -7,7 +7,7 @@ function SelectInput({
   options,
   emptyValue = null,
   setValue,
-  placeholder = "",
+  placeholder = null,
   required = false,
   disabled = false,
 }) {
@@ -22,9 +22,11 @@ function SelectInput({
       }}
       disabled={disabled}
     >
-      <option disabled value={valueToShowPlaceholder}>
-        {placeholder}
-      </option>
+      {placeholder && (
+        <option disabled value={valueToShowPlaceholder}>
+          {placeholder}
+        </option>
+      )}
       {emptyValue != null && <option value={emptyValue}>{"-"}</option>}
       {options.map((option, idx) => (
         <option key={idx} value={option}>

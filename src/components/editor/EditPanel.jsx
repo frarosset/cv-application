@@ -5,7 +5,8 @@ import EditEducationPanel from "./EditEducationPanel.jsx";
 import EditProfessionalExperiencePanel from "./EditProfessionalExperiencePanel.jsx";
 import EditSkillsPanel from "./EditSkillsPanel.jsx";
 import EditLanguagesPanel from "./EditLanguagesPanel.jsx";
-import EditCoursesAndCertificatesPanel from "./EditCoursesAndCertificatesPanel";
+import EditCoursesAndCertificatesPanel from "./EditCoursesAndCertificatesPanel.jsx";
+import EditPersonalizationPanel from "./EditPersonalizationPanel.jsx";
 import "../../styles/editor/EditPanel.css";
 
 const panelsInfo = [
@@ -15,6 +16,7 @@ const panelsInfo = [
   { name: "skills", iconName: "star" },
   { name: "languages", iconName: "flag" },
   { name: "coursesAndCertificates", iconName: "fileText" },
+  { name: "personalization", iconName: "penTool" },
 ];
 
 function EditPanel(props) {
@@ -85,6 +87,13 @@ function renderCurrentPanel(currentPanel, props) {
         <EditCoursesAndCertificatesPanel
           coursesAndCertificates={props.coursesAndCertificates}
           setCoursesAndCertificates={props.setCoursesAndCertificates}
+        />
+      );
+    case "personalization":
+      return (
+        <EditPersonalizationPanel
+          personalization={props.personalization}
+          setPersonalization={props.setPersonalization}
         />
       );
     default:

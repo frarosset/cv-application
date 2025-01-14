@@ -68,6 +68,7 @@ function ArrayOfInputWithLabel({
               type={inputProps[prop].type}
               maxLength={inputProps[prop].maxLength}
               required={inputProps[prop].required}
+              options={inputProps[prop].options}
               checked={item[prop]}
             />
           );

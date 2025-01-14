@@ -276,5 +276,20 @@
       "prop": "text",
       "label": "Description"
     }
+  },
+  "personalization": {
+    "accentColor": {
+      "required": true,
+      "type": "color",
+      "value": "#9e0b72",
+      "label": "Accent Color"
+    },
+    "format": {
+      "required": true,
+      "type": "select",
+      "value": "A4",
+      "label": "Format",
+      "options": ["A4", "Letter"]
+    }
   }
 }
