@@ -2,7 +2,14 @@ import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
 
-const orderedInputProps = ["format", "accentColor"];
+const orderedInputProps = [
+  "format",
+  "",
+  "accentColor",
+  "headingColor",
+  "detailColor",
+  "textColor",
+];
 
 const inputProps = inputProperties.personalization;
 
