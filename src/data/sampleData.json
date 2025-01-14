@@ -123,6 +123,7 @@
     }
   },
   "personalization": {
-    "accentColor": "#9E0B90"
+    "accentColor": "#9E0B90",
+    "format": "A4"
   }
 }

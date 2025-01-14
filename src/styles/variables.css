@@ -138,8 +138,8 @@
 
   /* Preview page */
   --preview-page-bg-col: white;
-  --a4-ar: calc(1 / 1.41421);
-  --preview-page-ar: var(--a4-ar);
+  /* --a4-ar: calc(1 / 1.41421); */
+  /* --preview-page-ar: var(--a4-ar); */
   --preview-page-padding: 5cqw;
   --preview-page-gap: 3cqw;
 

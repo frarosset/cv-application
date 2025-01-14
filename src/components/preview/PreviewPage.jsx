@@ -6,12 +6,26 @@ import PreviewLanguagesPanel from "./PreviewLanguagesPanel.jsx";
 import PreviewCoursesAndCertificatesPanel from "./PreviewCoursesAndCertificatesPanel.jsx";
 import "../../styles/preview/PreviewPage.css";
 
+const formatAr = {
+  a4: 1 / 1.41421,
+  letter: 1 / 1.29412,
+};
+
 function PreviewPage(props) {
   // Personalize the page
   // Accent color
   document.documentElement.style.setProperty(
     "--preview-page-accent-color",
     props.personalization.accentColor
+  );
+  // Page format
+  document.documentElement.style.setProperty(
+    "--preview-page-format",
+    props.personalization.format
+  );
+  document.documentElement.style.setProperty(
+    "--preview-page-ar",
+    formatAr[props.personalization.format.toLowerCase()]
   );
 
   return (

@@ -74,6 +74,7 @@ function Main() {
         <PrintButton />
         <DownloadButton
           filename={`cv_of_${personalInfo.name}_${personalInfo.surname}`}
+          format={personalization.format}
         />
       </div>
     </main>

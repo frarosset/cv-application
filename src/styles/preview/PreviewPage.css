@@ -28,7 +28,7 @@
 
 /* --- PRINT STYLES --------------------------------- */
 @page {
-  /* size: A4; */
+  size: var(--preview-page-format);
   margin: 5% 0;
 }
 
@@ -42,8 +42,12 @@
   body,
   body * {
     -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+    print-color-adjust: exact;
     visibility: hidden;
+  }
+
+  .print-btn {
+    visibility: hidden !important;
   }
 
   /* hide scrollbars when saving pdf*/

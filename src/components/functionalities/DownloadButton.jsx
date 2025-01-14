@@ -9,13 +9,13 @@ import fonts from "./getFontFaces.js";
 
 const printingClass = "printing";
 
-function DownloadButton({ filename }) {
+function DownloadButton({ filename, format = "a4" }) {
   return (
     <Button
       customCssClass={"download-btn functionality-btn"}
       iconName={"download"}
       onClickCallback={() => {
-        downloadPdf(filename);
+        downloadPdf(filename, format);
       }}
     />
   );
@@ -23,11 +23,12 @@ function DownloadButton({ filename }) {
 
 export default DownloadButton;
 
-function downloadPdf(filename) {
+function downloadPdf(filename, format) {
   let doc = new jsPDF({
     unit: "px",
     hotfixes: ["px_scaling"],
     putOnlyUsedFonts: true,
+    format: format,
   });
 
   const source = document.querySelector(".preview-page");
