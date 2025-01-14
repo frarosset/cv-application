@@ -22,7 +22,7 @@
 
 .preview-item-with-dates .dates {
   grid-area: dates;
-  color: var(--preview-sub-text-color);
+  color: var(--preview-detail-text-color);
   padding-left: 3em;
 }
 
@@ -35,25 +35,25 @@
 .preview-item-with-dates .issuer {
   font-weight: 500;
   font-style: italic;
-  color: var(--preview-sub-text-color);
+  color: var(--preview-detail-text-color);
   display: inline;
 }
 
 .preview-item-with-dates .address::before {
   content: ", ";
-  color: var(--preview-sub-text-color);
+  color: var(--preview-detail-text-color);
 }
 
 .preview-item-with-dates .address {
   font-style: italic;
-  color: var(--preview-sub-text-color);
+  color: var(--preview-detail-text-color);
   display: inline;
 }
 
 .preview-item-with-dates .other-info,
 .preview-item-with-dates .description {
   grid-area: other;
-  color: var(--preview-secondary-text-color);
+  color: var(--preview-text-color);
   padding-top: var(--preview-page-item-list-item-padding-top);
 }
 

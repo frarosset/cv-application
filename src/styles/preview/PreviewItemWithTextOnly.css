@@ -1,5 +1,5 @@
 .preview-item-with-text-only-text-blocks .text {
-  color: var(--preview-secondary-text-color);
+  color: var(--preview-text-color);
   display: inline;
 }
 

@@ -19,7 +19,7 @@
   grid-area: contacts;
 
   background-color: var(--preview-page-accent-color);
-  color: var(--preview-page-white);
+  color: var(--preview-page-bg-col);
 
   font-size: var(--preview-contacts-fontsize);
   padding: var(--preview-contacts-padding);
@@ -62,12 +62,12 @@
   grid-area: title;
   font-variant: small-caps;
   font-size: var(--preview-title-fontsize);
-  color: var(--preview-sub-text-color);
+  color: var(--preview-detail-text-color);
 }
 
 .preview-personal-info-panel .text.aboutMe {
   grid-area: aboutMe;
   padding: var(--preview-page-gap) 0;
   font-size: var(--preview-about-me-fontsize);
-  color: var(--preview-secondary-text-color);
+  color: var(--preview-text-color);
 }

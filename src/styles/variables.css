@@ -144,11 +144,10 @@
   --preview-page-gap: 3cqw;
 
   /* --preview-page-accent-color: rgb(158, 11, 114); */
-  --preview-page-white: white;
 
-  --preview-main-text-color: var(--col-dark-1);
-  --preview-sub-text-color: var(--col-dark-3);
-  --preview-secondary-text-color: var(--col-dark-4);
+  --preview-heading-text-color: var(--col-dark-1);
+  --preview-detail-text-color: var(--col-dark-3);
+  --preview-text-color: var(--col-dark-4);
 
   --preview-contacts-padding: 2cqw;
   --preview-contacts-fontsize: 1.5cqw;

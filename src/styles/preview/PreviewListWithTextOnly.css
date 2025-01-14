@@ -7,7 +7,7 @@
 
 .preview-item-with-dates .preview-list-with-text-only {
   list-style: disc;
-  color: var(--preview-sub-text-color);
+  color: var(--preview-detail-text-color);
   padding: 0;
   padding-left: var(--preview-page-item-list-padding-left);
 }
