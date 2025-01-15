@@ -55,6 +55,10 @@ input:checked::before {
   align-items: center;
 }
 
+.input-with-label input[type="color"] {
+  box-sizing: content-box;
+}
+
 .input-with-label input::placeholder,
 .input-with-label textarea::placeholder,
 .input-with-label input:disabled,
