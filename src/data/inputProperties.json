@@ -281,39 +281,33 @@
     "format": {
       "required": true,
       "type": "select",
-      "value": "A4",
       "label": "Format",
       "options": ["A4", "Letter"]
     },
     "mainFont": {
       "required": true,
       "type": "select",
-      "value": "Poppins",
       "label": "Main Font",
       "options": ["Poppins"]
     },
     "accentColor": {
-      "required": true,
+      "required": false,
       "type": "color",
-      "value": "#9e0b72",
       "label": "Accent Color"
     },
     "headingColor": {
-      "required": true,
+      "required": false,
       "type": "color",
-      "value": "#9e0b72",
       "label": "Titles Color"
     },
     "detailColor": {
-      "required": true,
+      "required": false,
       "type": "color",
-      "value": "#9e0b72",
       "label": "Detail Color"
     },
     "textColor": {
-      "required": true,
+      "required": false,
       "type": "color",
-      "value": "#9e0b72",
       "label": "Text Color"
     }
   }
