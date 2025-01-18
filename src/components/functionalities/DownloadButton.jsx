@@ -34,6 +34,7 @@ function downloadPdf(filename, format, fontFaces) {
   const source = document.querySelector(".preview-page");
   const height = doc.internal.pageSize.getHeight();
   const width = doc.internal.pageSize.getWidth();
+  const sourceWidth = source.scrollWidth;
   const marginTBInPixels = Math.round(height * 0.05);
   // const fontFamily = source.style.fontFamily;
 
@@ -45,11 +46,12 @@ function downloadPdf(filename, format, fontFaces) {
     y: 0,
     autoPaging: "text",
     width: width,
-    windowWidth: width,
+    windowWidth: sourceWidth,
     html2canvas: {
       dpi: 300,
       letterRendering: true,
       useCORS: true,
+      scale: width / sourceWidth,
       onclone: (doc, element) => {
         // this allows to modify the html to be exported for printing, without actually showing any difference in the dom
         element.querySelector(".preview-page").classList.add(printingClass);

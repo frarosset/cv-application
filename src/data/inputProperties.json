@@ -288,7 +288,24 @@
       "required": true,
       "type": "select",
       "label": "Main Font",
-      "options": ["Poppins"]
+      "options": [
+        "Poppins",
+        "Fira Sans",
+        "Montserrat",
+        "Raleway",
+        "Rubik",
+        "Saira",
+        "Blinker",
+        "Bitter",
+        "Lora",
+        "Playfair Display",
+        "Fira Code",
+        "Courier Prime",
+        "Source Code Pro",
+        "Playwrite IS",
+        "Fira Sans Condensed",
+        "Saira Condensed"
+      ]
     },
     "accentColor": {
       "required": false,

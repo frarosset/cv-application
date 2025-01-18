@@ -1,14 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 :root {
   /* Font family */
-  --main-font: "Exo 2", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --h1-font: "Rubik", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --h2-font: "Rubik", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --h3-font: "Rubik", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --page-font: "Poppins", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --main-font: "Blinker", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --h1-font: "Blinker", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --h2-font: "Blinker", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --h3-font: "Blinker", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   /* Colors (palette)*/
   --col-light-1: #ffffff; /*white*/

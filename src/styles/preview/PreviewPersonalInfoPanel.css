@@ -60,7 +60,6 @@
 
 .preview-personal-info-panel .text.title {
   grid-area: title;
-  font-variant: small-caps;
   font-size: var(--preview-title-fontsize);
   color: var(--preview-detail-text-color);
 }
