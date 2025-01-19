@@ -162,6 +162,12 @@
   --preview-page-item-list-item-padding-top: 0.3em;
   --preview-page-item-list-gap: 0.5em;
 
+  --preview-page-heading-font: "Saira";
+  --preview-page-detail-font: "Fira Sans";
+  --preview-page-accent-font: "Poppins";
+  --preview-page-full-name-font: "Bitter";
+  --preview-page-title-font: "Playwrite IS";
+
   --preview-contacts-cols: 3;
 
   /* --box-radius: max(6px, 0.9vmin); */

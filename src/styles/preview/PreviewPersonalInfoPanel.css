@@ -20,6 +20,7 @@
 
   background-color: var(--preview-page-accent-color);
   color: var(--preview-page-bg-col);
+  font-family: var(--preview-page-detail-font);
 
   font-size: var(--preview-contacts-fontsize);
   padding: var(--preview-contacts-padding);
@@ -38,11 +39,13 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: var(--preview-page-gap);
+  font-family: var(--preview-page-full-name-font);
 }
 
 .preview-personal-info-panel .text.surname {
   font-weight: 500;
   font-size: var(--preview-full-name-fontsize);
+  color: var(--preview-heading-text-color);
 }
 
 .preview-personal-info-panel .text.name {
@@ -62,6 +65,7 @@
   grid-area: title;
   font-size: var(--preview-title-fontsize);
   color: var(--preview-detail-text-color);
+  font-family: var(--preview-page-title-font);
 }
 
 .preview-personal-info-panel .text.aboutMe {

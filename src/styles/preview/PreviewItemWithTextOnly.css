@@ -32,6 +32,7 @@
 .languages .preview-item-with-text-only-text-blocks .text.heading {
   font-weight: 600;
   color: var(--preview-page-accent-color);
+  font-family: var(--preview-page-accent-font);
   font-size: var(--preview-accent-fontsize);
   margin-top: calc(
     -1 * (var(--preview-accent-fontsize) - var(--preview-about-me-fontsize)) - 1px

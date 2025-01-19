@@ -17,12 +17,14 @@
   grid-area: role;
   font-weight: 600;
   color: var(--preview-page-accent-color);
+  font-family: var(--preview-page-accent-font);
   font-size: var(--preview-accent-fontsize);
 }
 
 .preview-item-with-dates .dates {
   grid-area: dates;
   color: var(--preview-detail-text-color);
+  font-family: var(--preview-page-detail-font);
   padding-left: 3em;
 }
 
@@ -36,17 +38,20 @@
   font-weight: 500;
   font-style: italic;
   color: var(--preview-detail-text-color);
+  font-family: var(--preview-page-detail-font);
   display: inline;
 }
 
 .preview-item-with-dates .address::before {
   content: ", ";
   color: var(--preview-detail-text-color);
+  font-family: var(--preview-page-detail-font);
 }
 
 .preview-item-with-dates .address {
   font-style: italic;
   color: var(--preview-detail-text-color);
+  font-family: var(--preview-page-detail-font);
   display: inline;
 }
 
