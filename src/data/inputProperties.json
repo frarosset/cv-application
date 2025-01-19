@@ -307,6 +307,121 @@
         "Saira Condensed"
       ]
     },
+    "headingFont": {
+      "required": true,
+      "type": "select",
+      "label": "Headings Font",
+      "options": [
+        "Poppins",
+        "Fira Sans",
+        "Montserrat",
+        "Raleway",
+        "Rubik",
+        "Saira",
+        "Blinker",
+        "Bitter",
+        "Lora",
+        "Playfair Display",
+        "Fira Code",
+        "Courier Prime",
+        "Source Code Pro",
+        "Playwrite IS",
+        "Fira Sans Condensed",
+        "Saira Condensed"
+      ]
+    },
+    "accentFont": {
+      "required": true,
+      "type": "select",
+      "label": "Accent Font",
+      "options": [
+        "Poppins",
+        "Fira Sans",
+        "Montserrat",
+        "Raleway",
+        "Rubik",
+        "Saira",
+        "Blinker",
+        "Bitter",
+        "Lora",
+        "Playfair Display",
+        "Fira Code",
+        "Courier Prime",
+        "Source Code Pro",
+        "Playwrite IS",
+        "Fira Sans Condensed",
+        "Saira Condensed"
+      ]
+    },
+    "detailFont": {
+      "required": true,
+      "type": "select",
+      "label": "Details Font",
+      "options": [
+        "Poppins",
+        "Fira Sans",
+        "Montserrat",
+        "Raleway",
+        "Rubik",
+        "Saira",
+        "Blinker",
+        "Bitter",
+        "Lora",
+        "Playfair Display",
+        "Fira Code",
+        "Courier Prime",
+        "Source Code Pro",
+        "Playwrite IS",
+        "Fira Sans Condensed",
+        "Saira Condensed"
+      ]
+    },
+    "fullNameFont": {
+      "required": true,
+      "type": "select",
+      "label": "Full Name Font",
+      "options": [
+        "Poppins",
+        "Fira Sans",
+        "Montserrat",
+        "Raleway",
+        "Rubik",
+        "Saira",
+        "Blinker",
+        "Bitter",
+        "Lora",
+        "Playfair Display",
+        "Fira Code",
+        "Courier Prime",
+        "Source Code Pro",
+        "Playwrite IS",
+        "Fira Sans Condensed",
+        "Saira Condensed"
+      ]
+    },
+    "titleFont": {
+      "required": true,
+      "type": "select",
+      "label": "Professional Title Font",
+      "options": [
+        "Poppins",
+        "Fira Sans",
+        "Montserrat",
+        "Raleway",
+        "Rubik",
+        "Saira",
+        "Blinker",
+        "Bitter",
+        "Lora",
+        "Playfair Display",
+        "Fira Code",
+        "Courier Prime",
+        "Source Code Pro",
+        "Playwrite IS",
+        "Fira Sans Condensed",
+        "Saira Condensed"
+      ]
+    },
     "accentColor": {
       "required": false,
       "type": "color",
@@ -315,12 +430,12 @@
     "headingColor": {
       "required": false,
       "type": "color",
-      "label": "Titles Color"
+      "label": "Headings Color"
     },
     "detailColor": {
       "required": false,
       "type": "color",
-      "label": "Detail Color"
+      "label": "Details Color"
     },
     "textColor": {
       "required": false,
