@@ -141,9 +141,9 @@
 
   /* --preview-page-accent-color: rgb(158, 11, 114); */
 
-  /* --preview-heading-text-color: var(--col-dark-1);
-  --preview-detail-text-color: var(--col-dark-3);
-  --preview-text-color: var(--col-dark-4); */
+  /* --preview-page-headings-color: var(--col-dark-1);
+  --preview-page-details-color: var(--col-dark-3);
+  --preview-page-text-color: var(--col-dark-4); */
 
   --preview-contacts-padding: 2cqw;
   --preview-contacts-fontsize: 1.5cqw;
@@ -162,8 +162,8 @@
   --preview-page-item-list-item-padding-top: 0.3em;
   --preview-page-item-list-gap: 0.5em;
 
-  /* --preview-page-heading-font: "Saira";
-  --preview-page-detail-font: "Fira Sans";
+  /* --preview-page-headings-font: "Saira";
+  --preview-page-details-font: "Fira Sans";
   --preview-page-accent-font: "Poppins";
   --preview-page-full-name-font: "Bitter";
   --preview-page-title-font: "Playwrite IS"; */

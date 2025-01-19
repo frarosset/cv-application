@@ -5,9 +5,9 @@
 }
 
 .preview-panel-with-list-and-dates h3 {
-  border-bottom: 2px solid var(--preview-text-color);
-  color: var(--preview-heading-text-color);
-  font-family: var(--preview-page-heading-font);
+  border-bottom: 2px solid var(--preview-page-text-color);
+  color: var(--preview-page-headings-color);
+  font-family: var(--preview-page-headings-font);
   font-size: var(--preview-panel-title-fontsize);
   font-weight: bold;
 }

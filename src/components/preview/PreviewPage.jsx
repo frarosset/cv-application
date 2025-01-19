@@ -51,12 +51,12 @@ function applyPagePersonalization(settings) {
   );
 
   document.documentElement.style.setProperty(
-    "--preview-page-heading-font",
+    "--preview-page-headings-font",
     settings.headingFont
   );
 
   document.documentElement.style.setProperty(
-    "--preview-page-detail-font",
+    "--preview-page-details-font",
     settings.detailFont
   );
 
@@ -82,17 +82,17 @@ function applyPagePersonalization(settings) {
   );
 
   document.documentElement.style.setProperty(
-    "--preview-heading-text-color",
+    "--preview-page-headings-color",
     settings.headingColor
   );
 
   document.documentElement.style.setProperty(
-    "--preview-detail-text-color",
+    "--preview-page-details-color",
     settings.detailColor
   );
 
   document.documentElement.style.setProperty(
-    "--preview-text-color",
+    "--preview-page-text-color",
     settings.textColor
   );
 }

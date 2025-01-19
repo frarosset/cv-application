@@ -23,8 +23,8 @@
 
 .preview-item-with-dates .dates {
   grid-area: dates;
-  color: var(--preview-detail-text-color);
-  font-family: var(--preview-page-detail-font);
+  color: var(--preview-page-details-color);
+  font-family: var(--preview-page-details-font);
   padding-left: 3em;
 }
 
@@ -37,28 +37,28 @@
 .preview-item-with-dates .issuer {
   font-weight: 500;
   font-style: italic;
-  color: var(--preview-detail-text-color);
-  font-family: var(--preview-page-detail-font);
+  color: var(--preview-page-details-color);
+  font-family: var(--preview-page-details-font);
   display: inline;
 }
 
 .preview-item-with-dates .address::before {
   content: ", ";
-  color: var(--preview-detail-text-color);
-  font-family: var(--preview-page-detail-font);
+  color: var(--preview-page-details-color);
+  font-family: var(--preview-page-details-font);
 }
 
 .preview-item-with-dates .address {
   font-style: italic;
-  color: var(--preview-detail-text-color);
-  font-family: var(--preview-page-detail-font);
+  color: var(--preview-page-details-color);
+  font-family: var(--preview-page-details-font);
   display: inline;
 }
 
 .preview-item-with-dates > .other-info,
 .preview-item-with-dates > .description {
   grid-area: other;
-  color: var(--preview-text-color);
+  color: var(--preview-page-text-color);
   padding-top: var(--preview-page-item-list-item-padding-top);
 }
 
