@@ -1,7 +1,7 @@
 .input-with-label {
   display: flex;
   gap: var(--label-input-gap);
-  align-items: baseline;
+  align-items: center;
 }
 
 .input-with-label label {
