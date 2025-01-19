@@ -128,6 +128,11 @@
     "headingColor": "#131c28",
     "detailColor": "#595c61",
     "textColor": "#808080",
-    "mainFont": "Poppins"
+    "mainFont": "Fira Sans Condensed",
+    "headingFont": "Saira",
+    "accentFont": "Poppins",
+    "detailFont": "Fira Sans",
+    "fullNameFont": "Bitter",
+    "titleFont": "Playwrite IS"
   }
 }

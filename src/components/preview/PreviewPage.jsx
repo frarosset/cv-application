@@ -50,6 +50,31 @@ function applyPagePersonalization(settings) {
     settings.mainFont
   );
 
+  document.documentElement.style.setProperty(
+    "--preview-page-heading-font",
+    settings.headingFont
+  );
+
+  document.documentElement.style.setProperty(
+    "--preview-page-detail-font",
+    settings.detailFont
+  );
+
+  document.documentElement.style.setProperty(
+    "--preview-page-accent-font",
+    settings.accentFont
+  );
+
+  document.documentElement.style.setProperty(
+    "--preview-page-full-name-font",
+    settings.fullNameFont
+  );
+
+  document.documentElement.style.setProperty(
+    "--preview-page-title-font",
+    settings.titleFont
+  );
+
   // Colors
   document.documentElement.style.setProperty(
     "--preview-page-accent-color",
