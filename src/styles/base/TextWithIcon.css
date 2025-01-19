@@ -1,6 +1,6 @@
 .text-with-icon {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.5em;
 }
 
@@ -10,7 +10,3 @@
   width: 1.1em;
   height: 1.1em;
 }
-
-/* .text-with-icon {
-  vertical-align: center;
-} */

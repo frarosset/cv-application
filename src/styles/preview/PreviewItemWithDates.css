@@ -50,8 +50,8 @@
   display: inline;
 }
 
-.preview-item-with-dates .other-info,
-.preview-item-with-dates .description {
+.preview-item-with-dates > .other-info,
+.preview-item-with-dates > .description {
   grid-area: other;
   color: var(--preview-text-color);
   padding-top: var(--preview-page-item-list-item-padding-top);

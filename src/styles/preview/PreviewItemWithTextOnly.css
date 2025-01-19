@@ -12,6 +12,11 @@
   white-space: pre;
 }
 
+.skills .preview-item-with-text-only-text-blocks,
+.languages .preview-item-with-text-only-text-blocks {
+  line-height: var(--preview-about-me-fontsize);
+}
+
 .languages .preview-item-with-text-only-text-blocks .text:not(.heading)::before,
 .skills .preview-item-with-text-only-text-blocks .text:not(.heading)::before {
   content: " - ";
