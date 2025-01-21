@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect, useRef } from "react";
 
 // This custom hooks is used to check if an element has overflow.
 
@@ -21,21 +21,30 @@ import { useState, useLayoutEffect } from "react";
 const useIsOverflow = (ref, isVerticalOverflow, postCallback, preCallback) => {
   const [isOverflow, setIsOverflow] = useState(undefined);
 
+  // the next variable is used to fix the following error:
+  // "React: ResizeObserver loop completed with undelivered notifications"
+  // see: https://stackoverflow.com/a/77591424
+  const resizingDelayTimer = useRef(null);
+
   useLayoutEffect(() => {
     const { current } = ref;
 
     const trigger = () => {
-      if (preCallback) preCallback();
+      clearTimeout(resizingDelayTimer.current);
+      resizingDelayTimer.current = setTimeout(() => {
+        if (preCallback) preCallback();
 
-      const { clientWidth, scrollWidth, clientHeight, scrollHeight } = current;
+        const { clientWidth, scrollWidth, clientHeight, scrollHeight } =
+          current;
 
-      const hasOverflow = isVerticalOverflow
-        ? scrollHeight > clientHeight
-        : scrollWidth > clientWidth;
+        const hasOverflow = isVerticalOverflow
+          ? scrollHeight > clientHeight
+          : scrollWidth > clientWidth;
 
-      setIsOverflow(hasOverflow);
+        setIsOverflow(hasOverflow);
 
-      if (postCallback) postCallback(hasOverflow);
+        if (postCallback) postCallback(hasOverflow);
+      }, 100);
     };
 
     if (current) {
