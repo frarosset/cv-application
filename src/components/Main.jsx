@@ -9,20 +9,57 @@ import "../styles/Main.css";
 
 const hasOVerflowXCssClass = "has-overflow-y";
 
+const getFromLocalStorage = (name) => () => {
+  const storedData = JSON.parse(localStorage.getItem(name));
+  return storedData ? storedData : sampleData[name];
+};
+
 function Main() {
-  const [personalInfo, setPersonalInfo] = useState(sampleData.personalInfo);
-  const [education, setEducation] = useState(sampleData.education);
-  const [professionalExperience, setProfessionalExperience] = useState(
-    sampleData.professionalExperience
+  // Initialize states with values from Local Storage (see getFromLocalStorage())
+  const [personalInfo, setPersonalInfo] = useState(
+    getFromLocalStorage("personalInfo")
   );
-  const [skills, setSkills] = useState(sampleData.skills);
-  const [languages, setLanguages] = useState(sampleData.languages);
+  const [education, setEducation] = useState(getFromLocalStorage("education"));
+  const [professionalExperience, setProfessionalExperience] = useState(
+    getFromLocalStorage("professionalExperience")
+  );
+  const [skills, setSkills] = useState(getFromLocalStorage("skills"));
+  const [languages, setLanguages] = useState(getFromLocalStorage("languages"));
   const [coursesAndCertificates, setCoursesAndCertificates] = useState(
-    sampleData.coursesAndCertificates
+    getFromLocalStorage("coursesAndCertificates")
   );
   const [personalization, setPersonalization] = useState(
-    sampleData.personalization
+    getFromLocalStorage("personalization")
   );
+
+  // Initialize effects to update values in Local Storage ----------------------
+  useEffect(() => {
+    localStorage.setItem("personalInfo", JSON.stringify(personalInfo));
+  }, [personalInfo]);
+  useEffect(() => {
+    localStorage.setItem("education", JSON.stringify(education));
+  }, [education]);
+  useEffect(() => {
+    localStorage.setItem(
+      "professionalExperience",
+      JSON.stringify(professionalExperience)
+    );
+  }, [professionalExperience]);
+  useEffect(() => {
+    localStorage.setItem("skills", JSON.stringify(skills));
+  }, [skills]);
+  useEffect(() => {
+    localStorage.setItem("languages", JSON.stringify(languages));
+  }, [languages]);
+  useEffect(() => {
+    localStorage.setItem(
+      "coursesAndCertificates",
+      JSON.stringify(coursesAndCertificates)
+    );
+  }, [coursesAndCertificates]);
+  useEffect(() => {
+    localStorage.setItem("personalization", JSON.stringify(personalization));
+  }, [personalization]);
 
   /* *************************************************************************** */
   // A base layout style might be  specified. This is used to set a hasOVerflowXCssClass
