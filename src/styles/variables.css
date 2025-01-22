@@ -27,7 +27,7 @@
   --col-accent-2: var(--col-light-accent-2);
 
   /* Colors (background)*/
-  --bg-col: var(--col-light-1);
+  --bg-col: var(--col-light-3);
   --header-bg-col: var(--col-accent-2);
 
   --editor-bg-col: var(--col-light-3);
@@ -204,7 +204,7 @@
   --col-accent-2: var(--col-dark-accent-2);
 
   /* Colors (background)*/
-  --bg-col: var(--col-dark-2);
+  --bg-col: var(--col-dark-1);
   --header-bg-col: var(--col-dark-2);
 
   --editor-bg-col: var(--col-dark-1);

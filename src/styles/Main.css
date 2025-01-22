@@ -4,10 +4,12 @@ main {
   flex-direction: row;
   overflow-y: hidden;
   overflow-x: auto;
+  min-height: 0;
 }
 
 main .preview-panel {
   flex: 1;
+  min-height: 0;
 }
 
 /* Modify layout when base layout has overflow */
