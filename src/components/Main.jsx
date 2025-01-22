@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import useIsOverflow from "../customHooks/useIsOverflow.js";
 import EditPanel from "./editor/EditPanel.jsx";
 import PreviewPanel from "./preview/PreviewPanel.jsx";
@@ -44,6 +44,18 @@ function Main() {
 
   useIsOverflow(ref, false, isOverflowXPostCallback, isOverflowXPreCallback);
   /* *************************************************************************** */
+
+  /* set page title */
+  useEffect(() => {
+    const name = personalInfo.name ? personalInfo.name : "";
+    const surname = personalInfo.surname ? personalInfo.surname : "";
+
+    const fullName =
+      name != "" ? (surname != "" ? `${name} ${surname}` : name) : surname;
+
+    const titleStr = fullName != "" ? `CV of ${fullName}` : "CV Application";
+    document.title = titleStr;
+  }, [personalInfo.name, personalInfo.surname]);
 
   return (
     <main ref={ref}>
