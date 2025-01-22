@@ -5,13 +5,16 @@ import PreviewPanel from "./preview/PreviewPanel.jsx";
 import PrintButton from "./functionalities/PrintButton.jsx";
 import DownloadButton from "./functionalities/DownloadButton.jsx";
 import sampleData from "../data/sampleData.json";
+import blankData from "../data/blankData.json";
 import "../styles/Main.css";
 
 const hasOVerflowXCssClass = "has-overflow-y";
 
 const getFromLocalStorage = (name) => () => {
   const storedData = JSON.parse(localStorage.getItem(name));
-  return storedData ? storedData : sampleData[name];
+  return storedData
+    ? storedData
+    : Object.assign({}, blankData[name], sampleData[name]);
 };
 
 function Main() {

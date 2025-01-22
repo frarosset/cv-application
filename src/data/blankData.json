@@ -1,0 +1,36 @@
+{
+  "personalInfo": {},
+  "education": {
+    "allIds": [],
+    "byId": {}
+  },
+  "professionalExperience": {
+    "allIds": [],
+    "byId": {}
+  },
+  "skills": {
+    "allIds": [],
+    "byId": {}
+  },
+  "languages": {
+    "allIds": [],
+    "byId": {}
+  },
+  "coursesAndCertificates": {
+    "allIds": [],
+    "byId": {}
+  },
+  "personalization": {
+    "format": "A4",
+    "accentColor": "#9E0B90",
+    "headingColor": "#131c28",
+    "detailColor": "#595c61",
+    "textColor": "#808080",
+    "mainFont": "Poppins",
+    "headingFont": "Poppins",
+    "accentFont": "Poppins",
+    "detailFont": "Poppins",
+    "fullNameFont": "Poppins",
+    "titleFont": "Poppins"
+  }
+}
