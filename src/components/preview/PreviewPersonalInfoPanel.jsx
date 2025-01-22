@@ -55,15 +55,6 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
   return (
     <div className="preview-personal-info-panel">
       <h3>Personal Info</h3>
-      <div className="full-name">
-        {textPropertiesFullName.map((prop) => (
-          <Text key={prop} customClass={prop} value={personalInfo[prop]} />
-        ))}
-      </div>
-      {textPropertiesOther.map((prop) => (
-        <Text key={prop} customClass={prop} value={personalInfo[prop]} />
-      ))}
-
       <div className="contact-list" ref={ref}>
         {textWithIconsProperties.map((prop) => {
           const value = personalInfo[prop];
@@ -79,6 +70,18 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
           );
         })}
       </div>
+
+      <div className="full-name">
+        {textPropertiesFullName.map((prop) => {
+          const value = personalInfo[prop];
+          return value && <Text key={prop} customClass={prop} value={value} />;
+        })}
+      </div>
+
+      {textPropertiesOther.map((prop) => {
+        const value = personalInfo[prop];
+        return value && <Text key={prop} customClass={prop} value={value} />;
+      })}
     </div>
   );
 }
