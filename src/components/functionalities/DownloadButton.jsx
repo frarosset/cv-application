@@ -28,15 +28,15 @@ function downloadPdf(filename, format, fontFaces) {
     unit: "px",
     hotfixes: ["px_scaling"],
     putOnlyUsedFonts: true,
+    compress: true,
     format: format,
   });
 
   const source = document.querySelector(".preview-page");
   const height = doc.internal.pageSize.getHeight();
   const width = doc.internal.pageSize.getWidth();
-  const sourceWidth = source.scrollWidth;
+  const sourceWidth = source.offsetWidth;
   const marginTBInPixels = Math.round(height * 0.05);
-  // const fontFamily = source.style.fontFamily;
 
   const options = {
     background: "#fff",
@@ -54,7 +54,9 @@ function downloadPdf(filename, format, fontFaces) {
       scale: width / sourceWidth,
       onclone: (doc, element) => {
         // this allows to modify the html to be exported for printing, without actually showing any difference in the dom
-        element.querySelector(".preview-page").classList.add(printingClass);
+        const clonedSource = element.querySelector(".preview-page");
+        clonedSource.classList.add(printingClass);
+        clonedSource.style.width = `${sourceWidth}px`;
       },
     },
     fontFaces: fontFaces.reduce((arr, font) => {
