@@ -54,48 +54,12 @@ main.has-overflow-y .group-of-btns {
 }
 
 main .functionality-btn {
-  color: var(--round-btn-color);
-  background-color: var(--round-btn-bg-color);
-  opacity: var(--round-btn-opacity);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: var(--round-btn-padding);
-  border-radius: 50%;
-  aspect-ratio: 1;
-  border: none;
-}
-main .functionality-btn span,
-main .functionality-btn svg {
-  width: var(--round-btn-size);
-  height: var(--round-btn-size);
-}
-
-/* when hover is supported */
-@media not all and (hover: none) {
-  main .functionality-btn:hover {
-    opacity: 1 !important;
-    box-shadow: var(--box-shadow);
-  }
-  main .functionality-btn:hover span {
-    transform: scale(1.1);
-  }
-}
-
-main .functionality-btn:active {
-  opacity: 1 !important;
-  box-shadow: var(--box-shadow);
-}
-main .functionality-btn:active span {
-  transform: scale(1);
-}
-
-main .functionality-btn:focus {
-  outline: none;
-}
-
-main .functionality-btn:focus-visible {
-  outline: 2px solid var(--round-btn-color);
+  --button-col: var(--round-btn-color);
+  --button-bg-col: var(--round-btn-bg-color);
+  --button-opacity: var(--round-btn-opacity);
+  --button-padding: var(--round-btn-double-padding);
+  --button-radius: 50%;
+  --button-size: var(--round-btn-size);
 }
 
 /* some functionality buttons are shown only on hover */

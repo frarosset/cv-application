@@ -2,7 +2,7 @@
   background-color: var(--editor-bg-col);
   padding: var(--editor-padding);
   padding-bottom: calc(
-    2 * (var(--page-padding-ud) + var(--round-btn-padding)) +
+    2 * (var(--page-padding-ud) + var(--round-btn-double-padding)) +
       var(--round-btn-size)
   );
   z-index: 1;
@@ -26,48 +26,22 @@
   display: flex;
 }
 
-.edit-panel .edit-panel-button svg {
-  height: var(--editor-section-button-icon-size);
-  width: var(--editor-section-button-icon-size);
-}
-
 .edit-panel .edit-panel-button {
+  --button-col: var(--col-txt);
+  --button-bg-col: var(--editor-section-button-color);
+  --button-col-hover: var(--edit-section-highlight-color-secondary);
+  --button-bg-col-hover: var(--editor-section-button-color-secondary);
+  --button-padding: var(--editor-section-button-padding);
+  --button-radius: var(--editor-form-gap) var(--editor-form-gap) 0 0;
+  --button-size: var(--editor-section-button-icon-size);
+  --button-shadow: var(--box-shadow);
+
   flex: 0 0 1;
   min-width: 0;
 
-  background-color: var(--editor-section-button-color);
-  border: none !important;
-  outline: none !important;
-
-  padding: var(--editor-section-button-padding);
-  border-radius: var(--editor-form-gap) var(--editor-form-gap) 0 0;
-  box-shadow: var(--box-shadow);
   /* hide shadow below the bitton */
   --len: calc(-1 * var(--box-shadow-size));
   clip-path: inset(var(--len) var(--len) 0px var(--len));
-}
-
-/* when hover is supporte */
-@media not all and (hover: none) {
-  .edit-panel .edit-panel-button:hover {
-    background-color: var(--editor-section-button-color-secondary);
-    color: var(--edit-section-highlight-color-secondary);
-  }
-
-  .edit-panel .edit-panel-button:hover svg {
-    transform: scale(1.1);
-  }
-}
-
-.edit-panel .edit-panel-button:active svg {
-  transform: scale(1);
-}
-
-/* .edit-panel .edit-panel-button:active, */
-.edit-panel .edit-panel-button:focus,
-.edit-panel .edit-panel-button:focus-visible {
-  background-color: var(--editor-section-button-color-secondary);
-  color: var(--edit-section-highlight-color-secondary);
 }
 
 .edit-panel .edit-panel-button.current {

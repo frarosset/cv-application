@@ -6,49 +6,20 @@
 }
 
 .edit-item-position-in-list-button {
-  background-color: var(--editor-section-bg-col);
-  color: var(--col-txt);
+  --button-col: var(--col-txt);
+  --button-col-hover: var(--edit-section-highlight-color-secondary);
+  --button-bg-col: var(--editor-section-bg-col);
+  --button-shadow-hover: none;
+  --button-radius: 50%;
+  --button-padding: var(--editor-section-button-item-padding);
+  --button-size: var(--editor-section-button-icon-size);
 
   aspect-ratio: 1;
   min-height: 0;
-  border-radius: 50%;
-  border: none !important;
-
-  padding: var(--editor-section-button-item-padding);
-}
-
-.edit-item-position-in-list-button .icon,
-.edit-item-position-in-list-button svg {
-  height: var(--editor-section-button-icon-size);
-  width: var(--editor-section-button-icon-size);
 }
 
 /* hide if item is empty (no item to edit) */
 .empty-item > .edit-item-position-in-list-buttons {
   visibility: hidden;
   pointer-events: none;
-}
-
-/* when hover is supported */
-@media not all and (hover: none) {
-  .edit-item-position-in-list-button:hover {
-    color: var(--edit-section-highlight-color-secondary);
-  }
-
-  .edit-item-position-in-list-button:hover svg {
-    transform: scale(1.1);
-  }
-}
-
-.edit-item-position-in-list-button:focus,
-.edit-item-position-in-list-button:focus-visible {
-  outline: none;
-}
-
-.edit-item-position-in-list-button:focus-visible {
-  color: var(--edit-section-highlight-color-secondary);
-}
-
-.edit-item-position-in-list-button:active svg {
-  transform: scale(1);
 }

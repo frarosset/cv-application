@@ -1,4 +1,5 @@
 import Icon from "./Icon.jsx";
+import "../../styles/base/Button.css";
 
 function Button({
   customCssClass,

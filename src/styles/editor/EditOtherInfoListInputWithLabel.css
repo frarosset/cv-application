@@ -33,20 +33,15 @@
 }
 
 .editor-other-info .edit-list-selection-new-item-button {
-  border-radius: var(--button-border-radius);
-  padding: var(--editor-section-button-small-padding);
+  --button-padding: var(--editor-section-button-small-padding);
+  --button-size: var(--input-fontsize);
+
   align-self: flex-start;
   margin-top: var(--max-shadow-outline-size);
 }
 
-.editor-other-info .edit-list-selection-new-item-button .icon,
-.editor-other-info .edit-list-selection-new-item-button svg {
-  height: var(--input-fontsize);
-  width: var(--input-fontsize);
-}
-
 .editor-other-info .edit-list-selection-item-button {
-  padding: var(--editor-section-button-small-padding);
+  --button-padding: var(--editor-section-button-small-padding);
   font-size: var(--input-fontsize);
   line-height: 1;
   min-width: 2.2em;

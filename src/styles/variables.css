@@ -29,6 +29,7 @@
   /* Colors (background)*/
   --bg-col: var(--col-light-3);
   --header-bg-col: var(--col-accent-2);
+  --header-dropdown-bg-col: var(--col-accent-1);
 
   --editor-bg-col: var(--col-light-3);
   --editor-section-bg-col: var(--col-light-2);
@@ -113,7 +114,8 @@
   --preview-padding-lr: var(--page-padding-lr);
   --preview-padding: var(--page-padding);
 
-  --round-btn-padding: 1rem;
+  --round-btn-padding: 0.5rem;
+  --round-btn-double-padding: 1rem;
   --round-btn-size: 1.5rem;
 
   /* Radius / borders */
@@ -206,6 +208,7 @@
   /* Colors (background)*/
   --bg-col: var(--col-dark-1);
   --header-bg-col: var(--col-dark-2);
+  --header-dropdown-bg-col: var(--col-accent-1);
 
   --editor-bg-col: var(--col-dark-1);
   --editor-section-bg-col: var(--col-dark-2);

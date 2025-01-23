@@ -1,0 +1,72 @@
+button {
+  --button-col: var(--col-txt);
+  --button-col-hover: var(--button-col);
+  --button-bg-col: var(--bg-col);
+  --button-bg-col-hover: var(--button-bg-col);
+  --button-opacity: 1;
+  --button-opacity-hover: 1;
+  --button-padding: calc(var(--round-btn-padding) / 2);
+  --button-radius: 0;
+  --button-border: none;
+  --button-outline: none;
+  --button-size: var(--round-btn-size);
+  --button-shadow: none;
+  --button-shadow-hover: var(--box-shadow);
+
+  color: var(--button-col);
+  background-color: var(--button-bg-col);
+  opacity: var(--button-opacity);
+  box-shadow: var(--button-shadow);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+
+  border: var(--button-border);
+  outline: var(--button-outline);
+
+  cursor: pointer;
+}
+
+button span,
+button svg {
+  width: var(--button-size);
+  height: var(--button-size);
+}
+
+/* when hover is supported */
+@media not all and (hover: none) {
+  button:hover {
+    opacity: var(--button-opacity-hover) !important;
+    box-shadow: var(--button-shadow-hover);
+    color: var(--button-col-hover);
+    background-color: var(--button-bg-col-hover);
+  }
+  button:hover span {
+    transform: scale(1.1);
+  }
+}
+
+button:active {
+  opacity: var(--button-opacity-hover) !important;
+  box-shadow: var(--button-shadow-hover);
+  color: var(--button-col-hover);
+  background-color: var(--button-bg-col-hover);
+}
+button:active span {
+  transform: scale(1);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--button-col-hover);
+  outline-offset: -1px;
+  color: var(--button-col-hover);
+  background-color: var(--button-bg-col-hover);
+}

@@ -14,6 +14,7 @@ header h1 {
   font-family: var(--h1-font);
   font-weight: bold;
   color: var(--h1-color);
+  flex: 1;
 }
 
 header .group-of-btns {
@@ -23,60 +24,16 @@ header .group-of-btns {
 }
 
 header .functionality-btn {
-  color: var(--header-btn-col);
-  background-color: var(--header-btn-bg-col);
-
-  opacity: var(--round-btn-opacity);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: calc(var(--round-btn-padding) / 2);
-  border-radius: 50%;
-  aspect-ratio: 1;
-
-  border: none;
+  --button-col: var(--header-btn-col);
+  --button-bg-col: var(--header-btn-bg-col);
+  --button-opacity: var(--round-btn-opacity);
+  --button-padding: var(--round-btn-padding);
+  --button-radius: 50%;
+  --button-size: var(--round-btn-size);
 }
-header .functionality-btn span,
-header .functionality-btn svg {
-  width: var(--round-btn-size);
-  height: var(--round-btn-size);
-}
-
-/* when hover is supported */
-@media not all and (hover: none) {
-  header .functionality-btn:hover {
-    opacity: 1 !important;
-    box-shadow: var(--box-shadow);
-  }
-  header .functionality-btn:hover span {
-    transform: scale(1.1);
-  }
-  header .dark-theme-btn:hover {
-    background-color: var(--dark-theme-btn-hightlight-bg-col);
-    color: var(--dark-theme-btn-hightlight-col);
-    box-shadow: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
-      var(--dark-theme-btn-hightlight-box-shadow-col) inset;
-  }
-}
-
-header .functionality-btn:active {
-  opacity: 1 !important;
-  box-shadow: var(--box-shadow);
-}
-header .functionality-btn:active span {
-  transform: scale(1);
-}
-header .dark-theme-btn:active {
-  background-color: var(--dark-theme-btn-hightlight-bg-col);
-  color: var(--dark-theme-btn-hightlight-col);
-  box-shadow: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
+header .dark-theme-btn {
+  --button-col-hover: var(--dark-theme-btn-hightlight-col);
+  --button-bg-col-hover: var(--dark-theme-btn-hightlight-bg-col);
+  --button-shadow-hover: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
     var(--dark-theme-btn-hightlight-box-shadow-col) inset;
-}
-
-header .functionality-btn:focus {
-  outline: none;
-}
-
-header .functionality-btn:focus-visible {
-  outline: 2px solid var(--round-btn-color);
 }
