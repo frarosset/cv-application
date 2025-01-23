@@ -34,6 +34,8 @@ import Download from "../../assets/icons/download.svg?react";
 import Printer from "../../assets/icons/printer.svg?react";
 import Sun from "../../assets/icons/sun.svg?react";
 import Moon from "../../assets/icons/moon.svg?react";
+import Menu from "../../assets/icons/menu.svg?react";
+import X from "../../assets/icons/x.svg?react";
 
 import AddNew from "../../assets/icons/plus.svg?react";
 import Delete from "../../assets/icons/trash.svg?react";
@@ -59,6 +61,8 @@ const IconComponents = {
     printer: Printer,
     sun: Sun,
     moon: Moon,
+    menu: Menu,
+    x: X,
     addNew: AddNew,
     delete: Delete,
     moveBack: MoveBack,
