@@ -17,11 +17,25 @@ function App() {
     document.title = titleStr;
   }, [titleStr]);
 
+  /* set download options for jsPdf */
+  const downloadOptions = {
+    filename: titleStr,
+    format: dataStateProps.personalization.format,
+    fontFaces: [
+      dataStateProps.personalization.mainFont,
+      dataStateProps.personalization.headingFont,
+      dataStateProps.personalization.accentFont,
+      dataStateProps.personalization.detailFont,
+      dataStateProps.personalization.fullNameFont,
+      dataStateProps.personalization.titleFont,
+    ],
+  };
+
   return (
     <>
       <div className={`app-container ${darkThemeSet ? "dark-theme" : ""}`}>
         <Header {...{ darkThemeSet, setDarkThemeSet }} />
-        <Main {...{ dataStateProps, dataSetStateProps }} />
+        <Main {...{ dataStateProps, dataSetStateProps, downloadOptions }} />
         <CreditFooter darkTheme={darkThemeSet} />
       </div>
     </>

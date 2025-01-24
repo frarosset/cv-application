@@ -8,7 +8,7 @@ import "../styles/Main.css";
 
 const hasOVerflowXCssClass = "has-overflow-y";
 
-function Main({ dataStateProps, dataSetStateProps }) {
+function Main({ dataStateProps, dataSetStateProps, downloadOptions }) {
   /* *************************************************************************** */
   // A base layout style might be  specified. This is used to set a hasOVerflowXCssClass
   // css class whenever the base layout overflows horizontally, which can have a
@@ -30,27 +30,13 @@ function Main({ dataStateProps, dataSetStateProps }) {
   useIsOverflow(ref, false, isOverflowXPostCallback, isOverflowXPreCallback);
   /* *************************************************************************** */
 
-  const personalInfo = dataStateProps.personalInfo;
-  const personalization = dataStateProps.personalization;
-
   return (
     <main ref={ref}>
       <EditPanel {...{ ...dataStateProps, ...dataSetStateProps }} />
       <PreviewPanel {...dataStateProps} />
       <div className="group-of-btns">
         <PrintButton />
-        <DownloadButton
-          filename={`cv_of_${personalInfo.name}_${personalInfo.surname}`}
-          format={personalization.format}
-          fontFaces={[
-            personalization.mainFont,
-            personalization.headingFont,
-            personalization.accentFont,
-            personalization.detailFont,
-            personalization.fullNameFont,
-            personalization.titleFont,
-          ]}
-        />
+        <DownloadButton {...{ ...downloadOptions }} />
       </div>
     </main>
   );
