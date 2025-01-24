@@ -1,69 +1,14 @@
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import useIsOverflow from "../customHooks/useIsOverflow.js";
 import EditPanel from "./editor/EditPanel.jsx";
 import PreviewPanel from "./preview/PreviewPanel.jsx";
 import PrintButton from "./functionalities/PrintButton.jsx";
 import DownloadButton from "./functionalities/DownloadButton.jsx";
-import sampleData from "../data/sampleData.json";
-import blankData from "../data/blankData.json";
 import "../styles/Main.css";
 
 const hasOVerflowXCssClass = "has-overflow-y";
 
-const getFromLocalStorage = (name) => () => {
-  const storedData = JSON.parse(localStorage.getItem(name));
-  return storedData
-    ? storedData
-    : Object.assign({}, blankData[name], sampleData[name]);
-};
-
-function Main() {
-  // Initialize states with values from Local Storage (see getFromLocalStorage())
-  const [personalInfo, setPersonalInfo] = useState(
-    getFromLocalStorage("personalInfo")
-  );
-  const [education, setEducation] = useState(getFromLocalStorage("education"));
-  const [professionalExperience, setProfessionalExperience] = useState(
-    getFromLocalStorage("professionalExperience")
-  );
-  const [skills, setSkills] = useState(getFromLocalStorage("skills"));
-  const [languages, setLanguages] = useState(getFromLocalStorage("languages"));
-  const [coursesAndCertificates, setCoursesAndCertificates] = useState(
-    getFromLocalStorage("coursesAndCertificates")
-  );
-  const [personalization, setPersonalization] = useState(
-    getFromLocalStorage("personalization")
-  );
-
-  // Initialize effects to update values in Local Storage ----------------------
-  useEffect(() => {
-    localStorage.setItem("personalInfo", JSON.stringify(personalInfo));
-  }, [personalInfo]);
-  useEffect(() => {
-    localStorage.setItem("education", JSON.stringify(education));
-  }, [education]);
-  useEffect(() => {
-    localStorage.setItem(
-      "professionalExperience",
-      JSON.stringify(professionalExperience)
-    );
-  }, [professionalExperience]);
-  useEffect(() => {
-    localStorage.setItem("skills", JSON.stringify(skills));
-  }, [skills]);
-  useEffect(() => {
-    localStorage.setItem("languages", JSON.stringify(languages));
-  }, [languages]);
-  useEffect(() => {
-    localStorage.setItem(
-      "coursesAndCertificates",
-      JSON.stringify(coursesAndCertificates)
-    );
-  }, [coursesAndCertificates]);
-  useEffect(() => {
-    localStorage.setItem("personalization", JSON.stringify(personalization));
-  }, [personalization]);
-
+function Main({ dataStateProps, dataSetStateProps }) {
   /* *************************************************************************** */
   // A base layout style might be  specified. This is used to set a hasOVerflowXCssClass
   // css class whenever the base layout overflows horizontally, which can have a
@@ -85,6 +30,9 @@ function Main() {
   useIsOverflow(ref, false, isOverflowXPostCallback, isOverflowXPreCallback);
   /* *************************************************************************** */
 
+  const personalInfo = dataStateProps.personalInfo;
+  const personalization = dataStateProps.personalization;
+
   /* set page title */
   useEffect(() => {
     const name = personalInfo.name ? personalInfo.name : "";
@@ -99,31 +47,8 @@ function Main() {
 
   return (
     <main ref={ref}>
-      <EditPanel
-        personalInfo={personalInfo}
-        setPersonalInfo={setPersonalInfo}
-        education={education}
-        setEducation={setEducation}
-        professionalExperience={professionalExperience}
-        setProfessionalExperience={setProfessionalExperience}
-        skills={skills}
-        setSkills={setSkills}
-        languages={languages}
-        setLanguages={setLanguages}
-        coursesAndCertificates={coursesAndCertificates}
-        setCoursesAndCertificates={setCoursesAndCertificates}
-        personalization={personalization}
-        setPersonalization={setPersonalization}
-      />
-      <PreviewPanel
-        personalInfo={personalInfo}
-        education={education}
-        professionalExperience={professionalExperience}
-        skills={skills}
-        languages={languages}
-        coursesAndCertificates={coursesAndCertificates}
-        personalization={personalization}
-      />
+      <EditPanel {...{ ...dataStateProps, ...dataSetStateProps }} />
+      <PreviewPanel {...dataStateProps} />
       <div className="group-of-btns">
         <PrintButton />
         <DownloadButton
