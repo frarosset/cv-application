@@ -29,8 +29,11 @@ header .functionality-btn {
   --button-bg-col: var(--header-btn-bg-col);
   --button-opacity: var(--round-btn-opacity);
   --button-padding: var(--round-btn-padding);
-  --button-radius: 50%;
+  --button-radius: 0;
   --button-size: var(--round-btn-size);
+}
+header .functionality-btn:focus-visible {
+  --button-radius: 50%;
 }
 header .dark-theme-btn {
   --button-col-hover: var(--dark-theme-btn-hightlight-col);
@@ -59,6 +62,8 @@ header .drop-down-menu-items {
   --drop-down-menu-items-radius: 0;
   --drop-down-menu-items-radius-br: 0;
   --drop-down-menu-items-width: 100dvw;
+  --drop-down-menu-items-space-height: 1em;
+  --drop-down-menu-items-opacity: 0.9;
 
   --len: calc(-1 * var(--box-shadow-size));
   clip-path: inset(0px var(--len) var(--len) var(--len));
@@ -80,13 +85,21 @@ header .drop-down-menu-items::before {
 header .drop-down-menu-items button {
   --button-col: var(--col-txt-alt);
   --button-bg-col: var(--header-dropdown-bg-col);
-  --button-opacity: 0.9;
+  --button-opacity: var(--drop-down-menu-items-opacity);
   --button-padding: var(--round-btn-padding) var(--round-btn-double-padding);
-  --button-size: var(--round-btn-size);
+  --button-size: 1em;
+  --button-gap: 0.5em;
 }
 
 header .drop-down-menu-items button:hover {
-  font-weight: bold;
+  font-weight: 600;
+}
+
+header .drop-down-menu-items div.space {
+  content: "";
+  height: var(--drop-down-menu-items-space-height);
+  background-color: var(--header-dropdown-bg-col);
+  opacity: var(--drop-down-menu-items-opacity);
 }
 
 /* tablet or larger, or landscape (vs portrait), 641px (phone), 961px (tablet) */

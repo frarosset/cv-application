@@ -37,11 +37,11 @@
 
   justify-content: flex-start;
 }
-.drop-down-menu-items button:first-of-type {
+.drop-down-menu-items > *:first-child {
   border-top-left-radius: var(--drop-down-menu-items-radius-tl);
   border-top-right-radius: var(--drop-down-menu-items-radius-tr);
 }
-.drop-down-menu-items button:last-of-type {
+.drop-down-menu-items > *:last-child {
   border-bottom-right-radius: var(--drop-down-menu-items-radius-br);
   border-bottom-left-radius: var(--drop-down-menu-items-radius-bl);
 }

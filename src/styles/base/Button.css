@@ -12,6 +12,7 @@ button {
   --button-size: var(--round-btn-size);
   --button-shadow: none;
   --button-shadow-hover: var(--box-shadow);
+  --button-gap: 0;
 
   color: var(--button-col);
   background-color: var(--button-bg-col);
@@ -21,6 +22,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: var(--button-gap);
 
   padding: var(--button-padding);
   border-radius: var(--button-radius);

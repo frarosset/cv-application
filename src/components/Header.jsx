@@ -13,11 +13,13 @@ function Header({
   return (
     <header>
       <DropDownMenu>
+        <div className="space" />
         <ClearDataButton clearDataCallback={setBlankData} showText={true} />
         <LoadSampleDataButton
           loadSampleDataCallback={setSampleData}
           showText={true}
         />
+        <div className="space" />
       </DropDownMenu>
       <h1>CV Application</h1>
       <div className="group-of-btns">

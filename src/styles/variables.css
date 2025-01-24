@@ -85,7 +85,7 @@
   --page-padding-ud: 1rem;
   --page-padding: var(--page-padding-ud) var(--page-padding-lr);
 
-  --header-padding-ud: 2vw;
+  --header-padding-ud: min(2vw, 0.5rem);
   --header-padding-lr: var(--page-padding-lr);
   --header-padding: var(--header-padding-ud) var(--header-padding-lr);
 
