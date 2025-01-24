@@ -6,6 +6,8 @@ function Button({
   iconName,
   text,
   onClickCallback,
+  onFocusCallback,
+  onBlurCallback,
   type = "button",
 }) {
   const icon = iconName != null && <Icon name={iconName} />;
@@ -14,6 +16,8 @@ function Button({
     <button
       className={`button ${customCssClass}`}
       onClick={onClickCallback}
+      onFocus={onFocusCallback}
+      onBlur={onBlurCallback}
       type={type}
     >
       {icon}

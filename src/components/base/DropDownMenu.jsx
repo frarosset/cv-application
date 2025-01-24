@@ -12,6 +12,8 @@ function DropDownMenu(props) {
         onClickCallback={() => {
           setDropDownMenuVisible((val) => !val);
         }}
+        onBlurCallback={() => setDropDownMenuVisible(false)}
+        onFocusCallback={() => setDropDownMenuVisible(true)}
       />
       {dropDownMenuVisible && (
         <div className="drop-down-menu-items">{props.children}</div>
