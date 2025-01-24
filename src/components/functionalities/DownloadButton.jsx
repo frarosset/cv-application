@@ -9,11 +9,17 @@ import fonts from "./getFontFaces.js";
 
 const printingClass = "printing";
 
-function DownloadButton({ filename, format = "a4", fontFaces = [] }) {
+function DownloadButton({
+  filename,
+  format = "a4",
+  fontFaces = [],
+  showText = false,
+}) {
   return (
     <Button
       customCssClass={"download-btn functionality-btn"}
       iconName={"download"}
+      text={showText && "Export PDF"}
       onClickCallback={() => {
         downloadPdf(filename, format, fontFaces);
       }}
