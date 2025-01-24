@@ -5,8 +5,14 @@ import CreditFooter from "./components/base/CreditFooter.jsx";
 import useDefineDataStates from "./customHooks/useDefineDataStates.js";
 
 function App() {
-  const { dataStateProps, dataSetStateProps, darkThemeSet, setDarkThemeSet } =
-    useDefineDataStates();
+  const {
+    dataStateProps,
+    dataSetStateProps,
+    darkThemeSet,
+    setDarkThemeSet,
+    setBlankData,
+    setSampleData,
+  } = useDefineDataStates();
 
   /* set page title */
   const titleStr = getTitleStr(

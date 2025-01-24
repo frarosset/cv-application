@@ -88,11 +88,33 @@ const useDefineDataStates = () => {
     setPersonalization,
   };
 
+  // Define custom "setter" to set all data states altogether
+
+  const setDataFrom = (dataObj) => {
+    setPersonalInfo(dataObj["personalInfo"]);
+    setEducation(dataObj["education"]);
+    setProfessionalExperience(dataObj["professionalExperience"]);
+    setSkills(dataObj["skills"]);
+    setLanguages(dataObj["languages"]);
+    setCoursesAndCertificates(dataObj["coursesAndCertificates"]);
+    setPersonalization(dataObj["personalization"]);
+  };
+
+  const setBlankData = () => {
+    setDataFrom(blankData);
+  };
+
+  const setSampleData = () => {
+    setDataFrom(Object.assign({}, blankData, sampleData));
+  };
+
   return {
     dataStateProps,
     dataSetStateProps,
     darkThemeSet,
     setDarkThemeSet,
+    setBlankData,
+    setSampleData,
   };
 };
 
