@@ -1,13 +1,13 @@
 import "../styles/Header.css";
 import ToggleDarkThemeButton from "./functionalities/ToggleDarkThemeButton.jsx";
 import DropDownMenu from "./base/DropDownMenu.jsx";
+import ClearDataButton from "./functionalities/ClearDataButton.jsx";
 
-function Header({ darkThemeSet, setDarkThemeSet }) {
+function Header({ darkThemeSet, setDarkThemeSet, setBlankData }) {
   return (
     <header>
       <DropDownMenu>
-        <button>Placeholder button</button>
-        <button>Placeholder button</button>
+        <ClearDataButton clearDataCallback={setBlankData} showText={true} />
       </DropDownMenu>
       <h1>CV Application</h1>
       <div className="group-of-btns">

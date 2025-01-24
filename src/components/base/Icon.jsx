@@ -36,6 +36,7 @@ import Sun from "../../assets/icons/sun.svg?react";
 import Moon from "../../assets/icons/moon.svg?react";
 import Menu from "../../assets/icons/menu.svg?react";
 import X from "../../assets/icons/x.svg?react";
+import File from "../../assets/icons/file.svg?react";
 
 import AddNew from "../../assets/icons/plus.svg?react";
 import Delete from "../../assets/icons/trash.svg?react";
@@ -63,6 +64,7 @@ const IconComponents = {
     moon: Moon,
     menu: Menu,
     x: X,
+    file: File,
     addNew: AddNew,
     delete: Delete,
     moveBack: MoveBack,
