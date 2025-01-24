@@ -17,7 +17,12 @@ function Button({
       className={`button ${customCssClass}`}
       onClick={onClickCallback}
       onFocus={onFocusCallback}
-      onBlur={onBlurCallback}
+      onBlur={
+        onBlurCallback &&
+        (() => {
+          setTimeout(onBlurCallback, 200);
+        })
+      }
       type={type}
     >
       {icon}
