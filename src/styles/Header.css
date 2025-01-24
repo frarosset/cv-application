@@ -67,6 +67,10 @@ header .drop-down-menu-items {
 
   --len: calc(-1 * var(--box-shadow-size));
   clip-path: inset(0px var(--len) var(--len) var(--len));
+  overflow: hidden auto;
+  max-height: calc(
+    100dvh - var(--drop-down-menu-items-top) - var(--header-padding-ud)
+  );
 }
 
 /* add inset shadow only on the top of the .drop-down-menu-items div*/
@@ -96,10 +100,32 @@ header .drop-down-menu-items button:hover {
 }
 
 header .drop-down-menu-items div.space {
-  content: "";
   height: var(--drop-down-menu-items-space-height);
   background-color: var(--header-dropdown-bg-col);
   opacity: var(--drop-down-menu-items-opacity);
+}
+
+header .drop-down-menu-items div.separator {
+  --drop-down-menu-items-separator-height: 2px;
+  --drop-down-menu-items-separator-padding: 0.5em;
+
+  box-sizing: content-box;
+  height: var(--drop-down-menu-items-separator-height);
+  padding: var(--drop-down-menu-items-separator-padding);
+  /* background-color: var(--header-dropdown-bg-col); */
+  opacity: var(--drop-down-menu-items-opacity);
+
+  background-image: linear-gradient(
+      to bottom,
+      var(--col-txt-alt) 0%,
+      var(--col-txt-alt) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      var(--header-dropdown-bg-col) 0%,
+      var(--header-dropdown-bg-col) 100%
+    );
+  background-clip: content-box, padding-box;
 }
 
 /* tablet or larger, or landscape (vs portrait), 641px (phone), 961px (tablet) */

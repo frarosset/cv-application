@@ -16,15 +16,16 @@ function Header({
   return (
     <header>
       <DropDownMenu>
-        <div className="space" />
+        <div className="space"></div>
         <ClearDataButton clearDataCallback={setBlankData} showText={true} />
         <LoadSampleDataButton
           loadSampleDataCallback={setSampleData}
           showText={true}
         />
+        <div className="separator"></div>
         <DownloadButton {...{ ...downloadOptions }} showText={true} />
         <PrintButton showText={true} />
-        <div className="space" />
+        <div className="space"></div>
       </DropDownMenu>
       <h1>CV Application</h1>
       <div className="group-of-btns">
