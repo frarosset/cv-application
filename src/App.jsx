@@ -40,7 +40,9 @@ function App() {
   return (
     <>
       <div className={`app-container ${darkThemeSet ? "dark-theme" : ""}`}>
-        <Header {...{ darkThemeSet, setDarkThemeSet, setBlankData }} />
+        <Header
+          {...{ darkThemeSet, setDarkThemeSet, setBlankData, setSampleData }}
+        />
         <Main {...{ dataStateProps, dataSetStateProps, downloadOptions }} />
         <CreditFooter darkTheme={darkThemeSet} />
       </div>
