@@ -1,6 +1,6 @@
 import "../styles/Header.css";
 import ToggleDarkThemeButton from "./functionalities/ToggleDarkThemeButton.jsx";
-import DropDownMenu from "./functionalities/DropDownMenu.jsx";
+import DropDownMenu from "./base/DropDownMenu.jsx";
 
 function Header({ darkThemeSet, setDarkThemeSet }) {
   return (

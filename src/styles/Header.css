@@ -1,12 +1,13 @@
 header {
   background-color: var(--header-bg-col);
-  padding: var(--page-padding);
+  padding: var(--header-padding);
   box-shadow: var(--box-shadow);
   z-index: 10;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5em;
 }
 
 header h1 {
@@ -36,4 +37,69 @@ header .dark-theme-btn {
   --button-bg-col-hover: var(--dark-theme-btn-hightlight-bg-col);
   --button-shadow-hover: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
     var(--dark-theme-btn-hightlight-box-shadow-col) inset;
+}
+
+header .drop-down-menu-btn {
+  --button-col: var(--header-btn-col);
+  --button-bg-col: var(--header-btn-bg-col);
+  --button-opacity: var(--round-btn-opacity);
+  --button-padding: var(--round-btn-padding);
+  --button-radius: 50%;
+  --button-size: var(--round-btn-size);
+
+  --button-shadow-hover: none;
+}
+
+header .drop-down-menu-items {
+  --drop-down-menu-items-top: calc(
+    var(--header-padding-ud) + 2 * var(--round-btn-padding) +
+      var(--round-btn-size)
+  );
+  --drop-down-menu-items-left: calc(-1 * var(--header-padding-lr));
+  --drop-down-menu-items-radius: 0;
+  --drop-down-menu-items-radius-br: 0;
+  --drop-down-menu-items-width: 100dvw;
+
+  --len: calc(-1 * var(--box-shadow-size));
+  clip-path: inset(0px var(--len) var(--len) var(--len));
+}
+
+/* add inset shadow only on the top of the .drop-down-menu-items div*/
+header .drop-down-menu-items::before {
+  content: "";
+  width: 100%;
+  height: var(--box-shadow-size);
+  position: absolute;
+  top: calc(-1 * var(--box-shadow-size));
+  z-index: 1;
+  --box-shadow-color: var(--col-dark-1);
+  box-shadow: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
+    var(--box-shadow-color);
+}
+
+header .drop-down-menu-items button {
+  --button-col: var(--col-txt-alt);
+  --button-bg-col: var(--header-dropdown-bg-col);
+  --button-opacity: 0.9;
+  --button-padding: var(--round-btn-padding) var(--round-btn-double-padding);
+  --button-size: var(--round-btn-size);
+}
+
+header .drop-down-menu-items button:hover {
+  font-weight: bold;
+}
+
+/* tablet or larger, or landscape (vs portrait), 641px (phone), 961px (tablet) */
+@media only screen and (min-width: 512px) {
+  header .drop-down-menu-items {
+    --drop-down-menu-items-radius-br: var(--button-border-radius);
+    --drop-down-menu-items-width: 50dvw;
+  }
+
+  @media only screen and (min-width: 1048px) {
+    header .drop-down-menu-items {
+      --drop-down-menu-items-radius-br: var(--button-border-radius);
+      --drop-down-menu-items-width: 25dvw;
+    }
+  }
 }

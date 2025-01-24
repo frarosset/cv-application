@@ -1,12 +1,13 @@
 import { useState } from "react";
-import Button from "../base/Button.jsx";
+import Button from "./Button.jsx";
+import "../../styles/base/DropDownMenu.css";
 
 function DropDownMenu(props) {
   const [dropDownMenuVisible, setDropDownMenuVisible] = useState(false);
   return (
     <div className="drop-down-menu">
       <Button
-        customCssClass={"drop-down-menu-btn functionality-btn"}
+        customCssClass={"drop-down-menu-btn"}
         iconName={dropDownMenuVisible ? "x" : "menu"}
         onClickCallback={() => {
           setDropDownMenuVisible((val) => !val);
