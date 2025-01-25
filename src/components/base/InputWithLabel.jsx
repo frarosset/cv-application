@@ -15,6 +15,7 @@ function InputWithLabel({
   required = false,
   checked = false,
   options = [],
+  accept = null,
 }) {
   const inputOfType =
     type === "textarea" ? (
@@ -48,6 +49,7 @@ function InputWithLabel({
         maxLength={maxLength}
         required={required}
         checked={checked}
+        accept={accept}
       />
     );
 

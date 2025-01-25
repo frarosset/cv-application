@@ -9,6 +9,8 @@ const orderedInputProps = [
   "",
   "aboutMe",
   "",
+  "photo",
+  "",
   "location",
   "email",
   "phone",

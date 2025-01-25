@@ -70,6 +70,7 @@ function ArrayOfInputWithLabel({
               required={inputProps[prop].required}
               options={inputProps[prop].options}
               checked={item[prop]}
+              accept={inputProps[prop].accept}
             />
           );
         }

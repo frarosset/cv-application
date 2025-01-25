@@ -28,7 +28,12 @@
       "type": "textarea",
       "placeholder": "I am ..."
     },
-
+    "photo": {
+      "label": "Photo",
+      "required": false,
+      "type": "file",
+      "accept": "image/png, image/jpeg"
+    },
     "location": {
       "label": "Location",
       "maxLength": 60,
