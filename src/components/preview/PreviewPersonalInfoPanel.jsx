@@ -78,6 +78,10 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
         })}
       </div>
 
+      {personalInfo.photo && (
+        <img className="photo" src={personalInfo.photo.dataUrl} />
+      )}
+
       {textPropertiesOther.map((prop) => {
         const value = personalInfo[prop];
         return value && <Text key={prop} customClass={prop} value={value} />;

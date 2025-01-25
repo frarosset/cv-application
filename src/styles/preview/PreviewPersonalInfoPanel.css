@@ -1,14 +1,19 @@
 .preview-personal-info-panel {
   display: grid;
   grid-template-areas:
-    "contacts contacts contacts"
-    ". fullName ."
-    ". title ."
-    ". aboutMe .";
-  grid-template-columns: var(--preview-page-padding) 1fr var(
+    "contacts contacts contacts contacts"
+    ". photo fullName ."
+    ". photo title ."
+    ". photo . ."
+    ". photo aboutMe ."
+    ". photo . .";
+  grid-template-columns: var(--preview-page-padding) min-content 1fr var(
       --preview-page-padding
     );
-  grid-auto-rows: auto;
+  /* grid-auto-rows: auto; */
+  grid-template-rows:
+    min-content min-content min-content 1fr
+    min-content 4fr;
 }
 
 .preview-personal-info-panel h3 {
@@ -40,6 +45,18 @@
   flex-wrap: wrap;
   padding-top: var(--preview-page-gap);
   font-family: var(--preview-page-full-name-font);
+}
+
+.preview-personal-info-panel img.photo {
+  grid-area: photo;
+  width: auto;
+  max-width: var(--preview-photo-width);
+  height: 100%;
+  padding-top: var(--preview-page-gap);
+  padding-right: var(--preview-page-gap);
+  padding-bottom: var(--preview-page-gap);
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .preview-personal-info-panel .text.surname {
