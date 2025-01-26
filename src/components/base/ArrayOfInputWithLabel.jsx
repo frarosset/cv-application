@@ -71,6 +71,7 @@ function ArrayOfInputWithLabel({
               options={inputProps[prop].options}
               checked={item[prop]}
               accept={inputProps[prop].accept}
+              maxFileSizeInMb={inputProps[prop].maxFileSizeInMb}
             />
           );
         }

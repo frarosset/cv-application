@@ -37,6 +37,7 @@ function Input({
   required = false,
   accept = null,
   checked = null,
+  maxFileSizeInMb = 3,
 }) {
   const ref = useRef();
 
@@ -56,7 +57,7 @@ function Input({
       type={type}
       onChange={(e) => {
         if (type == "file") {
-          fileToBase64Obj(e.currentTarget.files).then((value) =>
+          fileToBase64Obj(e.currentTarget, maxFileSizeInMb).then((value) =>
             setValue(value)
           );
         } else {
@@ -76,15 +77,33 @@ function Input({
   );
 }
 
-function fileToBase64Obj(files) {
+function numToStringRounded(num, decimals = 2) {
+  const k = 10 ** decimals;
+  return (Math.round(num * k) / k).toFixed(decimals);
+}
+
+function fileToBase64Obj(inputElement, maxFileSizeInMb = null) {
   // returns a Promise which resolves with an
   // object with "dataUrl", "type", "name", and "lastModified" properties
   // which in turn allows to recreate the file
 
   return new Promise((resolve, reject) => {
-    if (!files || files.length == 0) resolve(null);
+    if (!inputElement.files || inputElement.files.length == 0) resolve(null);
 
-    const file = files[0];
+    const file = inputElement.files[0];
+
+    // Limit file size, if specified
+    // see: https://stackoverflow.com/a/49490014
+    if (maxFileSizeInMb && file.size > maxFileSizeInMb * 1024 * 1024) {
+      alert(
+        `File is too big (${numToStringRounded(
+          file.size / 1024 / 1024,
+          2
+        )} MB)! The maximum allowed size is ${maxFileSizeInMb} MB.`
+      );
+      inputElement.value = "";
+      resolve(null);
+    }
 
     const reader = new FileReader();
     reader.readAsDataURL(file);
