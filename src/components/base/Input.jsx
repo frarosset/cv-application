@@ -38,6 +38,9 @@ function Input({
   accept = null,
   checked = null,
   maxFileSizeInMb = 3,
+  min = 0,
+  max = 100,
+  step = 1,
 }) {
   const ref = useRef();
 
@@ -72,6 +75,9 @@ function Input({
       required={required}
       accept={accept}
       checked={checked}
+      min={min}
+      max={max}
+      step={step}
       ref={ref}
     />
   );

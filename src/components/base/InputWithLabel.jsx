@@ -17,6 +17,9 @@ function InputWithLabel({
   options = [],
   accept = null,
   maxFileSizeInMb = null,
+  min = 0,
+  max = 100,
+  step = 1,
 }) {
   const inputOfType =
     type === "textarea" ? (
@@ -52,6 +55,9 @@ function InputWithLabel({
         checked={checked}
         accept={accept}
         maxFileSizeInMb={maxFileSizeInMb}
+        min={min}
+        max={max}
+        step={step}
       />
     );
 

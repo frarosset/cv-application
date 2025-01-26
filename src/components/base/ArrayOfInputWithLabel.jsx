@@ -72,6 +72,9 @@ function ArrayOfInputWithLabel({
               checked={item[prop]}
               accept={inputProps[prop].accept}
               maxFileSizeInMb={inputProps[prop].maxFileSizeInMb}
+              min={inputProps[prop].min}
+              max={inputProps[prop].max}
+              step={inputProps[prop].step}
             />
           );
         }
