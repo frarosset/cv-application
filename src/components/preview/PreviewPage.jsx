@@ -95,4 +95,10 @@ function applyPagePersonalization(settings) {
     "--preview-page-text-color",
     settings.textColor
   );
+
+  // Photo format
+  document.documentElement.style.setProperty(
+    "--preview-photo-width",
+    `${settings.photoWidth}cqw`
+  );
 }

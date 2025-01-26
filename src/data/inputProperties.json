@@ -447,6 +447,14 @@
       "required": false,
       "type": "color",
       "label": "Text Color"
+    },
+    "photoWidth": {
+      "label": "Photo width",
+      "required": false,
+      "type": "range",
+      "min": 15,
+      "max": 50,
+      "step": 1
     }
   }
 }

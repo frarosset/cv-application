@@ -31,6 +31,7 @@
     "accentFont": "Poppins",
     "detailFont": "Poppins",
     "fullNameFont": "Poppins",
-    "titleFont": "Poppins"
+    "titleFont": "Poppins",
+    "photoWidth": 33
   }
 }

@@ -16,6 +16,8 @@ const orderedInputProps = [
   "headingColor",
   "detailColor",
   "textColor",
+  "",
+  "photoWidth",
 ];
 
 const inputProps = inputProperties.personalization;
