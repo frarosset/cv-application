@@ -456,6 +456,14 @@
       "max": 5,
       "step": 0.25
     },
+    "headingsFontsize": {
+      "label": "Headings Fontsize",
+      "required": false,
+      "type": "range",
+      "min": 1.5,
+      "max": 5,
+      "step": 0.25
+    },
     "fullnameFontsize": {
       "label": "Full Name Fontsize",
       "required": false,

@@ -103,6 +103,11 @@ function applyPagePersonalization(settings) {
   );
 
   document.documentElement.style.setProperty(
+    "--preview-headings-fontsize",
+    `${settings.headingsFontsize}cqw`
+  );
+
+  document.documentElement.style.setProperty(
     "--preview-full-name-fontsize",
     `${settings.fullnameFontsize}cqw`
   );
