@@ -298,6 +298,14 @@
       "max": 15,
       "step": 0.25
     },
+    "pageGap": {
+      "label": "Page Gap",
+      "required": false,
+      "type": "range",
+      "min": 0,
+      "max": 5,
+      "step": 0.25
+    },
     "mainFont": {
       "required": true,
       "type": "select",
