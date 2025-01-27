@@ -46,5 +46,6 @@
 }
 
 .edit-section-panel form .form-divider {
-  height: 1.4em;
+  height: var(--editor-form-divider-height);
+  min-height: var(--editor-form-divider-height);
 }

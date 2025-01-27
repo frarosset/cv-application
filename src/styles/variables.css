@@ -97,6 +97,7 @@
   --editor-section-gap: 1rem;
   --editor-form-padding: 1rem;
   --editor-form-gap: 0.5rem;
+  --editor-form-divider-height: 1.1em;
   --editor-section-button-icon-size: 1em;
   --editor-section-button-icon-larger-size: 1.5em;
   --editor-section-button-padding-tb: min(2%, 0.4em);
