@@ -322,6 +322,14 @@
       "max": 3,
       "step": 0.25
     },
+    "sectionListGap": {
+      "label": "Section List Gap",
+      "required": false,
+      "type": "range",
+      "min": 0,
+      "max": 3,
+      "step": 0.25
+    },
     "mainFont": {
       "required": true,
       "type": "select",

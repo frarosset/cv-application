@@ -48,6 +48,7 @@ function applyPagePersonalization(settings) {
     ["--preview-page-gap", getCqw(settings.pageGap)],
     ["--preview-page-personal-info-gap", getCqw(settings.personalInfoGap)],
     ["--preview-page-section-items-gap", getCqw(settings.sectionItemsGap)],
+    ["--preview-page-section-list-gap", getCqw(settings.sectionListGap)],
     // Fonts
     ["--preview-page-main-font", settings.mainFont],
     ["--preview-page-headings-font", settings.headingFont],

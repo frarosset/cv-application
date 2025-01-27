@@ -64,10 +64,10 @@
 .preview-item-with-dates > .description {
   grid-area: other;
   color: var(--preview-page-text-color);
-  padding-top: var(--preview-page-item-list-item-padding-top);
+  padding-top: var(--preview-page-section-list-gap);
 }
 
 .preview-item-with-dates .description {
-  /* padding-left: var(--preview-page-item-list-item-padding-top); */
+  /* padding-left: var(--preview-page-section-list-gap); */
   padding-left: var(--preview-page-item-list-padding-left);
 }

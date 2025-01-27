@@ -1,7 +1,8 @@
 .preview-panel-with-list {
   --preview-page-gap-t: max(
     var(--preview-page-gap),
-    var(--preview-page-section-items-gap)
+    var(--preview-page-section-items-gap),
+    var(--preview-page-section-list-gap)
   );
   display: flex;
   flex-direction: column;

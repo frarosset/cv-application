@@ -18,7 +18,8 @@
   --preview-page-gap-tb: max(
     var(--preview-page-gap),
     var(--preview-page-personal-info-gap),
-    var(--preview-page-section-items-gap)
+    var(--preview-page-section-items-gap),
+    var(--preview-page-section-list-gap)
   );
 }
 
