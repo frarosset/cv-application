@@ -1,10 +1,14 @@
-.preview-panel-with-list-and-dates {
+.preview-panel-with-list {
   display: flex;
   flex-direction: column;
-  padding: 0 var(--preview-page-lr-padding);
+  padding: var(--preview-page-gap) var(--preview-page-lr-padding) 0;
 }
 
-.preview-panel-with-list-and-dates h3 {
+.preview-personal-info-panel + .preview-panel-with-list {
+  padding-top: 0 !important;
+}
+
+.preview-panel-with-list h3 {
   border-bottom: 2px solid var(--preview-page-text-color);
   color: var(--preview-page-headings-color);
   font-family: var(--preview-page-headings-font);

@@ -6,7 +6,7 @@ const textProperties = ["heading", "text"];
 function PreviewSkillsPanel({ skills }) {
   if (skills.allIds.length > 0) {
     return (
-      <div className="preview-panel-with-list-and-dates preview-skills-panel">
+      <div className="preview-panel-with-list preview-skills-panel">
         <h3>Skills</h3>
         <PreviewListWithTextOnly
           customClass={"skills"}

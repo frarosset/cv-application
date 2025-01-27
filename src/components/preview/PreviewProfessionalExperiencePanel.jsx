@@ -1,12 +1,12 @@
 import PreviewListWithDates from "./PreviewListWithDates.jsx";
-import "../../styles/preview/previewPanelWithListAndDates.css";
+import "../../styles/preview/previewPanelWithList.css";
 
 const textProperties = [["institution", "address"], "role"];
 
 function PreviewProfessionalExperiencePanel({ professionalExperience }) {
   if (professionalExperience.allIds.length > 0) {
     return (
-      <div className="preview-panel-with-list-and-dates preview-professional-experience-panel">
+      <div className="preview-panel-with-list preview-professional-experience-panel">
         <h3>Professional Experience</h3>
 
         <PreviewListWithDates

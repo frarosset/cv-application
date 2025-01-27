@@ -1,5 +1,5 @@
 .preview-list-with-text-only {
-  padding: var(--preview-page-item-list-gap) 0;
+  padding-top: var(--preview-page-item-list-gap);
   display: flex;
   flex-direction: column;
   gap: var(--preview-page-item-list-item-padding-top);

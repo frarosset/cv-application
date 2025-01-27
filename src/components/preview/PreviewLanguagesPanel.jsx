@@ -6,7 +6,7 @@ const textProperties = ["heading", "text"];
 function PreviewLanguagesPanel({ languages }) {
   if (languages.allIds.length > 0) {
     return (
-      <div className="preview-panel-with-list-and-dates preview-languages-panel">
+      <div className="preview-panel-with-list preview-languages-panel">
         <h3>Languages</h3>
         <PreviewListWithTextOnly
           customClass={"languages"}
