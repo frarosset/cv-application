@@ -7,8 +7,8 @@ import blankData from "../data/blankData.json";
 const getFromLocalStorage = (name) => () => {
   const storedData = JSON.parse(localStorage.getItem(name));
   return storedData
-    ? storedData
-    : Object.assign({}, blankData[name], sampleData[name]);
+    ? Object_assign({}, blankData[name], storedData)
+    : Object_assign({}, blankData[name], sampleData[name]);
 };
 
 const useDefineDataStates = () => {
@@ -91,6 +91,7 @@ const useDefineDataStates = () => {
   // Define custom "setter" to set all data states altogether
 
   const setDataFrom = (dataObj) => {
+    // helper function that assumes that dataObj has been deep cloned
     setPersonalInfo(dataObj["personalInfo"]);
     setEducation(dataObj["education"]);
     setProfessionalExperience(dataObj["professionalExperience"]);
@@ -101,11 +102,11 @@ const useDefineDataStates = () => {
   };
 
   const setBlankData = () => {
-    setDataFrom(blankData);
+    setDataFrom(deepCopy(blankData));
   };
 
   const setSampleData = () => {
-    setDataFrom(Object.assign({}, blankData, sampleData));
+    setDataFrom(Object_assign({}, blankData, sampleData));
   };
 
   return {
@@ -117,5 +118,29 @@ const useDefineDataStates = () => {
     setSampleData,
   };
 };
+
+// Nested Object.assign
+// from:https://stackoverflow.com/a/58089332
+// Deep copy is performed from the sources before each assignment
+function Object_assign(target, ...sources) {
+  sources.forEach((source) => {
+    Object.keys(source).forEach((key) => {
+      const copiedSource = deepCopy(source);
+      const s_val = copiedSource[key];
+      const t_val = target[key];
+      const s_isObj = typeof s_val === "object";
+      const t_isObj = typeof t_val === "object";
+      target[key] =
+        t_val && s_val && t_isObj && s_isObj
+          ? Object_assign(t_val, s_val)
+          : s_val;
+    });
+  });
+  return target;
+}
+
+function deepCopy(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
 
 export default useDefineDataStates;
