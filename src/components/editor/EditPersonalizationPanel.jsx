@@ -17,6 +17,7 @@ const orderedInputProps = [
   "detailColor",
   "textColor",
   "",
+  "mainFontsize",
   "fullnameFontsize",
   "titleFontsize",
   "aboutMeFontsize",

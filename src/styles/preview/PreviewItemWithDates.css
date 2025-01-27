@@ -25,6 +25,7 @@
   grid-area: dates;
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
+  font-size: var(--preview-details-fontsize);
   padding-left: 3em;
 }
 
@@ -39,6 +40,7 @@
   font-style: italic;
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
+  font-size: var(--preview-details-fontsize);
   display: inline;
 }
 
@@ -46,12 +48,14 @@
   content: ", ";
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
+  font-size: var(--preview-details-fontsize);
 }
 
 .preview-item-with-dates .address {
   font-style: italic;
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
+  font-size: var(--preview-details-fontsize);
   display: inline;
 }
 

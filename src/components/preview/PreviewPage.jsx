@@ -98,6 +98,11 @@ function applyPagePersonalization(settings) {
 
   // Text fontsize
   document.documentElement.style.setProperty(
+    "--preview-main-fontsize",
+    `${settings.mainFontsize}cqw`
+  );
+
+  document.documentElement.style.setProperty(
     "--preview-full-name-fontsize",
     `${settings.fullnameFontsize}cqw`
   );
