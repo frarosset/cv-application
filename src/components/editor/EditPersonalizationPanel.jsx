@@ -8,6 +8,7 @@ const orderedInputProps = [
   "pageLrPadding",
   "pageGap",
   "personalInfoGap",
+  "sectionItemsGap",
   "",
   "mainFont",
   "headingFont",

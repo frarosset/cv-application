@@ -1,6 +1,6 @@
 .preview-list-with-dates {
   display: flex;
   flex-direction: column;
-  gap: var(--preview-page-item-list-gap);
-  padding-top: var(--preview-page-item-list-gap);
+  gap: var(--preview-page-section-items-gap);
+  padding-top: var(--preview-page-section-items-gap);
 }

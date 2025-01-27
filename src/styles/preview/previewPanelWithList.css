@@ -1,7 +1,11 @@
 .preview-panel-with-list {
+  --preview-page-gap-t: max(
+    var(--preview-page-gap),
+    var(--preview-page-section-items-gap)
+  );
   display: flex;
   flex-direction: column;
-  padding: var(--preview-page-gap) var(--preview-page-lr-padding) 0;
+  padding: var(--preview-page-gap-t) var(--preview-page-lr-padding) 0;
 }
 
 .preview-personal-info-panel + .preview-panel-with-list {
