@@ -5,6 +5,8 @@ import "../../styles/editor/EditSectionPanel.css";
 const orderedInputProps = [
   "format",
   "",
+  "pageLrPadding",
+  "",
   "mainFont",
   "headingFont",
   "accentFont",

@@ -143,7 +143,7 @@
   /* --a4-ar: calc(1 / 1.41421); */
   /* --preview-page-format: "A4" */
   /* --preview-page-ar: var(--a4-ar); */
-  --preview-page-padding: 5cqw;
+  /* --preview-page-lr-padding: 5cqw; */
   --preview-page-gap: 3cqw;
 
   /* --preview-page-accent-color: rgb(158, 11, 114); */

@@ -43,6 +43,8 @@ function applyPagePersonalization(settings) {
     // Page format
     ["--preview-page-format", settings.format],
     ["--preview-page-ar", formatAr[settings.format.toLowerCase()]],
+    // Paddings and Gaps
+    ["--preview-page-lr-padding", getCqw(settings.pageLrPadding)],
     // Fonts
     ["--preview-page-main-font", settings.mainFont],
     ["--preview-page-headings-font", settings.headingFont],

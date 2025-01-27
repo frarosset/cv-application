@@ -7,8 +7,8 @@
     ". photo . ."
     ". photo aboutMe ."
     ". photo . .";
-  grid-template-columns: var(--preview-page-padding) min-content 1fr var(
-      --preview-page-padding
+  grid-template-columns: var(--preview-page-lr-padding) min-content 1fr var(
+      --preview-page-lr-padding
     );
   /* grid-auto-rows: auto; */
   grid-template-rows:

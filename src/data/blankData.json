@@ -22,6 +22,7 @@
   },
   "personalization": {
     "format": "A4",
+    "pageLrPadding": 5,
     "accentColor": "#9E0B90",
     "headingColor": "#131c28",
     "detailColor": "#595c61",

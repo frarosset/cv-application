@@ -1,7 +1,7 @@
 .preview-panel-with-list-and-dates {
   display: flex;
   flex-direction: column;
-  padding: 0 var(--preview-page-padding);
+  padding: 0 var(--preview-page-lr-padding);
 }
 
 .preview-panel-with-list-and-dates h3 {
