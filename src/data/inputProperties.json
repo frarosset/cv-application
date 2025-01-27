@@ -456,6 +456,14 @@
       "max": 15,
       "step": 0.25
     },
+    "titleFontsize": {
+      "label": "Professional Title Font Size",
+      "required": false,
+      "type": "range",
+      "min": 1.5,
+      "max": 5,
+      "step": 0.25
+    },
     "photoWidth": {
       "label": "Photo width",
       "required": false,

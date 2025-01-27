@@ -101,6 +101,12 @@ function applyPagePersonalization(settings) {
     "--preview-full-name-fontsize",
     `${settings.fullnameFontsize}cqw`
   );
+
+  document.documentElement.style.setProperty(
+    "--preview-title-fontsize",
+    `${settings.titleFontsize}cqw`
+  );
+
   // Photo format
   document.documentElement.style.setProperty(
     "--preview-photo-width",
