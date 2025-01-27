@@ -108,6 +108,11 @@ function applyPagePersonalization(settings) {
   );
 
   document.documentElement.style.setProperty(
+    "--preview-accent-fontsize",
+    `${settings.accentFontsize}cqw`
+  );
+
+  document.documentElement.style.setProperty(
     "--preview-full-name-fontsize",
     `${settings.fullnameFontsize}cqw`
   );
