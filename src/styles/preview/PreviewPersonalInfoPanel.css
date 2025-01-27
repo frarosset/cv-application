@@ -47,16 +47,23 @@
   font-family: var(--preview-page-full-name-font);
 }
 
-.preview-personal-info-panel img.photo {
+.preview-personal-info-panel .photo {
   grid-area: photo;
-  width: auto;
-  max-width: var(--preview-photo-width);
+  width: min-content;
   height: 100%;
+  max-height: 100%;
   padding-top: var(--preview-page-gap);
   padding-right: var(--preview-page-gap);
   padding-bottom: var(--preview-page-gap);
+  overflow: hidden;
+}
+
+.preview-personal-info-panel .photo-img {
+  height: 100%;
+  width: var(--preview-photo-width);
   object-fit: cover;
   overflow: hidden;
+  border-radius: var(--preview-photo-radius);
 }
 
 .preview-personal-info-panel .text.surname {

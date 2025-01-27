@@ -79,7 +79,9 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
       </div>
 
       {personalInfo.photo && (
-        <img className="photo" src={personalInfo.photo.dataUrl} />
+        <div className="photo">
+          <img className="photo-img" src={personalInfo.photo.dataUrl} />
+        </div>
       )}
 
       {textPropertiesOther.map((prop) => {
