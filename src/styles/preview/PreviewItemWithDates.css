@@ -5,7 +5,7 @@
     "where where"
     "other other";
 
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr 1fr;
   align-items: baseline;
 
   font-size: var(--preview-page-main-fontsize);
@@ -27,6 +27,7 @@
   font-family: var(--preview-page-details-font);
   font-size: var(--preview-page-details-fontsize);
   padding-left: 3em;
+  text-align: right;
 }
 
 .preview-item-with-dates .institution-address,
