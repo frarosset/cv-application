@@ -32,6 +32,7 @@
     "detailFont": "Poppins",
     "fullNameFont": "Poppins",
     "titleFont": "Poppins",
+    "fullnameFontsize": "7",
     "photoWidth": 33,
     "photoRadius": 3
   }

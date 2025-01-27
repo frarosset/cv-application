@@ -96,6 +96,11 @@ function applyPagePersonalization(settings) {
     settings.textColor
   );
 
+  // Text fontsize
+  document.documentElement.style.setProperty(
+    "--preview-full-name-fontsize",
+    `${settings.fullnameFontsize}cqw`
+  );
   // Photo format
   document.documentElement.style.setProperty(
     "--preview-photo-width",
