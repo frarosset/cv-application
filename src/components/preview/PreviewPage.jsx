@@ -33,118 +33,43 @@ function PreviewPage(props) {
 
 export default PreviewPage;
 
+function getCqw(data) {
+  return `${data}cqw`;
+}
+
 function applyPagePersonalization(settings) {
-  // Page format
-  document.documentElement.style.setProperty(
-    "--preview-page-format",
-    settings.format
-  );
-  document.documentElement.style.setProperty(
-    "--preview-page-ar",
-    formatAr[settings.format.toLowerCase()]
-  );
+  // properties items: [css variable, state]
+  const properties = [
+    // Page format
+    ["--preview-page-format", settings.format],
+    ["--preview-page-ar", formatAr[settings.format.toLowerCase()]],
+    // Fonts
+    ["--preview-page-main-font", settings.mainFont],
+    ["--preview-page-headings-font", settings.headingFont],
+    ["--preview-page-details-font", settings.detailFont],
+    ["--preview-page-accent-font", settings.accentFont],
+    ["--preview-page-full-name-font", settings.fullNameFont],
+    ["--preview-page-title-font", settings.titleFont],
+    // Colors
+    ["--preview-page-accent-color", settings.accentColor],
+    ["--preview-page-headings-color", settings.headingColor],
+    ["--preview-page-details-color", settings.detailColor],
+    ["--preview-page-text-color", settings.textColor],
+    // Text fontsize
+    ["--preview-page-main-fontsize", getCqw(settings.mainFontsize)],
+    ["--preview-page-headings-fontsize", getCqw(settings.headingsFontsize)],
+    ["--preview-page-accent-fontsize", getCqw(settings.accentFontsize)],
+    ["--preview-page-details-fontsize", getCqw(settings.detailsFontsize)],
+    ["--preview-page-full-name-fontsize", getCqw(settings.fullnameFontsize)],
+    ["--preview-page-title-fontsize", getCqw(settings.titleFontsize)],
+    ["--preview-page-about-me-fontsize", getCqw(settings.aboutMeFontsize)],
+    ["--preview-page-contacts-fontsize", getCqw(settings.contactsFontsize)],
+    // Photo format
+    ["--preview-page-photo-width", getCqw(settings.photoWidth)],
+    ["--preview-page-photo-radius", getCqw(settings.photoRadius)],
+  ];
 
-  // Fonts
-  document.documentElement.style.setProperty(
-    "--preview-page-main-font",
-    settings.mainFont
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-headings-font",
-    settings.headingFont
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-details-font",
-    settings.detailFont
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-accent-font",
-    settings.accentFont
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-full-name-font",
-    settings.fullNameFont
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-title-font",
-    settings.titleFont
-  );
-
-  // Colors
-  document.documentElement.style.setProperty(
-    "--preview-page-accent-color",
-    settings.accentColor
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-headings-color",
-    settings.headingColor
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-details-color",
-    settings.detailColor
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-text-color",
-    settings.textColor
-  );
-
-  // Text fontsize
-  document.documentElement.style.setProperty(
-    "--preview-page-main-fontsize",
-    `${settings.mainFontsize}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-headings-fontsize",
-    `${settings.headingsFontsize}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-accent-fontsize",
-    `${settings.accentFontsize}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-details-fontsize",
-    `${settings.detailsFontsize}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-full-name-fontsize",
-    `${settings.fullnameFontsize}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-title-fontsize",
-    `${settings.titleFontsize}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-about-me-fontsize",
-    `${settings.aboutMeFontsize}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-contacts-fontsize",
-    `${settings.contactsFontsize}cqw`
-  );
-
-  // Photo format
-  document.documentElement.style.setProperty(
-    "--preview-page-photo-width",
-    `${settings.photoWidth}cqw`
-  );
-
-  document.documentElement.style.setProperty(
-    "--preview-page-photo-radius",
-    `${settings.photoRadius}cqw`
-  );
+  properties.forEach((prop) => {
+    document.documentElement.style.setProperty(...prop);
+  });
 }
