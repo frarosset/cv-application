@@ -46,6 +46,7 @@ function applyPagePersonalization(settings) {
     // Paddings and Gaps
     ["--preview-page-lr-padding", getCqw(settings.pageLrPadding)],
     ["--preview-page-gap", getCqw(settings.pageGap)],
+    ["--preview-page-personal-info-gap", getCqw(settings.personalInfoGap)],
     // Fonts
     ["--preview-page-main-font", settings.mainFont],
     ["--preview-page-headings-font", settings.headingFont],
