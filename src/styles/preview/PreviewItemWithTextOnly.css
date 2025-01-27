@@ -14,7 +14,7 @@
 
 .skills .preview-item-with-text-only-text-blocks,
 .languages .preview-item-with-text-only-text-blocks {
-  line-height: var(--preview-about-me-fontsize);
+  line-height: var(--preview-page-details-fontsize);
 }
 
 .languages .preview-item-with-text-only-text-blocks .text:not(.heading)::before,
@@ -25,7 +25,9 @@
 
 .skills .preview-item-with-text-only-text-blocks .text,
 .languages .preview-item-with-text-only-text-blocks .text {
-  font-size: var(--preview-about-me-fontsize);
+  font-size: var(--preview-page-details-fontsize);
+  color: var(--preview-page-details-color);
+  font-family: var(--preview-page-details-font);
 }
 
 .skills .preview-item-with-text-only-text-blocks .text.heading,
@@ -33,8 +35,11 @@
   font-weight: 600;
   color: var(--preview-page-accent-color);
   font-family: var(--preview-page-accent-font);
-  font-size: var(--preview-accent-fontsize);
+  font-size: var(--preview-page-accent-fontsize);
   margin-top: calc(
-    -1 * (var(--preview-accent-fontsize) - var(--preview-about-me-fontsize)) - 1px
+    -1 * (
+        var(--preview-page-accent-fontsize) -
+          var(--preview-page-details-fontsize)
+      ) - 1px
   );
 }

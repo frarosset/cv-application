@@ -40,6 +40,7 @@ header .dark-theme-btn {
   --button-bg-col-hover: var(--dark-theme-btn-hightlight-bg-col);
   --button-shadow-hover: 0 0px var(--box-shadow-blur) var(--box-shadow-spread)
     var(--dark-theme-btn-hightlight-box-shadow-col) inset;
+  --button-radius: 50%;
 }
 
 header .drop-down-menu-btn {

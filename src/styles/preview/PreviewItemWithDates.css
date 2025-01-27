@@ -8,7 +8,7 @@
   grid-template-columns: 1fr max-content;
   align-items: baseline;
 
-  font-size: var(--preview-main-fontsize);
+  font-size: var(--preview-page-main-fontsize);
 }
 
 .preview-item-with-dates .role,
@@ -18,14 +18,14 @@
   font-weight: 600;
   color: var(--preview-page-accent-color);
   font-family: var(--preview-page-accent-font);
-  font-size: var(--preview-accent-fontsize);
+  font-size: var(--preview-page-accent-fontsize);
 }
 
 .preview-item-with-dates .dates {
   grid-area: dates;
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
-  font-size: var(--preview-details-fontsize);
+  font-size: var(--preview-page-details-fontsize);
   padding-left: 3em;
 }
 
@@ -40,7 +40,7 @@
   font-style: italic;
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
-  font-size: var(--preview-details-fontsize);
+  font-size: var(--preview-page-details-fontsize);
   display: inline;
 }
 
@@ -48,14 +48,14 @@
   content: ", ";
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
-  font-size: var(--preview-details-fontsize);
+  font-size: var(--preview-page-details-fontsize);
 }
 
 .preview-item-with-dates .address {
   font-style: italic;
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
-  font-size: var(--preview-details-fontsize);
+  font-size: var(--preview-page-details-fontsize);
   display: inline;
 }
 

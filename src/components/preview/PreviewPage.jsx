@@ -98,53 +98,53 @@ function applyPagePersonalization(settings) {
 
   // Text fontsize
   document.documentElement.style.setProperty(
-    "--preview-main-fontsize",
+    "--preview-page-main-fontsize",
     `${settings.mainFontsize}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-headings-fontsize",
+    "--preview-page-headings-fontsize",
     `${settings.headingsFontsize}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-accent-fontsize",
+    "--preview-page-accent-fontsize",
     `${settings.accentFontsize}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-details-fontsize",
+    "--preview-page-details-fontsize",
     `${settings.detailsFontsize}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-full-name-fontsize",
+    "--preview-page-full-name-fontsize",
     `${settings.fullnameFontsize}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-title-fontsize",
+    "--preview-page-title-fontsize",
     `${settings.titleFontsize}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-about-me-fontsize",
+    "--preview-page-about-me-fontsize",
     `${settings.aboutMeFontsize}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-contacts-fontsize",
+    "--preview-page-contacts-fontsize",
     `${settings.contactsFontsize}cqw`
   );
 
   // Photo format
   document.documentElement.style.setProperty(
-    "--preview-photo-width",
+    "--preview-page-photo-width",
     `${settings.photoWidth}cqw`
   );
 
   document.documentElement.style.setProperty(
-    "--preview-photo-radius",
+    "--preview-page-photo-radius",
     `${settings.photoRadius}cqw`
   );
 }

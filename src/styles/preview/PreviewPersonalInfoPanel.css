@@ -27,7 +27,7 @@
   color: var(--preview-page-bg-col);
   font-family: var(--preview-page-details-font);
 
-  font-size: var(--preview-contacts-fontsize);
+  font-size: var(--preview-page-contacts-fontsize);
   padding: var(--preview-contacts-padding);
 
   display: grid;
@@ -61,21 +61,21 @@
 .preview-personal-info-panel .photo-img {
   height: 100%;
   /* height: auto; */
-  width: var(--preview-photo-width);
+  width: var(--preview-page-photo-width);
   object-fit: cover;
   overflow: hidden;
-  border-radius: var(--preview-photo-radius);
+  border-radius: var(--preview-page-photo-radius);
 }
 
 .preview-personal-info-panel .text.surname {
   font-weight: 500;
-  font-size: var(--preview-full-name-fontsize);
+  font-size: var(--preview-page-full-name-fontsize);
   color: var(--preview-page-headings-color);
 }
 
 .preview-personal-info-panel .text.name {
   font-weight: 700;
-  font-size: var(--preview-full-name-fontsize);
+  font-size: var(--preview-page-full-name-fontsize);
   color: var(--preview-page-accent-color);
   padding-right: 0.1em;
 }
@@ -83,12 +83,12 @@
 .preview-personal-info-panel .text.surname {
   grid-area: surname;
   font-weight: 500;
-  font-size: var(--preview-full-name-fontsize);
+  font-size: var(--preview-page-full-name-fontsize);
 }
 
 .preview-personal-info-panel .text.title {
   grid-area: title;
-  font-size: var(--preview-title-fontsize);
+  font-size: var(--preview-page-title-fontsize);
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-title-font);
 }
@@ -96,6 +96,6 @@
 .preview-personal-info-panel .text.aboutMe {
   grid-area: aboutMe;
   padding: var(--preview-page-gap) 0;
-  font-size: var(--preview-about-me-fontsize);
+  font-size: var(--preview-page-about-me-fontsize);
   color: var(--preview-page-text-color);
 }

@@ -137,7 +137,7 @@
   --button-small-outline-size: 1px;
   --button-large-outline-size: 3px;
 
-  /* Preview page */
+  /* Preview page -------------------------------------------------- */
   --preview-page-bg-col: white;
   /* --a4-ar: calc(1 / 1.41421); */
   /* --preview-page-format: "A4" */
@@ -152,18 +152,18 @@
   --preview-page-text-color: var(--col-dark-4); */
 
   --preview-contacts-padding: 2cqw;
-  /* --preview-contacts-fontsize: 1.5cqw; */
+  /* --preview-page-contacts-fontsize: 1.5cqw; */
   --preview-contacts-gap: 0.5em;
 
-  /* --preview-full-name-fontsize: 7cqw; */
+  /* --preview-page-full-name-fontsize: 7cqw; */
 
-  /* --preview-title-fontsize: 3cqw; */
-  /* --preview-headings-fontsize: 3.5cqw; */
-  /* --preview-about-me-fontsize: 2.5cqw; */
+  /* --preview-page-title-fontsize: 3cqw; */
+  /* --preview-page-headings-fontsize: 3.5cqw; */
+  /* --preview-page-about-me-fontsize: 2.5cqw; */
 
-  /* --preview-main-fontsize: 2.5cqw; */
-  /* --preview-accent-fontsize: 3cqw; */
-  /* --preview-details-fontsize: 3cqw; */
+  /* --preview-page-main-fontsize: 2.5cqw; */
+  /* --preview-page-accent-fontsize: 3cqw; */
+  /* --preview-page-details-fontsize: 3cqw; */
 
   --preview-page-item-list-padding-left: 1.8em;
   --preview-page-item-list-item-padding-top: 0.3em;
@@ -176,8 +176,10 @@
   --preview-page-title-font: "Playwrite IS"; */
 
   --preview-contacts-cols: 3;
-  /* --preview-photo-width: 30cqw; */
-  /* --preview-photo-radius: 1cqw; */
+  /* --preview-page-photo-width: 30cqw; */
+  /* --preview-page-photo-radius: 1cqw; */
+
+  /**************************************************************************/
 
   /* --box-radius: max(6px, 0.9vmin); */
 

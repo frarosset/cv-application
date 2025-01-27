@@ -8,6 +8,6 @@
   border-bottom: 2px solid var(--preview-page-text-color);
   color: var(--preview-page-headings-color);
   font-family: var(--preview-page-headings-font);
-  font-size: var(--preview-headings-fontsize);
+  font-size: var(--preview-page-headings-fontsize);
   font-weight: bold;
 }
