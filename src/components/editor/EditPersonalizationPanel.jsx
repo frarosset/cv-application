@@ -20,6 +20,7 @@ const orderedInputProps = [
   "mainFontsize",
   "headingsFontsize",
   "accentFontsize",
+  "detailsFontsize",
   "fullnameFontsize",
   "titleFontsize",
   "aboutMeFontsize",
