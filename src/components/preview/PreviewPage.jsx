@@ -112,6 +112,11 @@ function applyPagePersonalization(settings) {
     `${settings.aboutMeFontsize}cqw`
   );
 
+  document.documentElement.style.setProperty(
+    "--preview-contacts-fontsize",
+    `${settings.contactsFontsize}cqw`
+  );
+
   // Photo format
   document.documentElement.style.setProperty(
     "--preview-photo-width",

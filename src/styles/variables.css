@@ -152,7 +152,7 @@
   --preview-page-text-color: var(--col-dark-4); */
 
   --preview-contacts-padding: 2cqw;
-  --preview-contacts-fontsize: 1.5cqw;
+  /* --preview-contacts-fontsize: 1.5cqw; */
   --preview-contacts-gap: 0.5em;
 
   /* --preview-full-name-fontsize: 7cqw; */

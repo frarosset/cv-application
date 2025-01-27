@@ -449,7 +449,7 @@
       "label": "Text Color"
     },
     "fullnameFontsize": {
-      "label": "Full Name Font Size",
+      "label": "Full Name Fontsize",
       "required": false,
       "type": "range",
       "min": 1.5,
@@ -457,7 +457,7 @@
       "step": 0.25
     },
     "titleFontsize": {
-      "label": "Professional Title Font Size",
+      "label": "Professional Title Fontsize",
       "required": false,
       "type": "range",
       "min": 1.5,
@@ -465,7 +465,15 @@
       "step": 0.25
     },
     "aboutMeFontsize": {
-      "label": "About Me Font Size",
+      "label": "About Me Fontsize",
+      "required": false,
+      "type": "range",
+      "min": 1.5,
+      "max": 5,
+      "step": 0.25
+    },
+    "contactsFontsize": {
+      "label": "Contacts Fontsize",
       "required": false,
       "type": "range",
       "min": 1.5,
