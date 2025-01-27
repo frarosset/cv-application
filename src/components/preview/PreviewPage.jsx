@@ -101,4 +101,9 @@ function applyPagePersonalization(settings) {
     "--preview-photo-width",
     `${settings.photoWidth}cqw`
   );
+
+  document.documentElement.style.setProperty(
+    "--preview-photo-radius",
+    `${settings.photoRadius}cqw`
+  );
 }

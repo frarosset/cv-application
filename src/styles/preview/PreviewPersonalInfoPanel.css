@@ -60,6 +60,7 @@
 
 .preview-personal-info-panel .photo-img {
   height: 100%;
+  /* height: auto; */
   width: var(--preview-photo-width);
   object-fit: cover;
   overflow: hidden;

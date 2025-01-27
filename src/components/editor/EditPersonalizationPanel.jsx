@@ -18,6 +18,7 @@ const orderedInputProps = [
   "textColor",
   "",
   "photoWidth",
+  "photoRadius",
 ];
 
 const inputProps = inputProperties.personalization;
