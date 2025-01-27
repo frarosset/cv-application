@@ -107,6 +107,11 @@ function applyPagePersonalization(settings) {
     `${settings.titleFontsize}cqw`
   );
 
+  document.documentElement.style.setProperty(
+    "--preview-about-me-fontsize",
+    `${settings.aboutMeFontsize}cqw`
+  );
+
   // Photo format
   document.documentElement.style.setProperty(
     "--preview-photo-width",

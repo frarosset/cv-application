@@ -464,6 +464,14 @@
       "max": 5,
       "step": 0.25
     },
+    "aboutMeFontsize": {
+      "label": "About Me Font Size",
+      "required": false,
+      "type": "range",
+      "min": 1.5,
+      "max": 5,
+      "step": 0.25
+    },
     "photoWidth": {
       "label": "Photo width",
       "required": false,

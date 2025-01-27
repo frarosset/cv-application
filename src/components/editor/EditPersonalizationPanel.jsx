@@ -19,6 +19,7 @@ const orderedInputProps = [
   "",
   "fullnameFontsize",
   "titleFontsize",
+  "aboutMeFontsize",
   "",
   "photoWidth",
   "photoRadius",

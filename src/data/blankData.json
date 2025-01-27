@@ -34,6 +34,7 @@
     "titleFont": "Poppins",
     "fullnameFontsize": "7",
     "titleFontsize": "3",
+    "aboutMeFontsize": "2.5",
     "photoWidth": 33,
     "photoRadius": 3
   }
