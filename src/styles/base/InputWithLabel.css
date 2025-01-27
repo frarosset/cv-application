@@ -118,6 +118,60 @@ input:checked::before {
   outline-color: var(--input-color-focus);
 }
 
+/* range input */
+/* input::-webkit-slider-thumb, */
+.input-with-label input[type="range"] {
+  --input-size: calc(var(--input-fontsize) * 1 + 2 * var(--input-padding-tb));
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%; /*Firefox*/
+}
+
+.input-with-label input[type="range"]::-webkit-slider-thumb {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--input-size);
+  height: var(--input-size);
+  background-color: var(--input-color);
+  border-radius: var(--input-border-radius);
+}
+
+.input-with-label input[type="range"]::-moz-range-thumb {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--input-size);
+  height: var(--input-size);
+  background-color: var(--input-color);
+  border-radius: var(--input-border-radius);
+}
+
+.input-with-label input[type="range"]::-ms-thumb {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--input-size);
+  height: var(--input-size);
+  background-color: var(--input-color);
+  border-radius: var(--input-border-radius);
+}
+
+.input-with-label input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+}
+
+.input-with-label input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  cursor: pointer;
+}
+
+.input-with-label input[type="range"]::-moz-range-trac {
+  width: 100%;
+  cursor: pointer;
+}
+
 /* highlight required inputs / textareas */
 
 .input-with-label label:before {
