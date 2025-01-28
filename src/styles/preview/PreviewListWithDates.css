@@ -1,6 +1,10 @@
 .preview-list-with-dates {
+  --preview-page-section-items-gap-t: max(
+    var(--preview-page-section-items-gap),
+    var(--preview-page-section-list-gap)
+  );
   display: flex;
   flex-direction: column;
-  gap: var(--preview-page-section-items-gap);
-  padding-top: var(--preview-page-section-items-gap);
+  gap: var(--preview-page-section-items-gap-t);
+  padding-top: var(--preview-page-section-items-gap-t);
 }

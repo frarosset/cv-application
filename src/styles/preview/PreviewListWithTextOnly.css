@@ -1,8 +1,18 @@
 .preview-list-with-text-only {
-  padding-top: var(--preview-page-section-items-gap);
+  padding-top: var(--preview-page-section-list-gap);
   display: flex;
   flex-direction: column;
   gap: var(--preview-page-section-list-gap);
+}
+
+.skills.preview-list-with-text-only,
+.languages.preview-list-with-text-only {
+  --preview-page-section-items-gap-t: max(
+    var(--preview-page-section-items-gap),
+    var(--preview-page-section-list-gap)
+  );
+  padding-top: var(--preview-page-section-items-gap-t);
+  gap: var(--preview-page-section-items-gap-t);
 }
 
 .preview-item-with-dates .preview-list-with-text-only {
