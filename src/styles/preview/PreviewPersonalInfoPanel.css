@@ -35,12 +35,13 @@
   font-family: var(--preview-page-details-font);
 
   font-size: var(--preview-page-contacts-fontsize);
-  padding: var(--preview-contacts-padding);
+  padding: var(--preview-page-contacts-tb-padding)
+    var(--preview-page-contacts-lr-padding);
 
   display: grid;
-  grid-template-columns: repeat(var(--preview-contacts-cols), max-content);
+  grid-template-columns: repeat(var(--preview-page-contacts-cols), max-content);
   grid-auto-rows: auto;
-  gap: var(--preview-contacts-gap);
+  gap: var(--preview-page-contacts-gap);
   justify-content: space-around;
 
   overflow: hidden;

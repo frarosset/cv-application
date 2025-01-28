@@ -54,6 +54,8 @@ function applyPagePersonalization(settings) {
     ["--preview-page-personal-info-gap", getCqw(settings.personalInfoGap)],
     ["--preview-page-section-items-gap", getCqw(settings.sectionItemsGap)],
     ["--preview-page-section-list-gap", getCqw(settings.sectionListGap)],
+    ["--preview-page-contacts-tb-padding", getCqw(settings.contactsTbPadding)],
+    ["--preview-page-contacts-lr-padding", getCqw(settings.contactsLrPadding)],
     // Fonts
     ["--preview-page-main-font", settings.mainFont],
     ["--preview-page-headings-font", settings.headingFont],

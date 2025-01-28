@@ -28,6 +28,8 @@
     "personalInfoGap": 3,
     "sectionItemsGap": 0.5,
     "sectionListGap": 0.25,
+    "contactsTbPadding": 2,
+    "contactsLrPadding": 2,
     "accentColor": "#9E0B90",
     "headingColor": "#131c28",
     "detailColor": "#595c61",

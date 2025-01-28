@@ -27,7 +27,10 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
   const ref = useRef();
 
   const setContactCols = (num) =>
-    document.documentElement.style.setProperty("--preview-contacts-cols", num);
+    document.documentElement.style.setProperty(
+      "--preview-page-contacts-cols",
+      num
+    );
 
   const contactItemsCount = textWithIconsProperties.reduce((count, prop) => {
     const value = personalInfo[prop];
