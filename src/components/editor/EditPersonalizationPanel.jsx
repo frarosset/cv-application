@@ -13,6 +13,7 @@ const orderedInputProps = [
   "sectionListGap",
   "contactsTbPadding",
   "contactsLrPadding",
+  "contactsVGap",
   "",
   "mainFont",
   "headingFont",

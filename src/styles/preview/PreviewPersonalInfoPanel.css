@@ -41,7 +41,7 @@
   display: grid;
   grid-template-columns: repeat(var(--preview-page-contacts-cols), max-content);
   grid-auto-rows: auto;
-  gap: var(--preview-page-contacts-gap);
+  gap: var(--preview-page-contacts-v-gap) var(--preview-page-contacts-h-gap);
   justify-content: space-around;
 
   overflow: hidden;

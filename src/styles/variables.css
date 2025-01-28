@@ -157,7 +157,8 @@
   /* --preview-page-contacts-tb-padding: 2cqw; */
   /* --preview-page-contacts-lr-padding: 2cqw; */
   /* --preview-page-contacts-fontsize: 1.5cqw; */
-  --preview-page-contacts-gap: 0.5em;
+  /* --preview-page-contacts-v-gap: 0.5em; */
+  --preview-page-contacts-h-gap: 1em;
 
   /* --preview-page-full-name-fontsize: 7cqw; */
 
