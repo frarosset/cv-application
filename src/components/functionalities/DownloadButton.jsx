@@ -14,6 +14,7 @@ function DownloadButton({
   format = "a4",
   fontFaces = [],
   showText = false,
+  pageTbPaddingInteger = 5,
 }) {
   return (
     <Button
@@ -21,7 +22,7 @@ function DownloadButton({
       iconName={"download"}
       text={showText && "Export PDF"}
       onClickCallback={() => {
-        downloadPdf(filename, format, fontFaces);
+        downloadPdf(filename, format, fontFaces, pageTbPaddingInteger);
       }}
     />
   );
@@ -29,7 +30,7 @@ function DownloadButton({
 
 export default DownloadButton;
 
-function downloadPdf(filename, format, fontFaces) {
+function downloadPdf(filename, format, fontFaces, pageTbPaddingInteger) {
   let doc = new jsPDF({
     unit: "px",
     hotfixes: ["px_scaling"],
@@ -42,7 +43,7 @@ function downloadPdf(filename, format, fontFaces) {
   const height = doc.internal.pageSize.getHeight();
   const width = doc.internal.pageSize.getWidth();
   const sourceWidth = source.offsetWidth;
-  const marginTBInPixels = Math.round(height * 0.05);
+  const marginTBInPixels = Math.round((height * pageTbPaddingInteger) / 100);
 
   const options = {
     background: "#fff",

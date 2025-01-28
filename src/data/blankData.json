@@ -22,6 +22,7 @@
   },
   "personalization": {
     "format": "A4",
+    "pageTbPadding": 5,
     "pageLrPadding": 5,
     "pageGap": 2,
     "personalInfoGap": 3,

@@ -3,7 +3,7 @@
   box-shadow: var(--box-shadow);
 
   height: 100%;
-  padding: 0 0 5%;
+  padding: 0 0 var(--preview-page-tb-padding);
   aspect-ratio: var(--preview-page-ar);
   overflow: hidden auto;
 
@@ -34,7 +34,7 @@
 /* --- PRINT STYLES --------------------------------- */
 @page {
   size: var(--preview-page-format);
-  margin: 5% 0;
+  margin: var(--preview-page-tb-padding) 0;
 }
 
 /* remove the top margin on the first page only */

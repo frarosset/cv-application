@@ -37,6 +37,10 @@ function getCqw(data) {
   return `${data}cqw`;
 }
 
+function getPercentage(data) {
+  return `${data}%`;
+}
+
 function applyPagePersonalization(settings) {
   // properties items: [css variable, state]
   const properties = [
@@ -44,6 +48,7 @@ function applyPagePersonalization(settings) {
     ["--preview-page-format", settings.format],
     ["--preview-page-ar", formatAr[settings.format.toLowerCase()]],
     // Paddings and Gaps
+    ["--preview-page-tb-padding", getPercentage(settings.pageTbPadding)],
     ["--preview-page-lr-padding", getCqw(settings.pageLrPadding)],
     ["--preview-page-gap", getCqw(settings.pageGap)],
     ["--preview-page-personal-info-gap", getCqw(settings.personalInfoGap)],

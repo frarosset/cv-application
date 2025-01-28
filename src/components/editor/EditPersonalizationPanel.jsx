@@ -5,6 +5,7 @@ import "../../styles/editor/EditSectionPanel.css";
 const orderedInputProps = [
   "format",
   "",
+  "pageTbPadding",
   "pageLrPadding",
   "pageGap",
   "personalInfoGap",

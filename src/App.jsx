@@ -35,6 +35,7 @@ function App() {
       dataStateProps.personalization.fullNameFont,
       dataStateProps.personalization.titleFont,
     ],
+    pageTbPaddingInteger: dataStateProps.personalization.pageTbPadding,
   };
 
   return (
