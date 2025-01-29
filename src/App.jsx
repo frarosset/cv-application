@@ -40,7 +40,10 @@ function App() {
 
   return (
     <>
-      <div className={`app-container ${darkThemeSet ? "dark-theme" : ""}`}>
+      <div
+        className={`app-container ${darkThemeSet ? "dark-theme" : ""}`}
+        onClickCapture={checkFormValidityCallback}
+      >
         <Header
           {...{
             darkThemeSet,
@@ -65,6 +68,44 @@ function getTitleStr(nameData, surnameData) {
     name != "" ? (surname != "" ? `${name} ${surname}` : name) : surname;
 
   return fullName != "" ? `CV of ${fullName}` : "CV Application";
+}
+
+function checkFormValidityCallback(e) {
+  const button = e.target.closest("button");
+
+  const btnsToDisable = [
+    "download-btn",
+    "print-btn",
+    "edit-panel-button",
+    "edit-list-selection-new-item-button",
+    "edit-list-selection-item-button",
+  ];
+
+  // if the clicked point is not a button, do nothing
+  if (!button) return;
+
+  // check if the button placed in the same position as the clicked point is
+  // a button to be disabled under invalid form condition
+  const isButtonToDisable = btnsToDisable.some((btnClass) =>
+    button.classList.contains(btnClass)
+  );
+  if (!isButtonToDisable) return;
+
+  // check validity of each form:
+  // as soon as you find an invalid one, you must prevent the associated button to be executed
+  const allForms = document.querySelectorAll("form");
+
+  for (const form of allForms) {
+    form.setAttribute("novalidate", true);
+
+    if (!form.reportValidity()) {
+      // if the form is not valid, do not continue propagating the event
+      // (recall that capture is being considered here)
+      // This prevents the events listeners in the buttons to be executed
+      e.stopPropagation();
+      return;
+    }
+  }
 }
 
 export default App;
