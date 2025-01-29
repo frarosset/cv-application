@@ -14,7 +14,9 @@
 
 .skills .preview-item-with-text-only-text-blocks,
 .languages .preview-item-with-text-only-text-blocks {
-  line-height: var(--preview-page-details-fontsize);
+  line-height: calc(
+    var(--preview-page-details-fontsize) * var(--preview-page-lineheight)
+  );
 }
 
 .languages .preview-item-with-text-only-text-blocks .text:not(.heading)::before,
@@ -38,8 +40,9 @@
   font-size: var(--preview-page-accent-fontsize);
   margin-top: calc(
     -1 * (
-        var(--preview-page-accent-fontsize) -
-          var(--preview-page-details-fontsize)
+        var(--preview-page-accent-fontsize) *
+          var(--preview-page-sub-text-lineheight) -
+          var(--preview-page-details-fontsize) * var(--preview-page-lineheight)
       ) - 1px
   );
 }

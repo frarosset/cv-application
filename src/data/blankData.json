@@ -49,6 +49,10 @@
     "titleFontsize": 3,
     "aboutMeFontsize": 2.5,
     "contactsFontsize": 1.5,
+    "lineHeight": 1,
+    "headingsLineHeight": 1.2,
+    "fullnameLineHeight": 1,
+    "titleLineHeight": 1.3,
     "photoWidth": 33,
     "photoRadius": 3
   }

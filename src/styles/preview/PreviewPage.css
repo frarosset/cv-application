@@ -12,6 +12,7 @@
 
   font-family: var(--preview-page-main-font);
   letter-spacing: -0.0005em; /* fix for letter spacing when using jsPdf */
+  line-height: var(--preview-page-lineheight);
 }
 
 /* show top/bottom padding when not saving pdf (otherwise, this is already included when saving into pdf) */

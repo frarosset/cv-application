@@ -184,6 +184,11 @@
   /* --preview-page-photo-width: 30cqw; */
   /* --preview-page-photo-radius: 1cqw; */
 
+  /* --preview-page-lineheight: 1.2; */
+  /* --preview-page-headings-lineheight: 1; */
+  --preview-page-full-name-lineheight: 0.8;
+  --preview-page-title-lineheight: 1.2;
+
   /**************************************************************************/
 
   /* --box-radius: max(6px, 0.9vmin); */

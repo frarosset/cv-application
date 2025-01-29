@@ -19,4 +19,5 @@
   font-family: var(--preview-page-headings-font);
   font-size: var(--preview-page-headings-fontsize);
   font-weight: bold;
+  line-height: var(--preview-page-headings-lineheight);
 }

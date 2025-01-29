@@ -78,6 +78,11 @@ function applyPagePersonalization(settings) {
     ["--preview-page-title-fontsize", getCqw(settings.titleFontsize)],
     ["--preview-page-about-me-fontsize", getCqw(settings.aboutMeFontsize)],
     ["--preview-page-contacts-fontsize", getCqw(settings.contactsFontsize)],
+    // Line Height
+    ["--preview-page-lineheight", settings.lineHeight],
+    ["--preview-page-headings-lineheight", settings.headingsLineHeight],
+    ["--preview-page-full-name-lineheight", settings.fullnameLineHeight],
+    ["--preview-page-title-lineheight", settings.titleLineHeight],
     // Photo format
     ["--preview-page-photo-width", getCqw(settings.photoWidth)],
     ["--preview-page-photo-radius", getCqw(settings.photoRadius)],
