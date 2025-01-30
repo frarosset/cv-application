@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import useIsOverflow from "../../customHooks/useIsOverflow.js";
 import Text from "../base/Text.jsx";
-import TextWithIcon from "../base/TextWithIcon.jsx";
+import AnchorWithTextWithIcon from "../base/AnchorWithTextWithIcon.jsx";
 import "../../styles/preview/PreviewPersonalInfoPanel.css";
 
 const textPropertiesFullName = ["name", "surname"];
@@ -63,11 +63,12 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
           const value = personalInfo[prop];
           return (
             value && (
-              <TextWithIcon
+              <AnchorWithTextWithIcon
                 key={prop}
                 iconName={{ name: `${prop}White`, format: "png" }}
                 customClass={prop}
                 value={value}
+                url={getHrefUrl(prop, value)}
               />
             )
           );
@@ -96,3 +97,19 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
 }
 
 export default PreviewPersonalInfoPanel;
+
+function getHrefUrl(prop, value) {
+  switch (prop) {
+    case "email":
+      return `mailto:${value}`;
+    case "phone":
+      return `tel:${value}`;
+    case "location":
+      // Note: https://maps.apple.com/maps?q= redirects to https://www.google.com/maps?q= on non-Apple devices"
+      return `https://maps.apple.com/maps?q=${encodeURIComponent(value)}`;
+    default:
+      return value.includes("https://") || value.includes("https://")
+        ? value
+        : `https://${value}`;
+  }
+}
