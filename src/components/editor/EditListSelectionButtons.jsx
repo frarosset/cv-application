@@ -20,6 +20,9 @@ function EditListSelectionButtons({
   currentItemId,
   setCurrentItemId,
   emptyListText = "",
+  newItemCallback = () => {
+    //setCurrentItemId(newItemId);
+  },
 }) {
   const setCurrentClass = (thisItemId) =>
     thisItemId == currentItemId ? "current" : "";
@@ -31,7 +34,7 @@ function EditListSelectionButtons({
           newItemId
         )}`}
         iconName={"addNew"}
-        onClickCallback={() => setCurrentItemId(newItemId)}
+        onClickCallback={newItemCallback}
       ></Button>
 
       <div className="edit-list-selection-items-buttons">

@@ -4,6 +4,7 @@ import {
   deleteItem,
   moveItemBy,
   setValueForSetter,
+  addNewItem,
 } from "../helper/itemsArrayManagement.js";
 import InputWithLabel from "../base/InputWithLabel.jsx";
 import EditListSelectionButtons from "./EditListSelectionButtons.jsx";
@@ -33,6 +34,8 @@ function EditOtherInfoListInputWithLabel({
   const allIdsPath = [...pathInState, "allIds"];
   const byIdPath = [...pathInState, "byId"];
 
+  const newItemCallback = () =>
+    addNewItem(setState, setCurrentItemId, {}, allIdsPath, byIdPath);
   const deleteItemCallback = () =>
     deleteItem(currentItemId, setState, setCurrentItemId, allIdsPath, byIdPath);
   const moveItemBackCallback = () =>
@@ -64,6 +67,7 @@ function EditOtherInfoListInputWithLabel({
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"(empty)"}
+          newItemCallback={newItemCallback}
         />
       </div>
       {showForm && (

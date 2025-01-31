@@ -6,6 +6,7 @@ import {
   deleteItem,
   moveItemBy,
   setValueForSetter,
+  addNewItem,
 } from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import EditOtherInfoListInputWithLabel from "./EditOtherInfoListInputWithLabel.jsx";
@@ -38,6 +39,14 @@ function EditProfessionalExperiencePanel({
   const isEmptyItem = Object.keys(currentItem).length === 0;
   const emptyItemClass = isEmptyItem && "empty-item";
 
+  const newItemCallback = () =>
+    addNewItem(
+      setProfessionalExperience,
+      setCurrentItemId,
+      {},
+      ["allIds"],
+      ["byId"]
+    );
   const deleteItemCallback = () =>
     deleteItem(
       currentItemId,
@@ -86,6 +95,7 @@ function EditProfessionalExperiencePanel({
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}
+          newItemCallback={newItemCallback}
         />
 
         {showForm && (

@@ -6,6 +6,7 @@ import {
   deleteItem,
   moveItemBy,
   setValueForSetter,
+  addNewItem,
 } from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
@@ -38,6 +39,14 @@ function EditCoursesAndCertificatesPanel({
   const isEmptyItem = Object.keys(currentItem).length === 0;
   const emptyItemClass = isEmptyItem && "empty-item";
 
+  const newItemCallback = () =>
+    addNewItem(
+      setCoursesAndCertificates,
+      setCurrentItemId,
+      {},
+      ["allIds"],
+      ["byId"]
+    );
   const deleteItemCallback = () =>
     deleteItem(
       currentItemId,
@@ -85,6 +94,7 @@ function EditCoursesAndCertificatesPanel({
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}
+          newItemCallback={newItemCallback}
         />
 
         {showForm && (

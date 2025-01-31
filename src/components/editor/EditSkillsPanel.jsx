@@ -6,6 +6,7 @@ import {
   deleteItem,
   moveItemBy,
   setValueForSetter,
+  addNewItem,
 } from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
@@ -25,6 +26,8 @@ function EditSkillsPanel({ skills, setSkills }) {
   const isEmptyItem = Object.keys(currentItem).length === 0;
   const emptyItemClass = isEmptyItem && "empty-item";
 
+  const newItemCallback = () =>
+    addNewItem(setSkills, setCurrentItemId, {}, ["allIds"], ["byId"]);
   const deleteItemCallback = () =>
     deleteItem(
       currentItemId,
@@ -58,6 +61,7 @@ function EditSkillsPanel({ skills, setSkills }) {
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}
+          newItemCallback={newItemCallback}
         />
 
         {showForm && (

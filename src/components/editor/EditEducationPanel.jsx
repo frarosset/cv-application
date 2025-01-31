@@ -6,6 +6,7 @@ import {
   deleteItem,
   moveItemBy,
   setValueForSetter,
+  addNewItem,
 } from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import EditOtherInfoListInputWithLabel from "./EditOtherInfoListInputWithLabel.jsx";
@@ -33,6 +34,8 @@ function EditEducationPanel({ education, setEducation }) {
   const isEmptyItem = Object.keys(currentItem).length === 0;
   const emptyItemClass = isEmptyItem && "empty-item";
 
+  const newItemCallback = () =>
+    addNewItem(setEducation, setCurrentItemId, {}, ["allIds"], ["byId"]);
   const deleteItemCallback = () =>
     deleteItem(
       currentItemId,
@@ -68,6 +71,7 @@ function EditEducationPanel({ education, setEducation }) {
           currentItemId={currentItemId}
           setCurrentItemId={setCurrentItemId}
           emptyListText={"Insert new items"}
+          newItemCallback={newItemCallback}
         />
 
         {showForm && (
