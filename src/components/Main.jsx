@@ -1,12 +1,14 @@
-import { useRef } from "react";
+import { useState, useRef } from "react";
 import useIsOverflow from "../customHooks/useIsOverflow.js";
 import EditPanel from "./editor/EditPanel.jsx";
 import PreviewPanel from "./preview/PreviewPanel.jsx";
 import PrintButton from "./functionalities/PrintButton.jsx";
 import DownloadButton from "./functionalities/DownloadButton.jsx";
+import TogglePreviewEditViewButton from "./functionalities/TogglePreviewEditViewButton.jsx";
 import "../styles/Main.css";
 
 const hasOVerflowXCssClass = "has-overflow-y";
+const previewViewCssClass = "preview-view";
 
 const isOverflowXPreCallback = (ref) => {
   // before checking the overflow condition, revert to the base layout
@@ -37,11 +39,23 @@ function Main({ dataStateProps, dataSetStateProps, downloadOptions }) {
   );
   /* *************************************************************************** */
 
+  const [previewView, setPreviewView] = useState();
+
   return (
-    <main ref={ref} className={isOverflow ? hasOVerflowXCssClass : ""}>
+    <main
+      ref={ref}
+      className={
+        isOverflow
+          ? `${hasOVerflowXCssClass} ${previewView ? previewViewCssClass : ""}`
+          : ""
+      }
+    >
       <EditPanel {...{ ...dataStateProps, ...dataSetStateProps }} />
       <PreviewPanel {...dataStateProps} />
       <div className="group-of-btns">
+        {isOverflow && (
+          <TogglePreviewEditViewButton {...{ previewView, setPreviewView }} />
+        )}
         <PrintButton />
         <DownloadButton {...{ ...downloadOptions }} />
       </div>

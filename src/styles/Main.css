@@ -3,8 +3,12 @@ main {
   display: flex;
   flex-direction: row;
   overflow-y: hidden;
-  overflow-x: auto;
+  overflow-x: hidden;
   min-height: 0;
+}
+
+main.preview-view {
+  --main-translate: -100%;
 }
 
 main .preview-panel {
@@ -21,6 +25,12 @@ main.has-overflow-y .preview-panel {
 
 main.has-overflow-y .edit-panel {
   padding-right: var(--editor-padding-ud);
+}
+
+main.has-overflow-y .edit-panel,
+main.has-overflow-y .preview-panel {
+  transition: transform 0.5s;
+  transform: translateX(var(--main-translate));
 }
 
 /* tablet or larger, or landscape (vs portrait), 641px (phone), 961px (tablet) */
@@ -40,8 +50,8 @@ main .group-of-btns {
   position: fixed;
   /* left: 0; */
   right: 0;
-  bottom: 0;
-  /* width: 100dvw; */
+  bottom: 1em;
+  width: 100dvw;
   z-index: 1;
   display: flex;
   justify-content: flex-end;
@@ -49,9 +59,10 @@ main .group-of-btns {
   gap: 0.5em;
 }
 
-main.has-overflow-y .group-of-btns {
-  padding-bottom: calc(var(--page-padding-ud) + 4px); /* incude scrollbar size*/
-}
+/* main.has-overflow-y .group-of-btns {*/
+/* incude scrollbar size*/
+/*  padding-bottom: calc(var(--page-padding-ud) + 4px); 
+} */
 
 main .functionality-btn {
   --button-col: var(--round-btn-color);
@@ -60,6 +71,10 @@ main .functionality-btn {
   --button-padding: var(--round-btn-double-padding);
   --button-radius: 50%;
   --button-size: var(--round-btn-size);
+}
+
+main .group-of-btns .toggle-preview-view-btn {
+  margin-right: auto;
 }
 
 /* some functionality buttons are shown only on hover */
