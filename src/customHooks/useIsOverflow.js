@@ -32,7 +32,7 @@ const useIsOverflow = (ref, isVerticalOverflow, postCallback, preCallback) => {
     const trigger = () => {
       clearTimeout(resizingDelayTimer.current);
       resizingDelayTimer.current = setTimeout(() => {
-        if (preCallback) preCallback();
+        if (preCallback) preCallback(ref);
 
         const { clientWidth, scrollWidth, clientHeight, scrollHeight } =
           current;
@@ -43,7 +43,7 @@ const useIsOverflow = (ref, isVerticalOverflow, postCallback, preCallback) => {
 
         setIsOverflow(hasOverflow);
 
-        if (postCallback) postCallback(hasOverflow);
+        if (postCallback) postCallback(ref, hasOverflow);
       }, 100);
     };
 

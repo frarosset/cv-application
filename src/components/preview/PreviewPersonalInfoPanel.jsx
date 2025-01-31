@@ -40,14 +40,14 @@ function PreviewPersonalInfoPanel({ personalInfo }) {
   const initialContactCols = contactItemsCount < 5 ? contactItemsCount : 3;
   const modContactCols = Math.ceil(initialContactCols / 2);
 
-  const isOverflowXPreCallback = () => {
+  const isOverflowXPreCallback = (ref) => {
     // before checking the overflow condition, set the initial number of columns
     if (ref) {
       setContactCols(initialContactCols);
     }
   };
 
-  const isOverflowXPostCallback = (hasOverflowX) => {
+  const isOverflowXPostCallback = (ref, hasOverflowX) => {
     // after checking the overflow condition, set the modified number of columns if it overflows
     if (hasOverflowX) setContactCols(modContactCols);
   };

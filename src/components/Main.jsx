@@ -8,6 +8,18 @@ import "../styles/Main.css";
 
 const hasOVerflowXCssClass = "has-overflow-y";
 
+const isOverflowXPreCallback = (ref) => {
+  // before checking the overflow condition, revert to the base layout
+  if (ref) {
+    ref.current.classList.toggle(hasOVerflowXCssClass, false);
+  }
+};
+
+const isOverflowXPostCallback = (ref, hasOverflowX) => {
+  // after checking the overflow condition, apply the hasOVerflowXCssClass if necessary
+  ref.current.classList.toggle(hasOVerflowXCssClass, hasOverflowX);
+};
+
 function Main({ dataStateProps, dataSetStateProps, downloadOptions }) {
   /* *************************************************************************** */
   // A base layout style might be  specified. This is used to set a hasOVerflowXCssClass
@@ -17,21 +29,16 @@ function Main({ dataStateProps, dataSetStateProps, downloadOptions }) {
 
   const ref = useRef();
 
-  const isOverflowXPreCallback = () => {
-    // before checking the overflow condition, revert to the base layout
-    if (ref) ref.current.classList.toggle(hasOVerflowXCssClass, false);
-  };
-
-  const isOverflowXPostCallback = (hasOverflowX) => {
-    // after checking the overflow condition, apply the hasOVerflowXCssClass if necessary
-    ref.current.classList.toggle(hasOVerflowXCssClass, hasOverflowX);
-  };
-
-  useIsOverflow(ref, false, isOverflowXPostCallback, isOverflowXPreCallback);
+  const isOverflow = useIsOverflow(
+    ref,
+    false,
+    isOverflowXPostCallback,
+    isOverflowXPreCallback
+  );
   /* *************************************************************************** */
 
   return (
-    <main ref={ref}>
+    <main ref={ref} className={isOverflow ? hasOVerflowXCssClass : ""}>
       <EditPanel {...{ ...dataStateProps, ...dataSetStateProps }} />
       <PreviewPanel {...dataStateProps} />
       <div className="group-of-btns">
