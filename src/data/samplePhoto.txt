@@ -1,0 +1,5 @@
+samplePhoto.png by Stephanie Edwards from Pixabay
+
+source: https://pixabay.com/users/wanderercreative-855399/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=973460
+
+The image has been converted to base64 and included in sampleData.json.
