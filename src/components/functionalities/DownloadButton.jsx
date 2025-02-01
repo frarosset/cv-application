@@ -1,6 +1,6 @@
 import Button from "../base/Button.jsx";
 import { jsPDF } from "jspdf";
-import fonts from "./getFontFaces.js";
+import getFonts from "./getFontFaces.js";
 
 // to download a div as pdf, the jsPdf library is used,
 // in particular the .html method
@@ -46,6 +46,7 @@ function downloadPdf(filename, format, fontFaces, pageTbPaddingInteger) {
   const marginTBInPixels = Math.round((height * pageTbPaddingInteger) / 100);
 
   const hasOverflow = source.scrollHeight > source.offsetHeight;
+  const fonts = getFonts();
 
   const options = {
     background: "#fff",
@@ -74,7 +75,7 @@ function downloadPdf(filename, format, fontFaces, pageTbPaddingInteger) {
     }, []),
     callback: (doc) => {
       doc.save(filename + ".pdf");
-      window.open(doc.output("bloburl"));
+      // window.open(doc.output("bloburl"));
     },
   };
 

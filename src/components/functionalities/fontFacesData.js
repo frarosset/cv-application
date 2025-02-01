@@ -3,7 +3,7 @@ import "../../styles/fontFacesData.css";
 const fontFacesData = {
   Poppins: {
     fontFamily: "Poppins",
-    fontPath: "/src/assets/fonts/Poppins/",
+    fontPath: "/fonts/Poppins/",
     fontData: [
       { filename: "Poppins-Thin", style: "normal", weight: 100 },
       { filename: "Poppins-ExtraLight", style: "normal", weight: 200 },
@@ -27,7 +27,7 @@ const fontFacesData = {
   },
   Rubik: {
     fontFamily: "Rubik",
-    fontPath: "/src/assets/fonts/Rubik/static/",
+    fontPath: "/fonts/Rubik/static/",
     fontData: [
       { filename: "Rubik-Light", style: "normal", weight: 300 },
       { filename: "Rubik-Regular", style: "normal", weight: 400 },
@@ -47,7 +47,7 @@ const fontFacesData = {
   },
   Raleway: {
     fontFamily: "Raleway",
-    fontPath: "/src/assets/fonts/Raleway/static/",
+    fontPath: "/fonts/Raleway/static/",
     fontData: [
       { filename: "Raleway-Light", style: "normal", weight: 300 },
       { filename: "Raleway-Regular", style: "normal", weight: 400 },
@@ -67,7 +67,7 @@ const fontFacesData = {
   },
   Montserrat: {
     fontFamily: "Montserrat",
-    fontPath: "/src/assets/fonts/Montserrat/static/",
+    fontPath: "/fonts/Montserrat/static/",
     fontData: [
       { filename: "Montserrat-Thin", style: "normal", weight: 100 },
       { filename: "Montserrat-ExtraLight", style: "normal", weight: 200 },
@@ -91,7 +91,7 @@ const fontFacesData = {
   },
   "Fira Sans": {
     fontFamily: "Fira Sans",
-    fontPath: "/src/assets/fonts/Fira_Sans/",
+    fontPath: "/fonts/Fira_Sans/",
     fontData: [
       { filename: "FiraSans-Thin", style: "normal", weight: 100 },
       { filename: "FiraSans-ExtraLight", style: "normal", weight: 200 },
@@ -131,7 +131,7 @@ const fontFacesData = {
   },
   "Playfair Display": {
     fontFamily: "Playfair Display",
-    fontPath: "/src/assets/fonts/Playfair_Display/static/",
+    fontPath: "/fonts/Playfair_Display/static/",
     fontData: [
       { filename: "PlayfairDisplay-Regular", style: "normal", weight: 400 },
       { filename: "PlayfairDisplay-Medium", style: "normal", weight: 500 },
@@ -161,7 +161,7 @@ const fontFacesData = {
   },
   Bitter: {
     fontFamily: "Bitter",
-    fontPath: "/src/assets/fonts/Bitter/static/",
+    fontPath: "/fonts/Bitter/static/",
     fontData: [
       { filename: "Bitter-Thin", style: "normal", weight: 100 },
       { filename: "Bitter-ExtraLight", style: "normal", weight: 200 },
@@ -201,7 +201,7 @@ const fontFacesData = {
   },
   Lora: {
     fontFamily: "Lora",
-    fontPath: "/src/assets/fonts/Lora/static/",
+    fontPath: "/fonts/Lora/static/",
     fontData: [
       { filename: "Lora-Regular", style: "normal", weight: 400 },
       { filename: "Lora-Medium", style: "normal", weight: 500 },
@@ -223,7 +223,7 @@ const fontFacesData = {
   },
   "Fira Code": {
     fontFamily: "Fira Code",
-    fontPath: "/src/assets/fonts/Fira_Code/static/",
+    fontPath: "/fonts/Fira_Code/static/",
     fontData: [
       { filename: "FiraCode-Light", style: "normal", weight: 300 },
       { filename: "FiraCode-Regular", style: "normal", weight: 400 },
@@ -234,7 +234,7 @@ const fontFacesData = {
   },
   "Courier Prime": {
     fontFamily: "Courier Prime",
-    fontPath: "/src/assets/fonts/Courier_Prime/",
+    fontPath: "/fonts/Courier_Prime/",
     fontData: [
       { filename: "CourierPrime-Regular", style: "normal", weight: 400 },
       { filename: "CourierPrime-Bold", style: "normal", weight: 700 },
@@ -244,7 +244,7 @@ const fontFacesData = {
   },
   "Source Code Pro": {
     fontFamily: "Source Code Pro",
-    fontPath: "/src/assets/fonts/Source_Code_Pro/static/",
+    fontPath: "/fonts/Source_Code_Pro/static/",
     fontData: [
       { filename: "SourceCodePro-ExtraLight", style: "normal", weight: 200 },
       { filename: "SourceCodePro-Light", style: "normal", weight: 300 },
@@ -282,7 +282,7 @@ const fontFacesData = {
   },
   "Playwrite IS": {
     fontFamily: "Playwrite IS",
-    fontPath: "/src/assets/fonts/Playwrite_IS/static/",
+    fontPath: "/fonts/Playwrite_IS/static/",
     fontData: [
       { filename: "PlaywriteIS-Thin", style: "normal", weight: 100 },
       { filename: "PlaywriteIS-ExtraLight", style: "normal", weight: 200 },
@@ -292,7 +292,7 @@ const fontFacesData = {
   },
   Saira: {
     fontFamily: "Saira",
-    fontPath: "/src/assets/fonts/Saira/static/",
+    fontPath: "/fonts/Saira/static/",
     fontData: [
       { filename: "Saira-Thin", style: "normal", weight: 100 },
       { filename: "Saira-ExtraLight", style: "normal", weight: 200 },
@@ -332,7 +332,7 @@ const fontFacesData = {
   },
   Blinker: {
     fontFamily: "Blinker",
-    fontPath: "/src/assets/fonts/Blinker/",
+    fontPath: "/fonts/Blinker/",
     fontData: [
       { filename: "Blinker-Thin", style: "normal", weight: 100 },
       { filename: "Blinker-ExtraLight", style: "normal", weight: 200 },
@@ -346,7 +346,7 @@ const fontFacesData = {
   },
   "Saira Condensed": {
     fontFamily: "Saira Condensed",
-    fontPath: "/src/assets/fonts/Saira_Condensed/",
+    fontPath: "/fonts/Saira_Condensed/",
     fontData: [
       { filename: "SairaCondensed-Thin", style: "normal", weight: 100 },
       { filename: "SairaCondensed-ExtraLight", style: "normal", weight: 200 },
@@ -361,7 +361,7 @@ const fontFacesData = {
   },
   "Fira Sans Condensed": {
     fontFamily: "Fira Sans Condensed",
-    fontPath: "/src/assets/fonts/Fira_Sans_Condensed/",
+    fontPath: "/fonts/Fira_Sans_Condensed/",
     fontData: [
       { filename: "FiraSansCondensed-Thin", style: "normal", weight: 100 },
       {

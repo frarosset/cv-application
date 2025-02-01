@@ -1,85 +1,85 @@
 /* Rubik */
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-Light.ttf");
+  src: url("/fonts/Rubik/static/Rubik-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-Regular.ttf");
+  src: url("/fonts/Rubik/static/Rubik-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-Medium.ttf");
+  src: url("/fonts/Rubik/static/Rubik-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-SemiBold.ttf");
+  src: url("/fonts/Rubik/static/Rubik-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-Bold.ttf");
+  src: url("/fonts/Rubik/static/Rubik-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-ExtraBold.ttf");
+  src: url("/fonts/Rubik/static/Rubik-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-Black.ttf");
+  src: url("/fonts/Rubik/static/Rubik-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-LightItalic.ttf");
+  src: url("/fonts/Rubik/static/Rubik-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-Italic.ttf");
+  src: url("/fonts/Rubik/static/Rubik-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-MediumItalic.ttf");
+  src: url("/fonts/Rubik/static/Rubik-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf");
+  src: url("/fonts/Rubik/static/Rubik-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-BoldItalic.ttf");
+  src: url("/fonts/Rubik/static/Rubik-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-ExtraBoldItalic.ttf");
+  src: url("/fonts/Rubik/static/Rubik-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik/static/Rubik-BlackItalic.ttf");
+  src: url("/fonts/Rubik/static/Rubik-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -87,109 +87,109 @@
 /* Raleway */
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-Thin.ttf");
+  src: url("/fonts/Raleway/static/Raleway-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-ExtraLight.ttf");
+  src: url("/fonts/Raleway/static/Raleway-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-Light.ttf");
+  src: url("/fonts/Raleway/static/Raleway-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-Regular.ttf");
+  src: url("/fonts/Raleway/static/Raleway-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-Medium.ttf");
+  src: url("/fonts/Raleway/static/Raleway-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-SemiBold.ttf");
+  src: url("/fonts/Raleway/static/Raleway-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-Bold.ttf");
+  src: url("/fonts/Raleway/static/Raleway-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-ExtraBold.ttf");
+  src: url("/fonts/Raleway/static/Raleway-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-Black.ttf");
+  src: url("/fonts/Raleway/static/Raleway-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-ThinItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-ThinItalic.ttf");
   font-style: italic;
   font-weight: 100;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-ExtraLightItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-LightItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-Italic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-MediumItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-SemiBoldItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-BoldItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-ExtraBoldItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Raleway";
-  src: url("../assets/fonts/Raleway/static/Raleway-BlackItalic.ttf");
+  src: url("/fonts/Raleway/static/Raleway-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -197,109 +197,109 @@
 /* Poppins */
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-Thin.ttf");
+  src: url("/fonts/Poppins/Poppins-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-ExtraLight.ttf");
+  src: url("/fonts/Poppins/Poppins-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-Light.ttf");
+  src: url("/fonts/Poppins/Poppins-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+  src: url("/fonts/Poppins/Poppins-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-Medium.ttf");
+  src: url("/fonts/Poppins/Poppins-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-SemiBold.ttf");
+  src: url("/fonts/Poppins/Poppins-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-Bold.ttf");
+  src: url("/fonts/Poppins/Poppins-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-ExtraBold.ttf");
+  src: url("/fonts/Poppins/Poppins-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-Black.ttf");
+  src: url("/fonts/Poppins/Poppins-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-ThinItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-ThinItalic.ttf");
   font-style: italic;
   font-weight: 100;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-ExtraLightItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-LightItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-Italic.ttf");
+  src: url("/fonts/Poppins/Poppins-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-MediumItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-BoldItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Poppins";
-  src: url("../assets/fonts/Poppins/Poppins-BlackItalic.ttf");
+  src: url("/fonts/Poppins/Poppins-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -307,109 +307,109 @@
 /* Montserrat */
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-Thin.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-ExtraLight.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-Light.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-Regular.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-Medium.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-Bold.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-Black.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-ThinItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-ThinItalic.ttf");
   font-style: italic;
   font-weight: 100;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-ExtraLightItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-LightItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-Italic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-MediumItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-BoldItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../assets/fonts/Montserrat/static/Montserrat-BlackItalic.ttf");
+  src: url("/fonts/Montserrat/static/Montserrat-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -417,109 +417,109 @@
 /* Fira Sans */
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-Thin.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-ExtraLight.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-Light.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-Regular.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-Medium.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-SemiBold.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-Bold.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-ExtraBold.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-Black.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-ThinItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-ThinItalic.ttf");
   font-style: italic;
   font-weight: 100;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-ExtraLightItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-LightItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-Italic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-MediumItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-SemiBoldItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-BoldItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-ExtraBoldItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("../assets/fonts/Fira_Sans/FiraSans-BlackItalic.ttf");
+  src: url("/fonts/Fira_Sans/FiraSans-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -527,73 +527,73 @@
 /* Playfair Display */
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-SemiBoldItalic.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/Playfair_Display/static/PlayfairDisplay-BlackItalic.ttf");
+  src: url("/fonts/Playfair_Display/static/PlayfairDisplay-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -601,109 +601,109 @@
 /* Bitter */
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-Thin.ttf");
+  src: url("/fonts/Bitter/static/Bitter-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-ExtraLight.ttf");
+  src: url("/fonts/Bitter/static/Bitter-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-Light.ttf");
+  src: url("/fonts/Bitter/static/Bitter-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-Regular.ttf");
+  src: url("/fonts/Bitter/static/Bitter-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-Medium.ttf");
+  src: url("/fonts/Bitter/static/Bitter-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-SemiBold.ttf");
+  src: url("/fonts/Bitter/static/Bitter-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-Bold.ttf");
+  src: url("/fonts/Bitter/static/Bitter-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-ExtraBold.ttf");
+  src: url("/fonts/Bitter/static/Bitter-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-Black.ttf");
+  src: url("/fonts/Bitter/static/Bitter-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-ThinItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-ThinItalic.ttf");
   font-style: italic;
   font-weight: 100;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-ExtraLightItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-LightItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-Italic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-MediumItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-SemiBoldItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-BoldItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-ExtraBoldItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Bitter";
-  src: url("../assets/fonts/Bitter/static/Bitter-BlackItalic.ttf");
+  src: url("/fonts/Bitter/static/Bitter-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -711,49 +711,49 @@
 /* Lora */
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-Regular.ttf");
+  src: url("/fonts/Lora/static/Lora-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-Medium.ttf");
+  src: url("/fonts/Lora/static/Lora-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-SemiBold.ttf");
+  src: url("/fonts/Lora/static/Lora-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-Bold.ttf");
+  src: url("/fonts/Lora/static/Lora-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-Italic.ttf");
+  src: url("/fonts/Lora/static/Lora-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-MediumItalic.ttf");
+  src: url("/fonts/Lora/static/Lora-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-SemiBoldItalic.ttf");
+  src: url("/fonts/Lora/static/Lora-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Lora";
-  src: url("../assets/fonts/Lora/static/Lora-BoldItalic.ttf");
+  src: url("/fonts/Lora/static/Lora-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
@@ -761,31 +761,31 @@
 /* Fira Code */
 @font-face {
   font-family: "Fira Code";
-  src: url("../assets/fonts/Fira_Code/static/FiraCode-Light.ttf");
+  src: url("/fonts/Fira_Code/static/FiraCode-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Fira Code";
-  src: url("../assets/fonts/Fira_Code/static/FiraCode-Regular.ttf");
+  src: url("/fonts/Fira_Code/static/FiraCode-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Fira Code";
-  src: url("../assets/fonts/Fira_Code/static/FiraCode-Medium.ttf");
+  src: url("/fonts/Fira_Code/static/FiraCode-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Fira Code";
-  src: url("../assets/fonts/Fira_Code/static/FiraCode-SemiBold.ttf");
+  src: url("/fonts/Fira_Code/static/FiraCode-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Fira Code";
-  src: url("../assets/fonts/Fira_Code/static/FiraCode-Bold.ttf");
+  src: url("/fonts/Fira_Code/static/FiraCode-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
@@ -793,25 +793,25 @@
 /* Courier Prime */
 @font-face {
   font-family: "Courier Prime";
-  src: url("../assets/fonts/Courier_Prime/CourierPrime-Regular.ttf");
+  src: url("/fonts/Courier_Prime/CourierPrime-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Courier Prime";
-  src: url("../assets/fonts/Courier_Prime/CourierPrime-Bold.ttf");
+  src: url("/fonts/Courier_Prime/CourierPrime-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Courier Prime";
-  src: url("../assets/fonts/Courier_Prime/CourierPrime-Italic.ttf");
+  src: url("/fonts/Courier_Prime/CourierPrime-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Courier Prime";
-  src: url("../assets/fonts/Courier_Prime/CourierPrime-BoldItalic.ttf");
+  src: url("/fonts/Courier_Prime/CourierPrime-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
@@ -819,97 +819,97 @@
 /* Source Code Pro */
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-ExtraLight.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-Light.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-Medium.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-Bold.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-ExtraBold.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-Black.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-LightItalic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-Italic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-MediumItalic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-SemiBoldItalic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-BoldItalic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-ExtraBoldItalic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Source Code Pro";
-  src: url("../assets/fonts/Source_Code_Pro/static/SourceCodePro-BlackItalic.ttf");
+  src: url("/fonts/Source_Code_Pro/static/SourceCodePro-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -917,25 +917,25 @@
 /* Playwrite IS */
 @font-face {
   font-family: "Playwrite IS";
-  src: url("../assets/fonts/Playwrite_IS/static/PlaywriteIS-Thin.ttf");
+  src: url("/fonts/Playwrite_IS/static/PlaywriteIS-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Playwrite IS";
-  src: url("../assets/fonts/Playwrite_IS/static/PlaywriteIS-ExtraLight.ttf");
+  src: url("/fonts/Playwrite_IS/static/PlaywriteIS-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Playwrite IS";
-  src: url("../assets/fonts/Playwrite_IS/static/PlaywriteIS-Light.ttf");
+  src: url("/fonts/Playwrite_IS/static/PlaywriteIS-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Playwrite IS";
-  src: url("../assets/fonts/Playwrite_IS/static/PlaywriteIS-Regular.ttf");
+  src: url("/fonts/Playwrite_IS/static/PlaywriteIS-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
@@ -943,109 +943,109 @@
 /* Saira */
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-Thin.ttf");
+  src: url("/fonts/Saira/static/Saira-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-ExtraLight.ttf");
+  src: url("/fonts/Saira/static/Saira-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-Light.ttf");
+  src: url("/fonts/Saira/static/Saira-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-Regular.ttf");
+  src: url("/fonts/Saira/static/Saira-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-Medium.ttf");
+  src: url("/fonts/Saira/static/Saira-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-SemiBold.ttf");
+  src: url("/fonts/Saira/static/Saira-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-Bold.ttf");
+  src: url("/fonts/Saira/static/Saira-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-ExtraBold.ttf");
+  src: url("/fonts/Saira/static/Saira-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-Black.ttf");
+  src: url("/fonts/Saira/static/Saira-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-ThinItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-ThinItalic.ttf");
   font-style: italic;
   font-weight: 100;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-ExtraLightItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-LightItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-Italic.ttf");
+  src: url("/fonts/Saira/static/Saira-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-MediumItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-SemiBoldItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-BoldItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-ExtraBoldItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Saira";
-  src: url("../assets/fonts/Saira/static/Saira-BlackItalic.ttf");
+  src: url("/fonts/Saira/static/Saira-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }
@@ -1053,49 +1053,49 @@
 /* Blinker */
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-Thin.ttf");
+  src: url("/fonts/Blinker/Blinker-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-ExtraLight.ttf");
+  src: url("/fonts/Blinker/Blinker-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-Light.ttf");
+  src: url("/fonts/Blinker/Blinker-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-Regular.ttf");
+  src: url("/fonts/Blinker/Blinker-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-SemiBold.ttf");
+  src: url("/fonts/Blinker/Blinker-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-Bold.ttf");
+  src: url("/fonts/Blinker/Blinker-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-ExtraBold.ttf");
+  src: url("/fonts/Blinker/Blinker-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Blinker";
-  src: url("../assets/fonts/Blinker/Blinker-Black.ttf");
+  src: url("/fonts/Blinker/Blinker-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
@@ -1103,55 +1103,55 @@
 /* Saira Condensed */
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-Thin.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-ExtraLight.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-Light.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-Regular.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-Medium.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-SemiBold.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-Bold.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-ExtraBold.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Saira Condensed";
-  src: url("../assets/fonts/Saira_Condensed/SairaCondensed-Black.ttf");
+  src: url("/fonts/Saira_Condensed/SairaCondensed-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
@@ -1159,109 +1159,109 @@
 /* Fira Sans Condensed */
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-Thin.ttf");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLight.ttf");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-Light.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-Light.ttf");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-Regular.ttf");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-Bold.ttf");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-Black.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-Black.ttf");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-ThinItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-ThinItalic.ttf");
   font-style: italic;
   font-weight: 100;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraLightItalic.ttf");
   font-style: italic;
   font-weight: 200;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-LightItalic.ttf");
   font-style: italic;
   font-weight: 300;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-Italic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-Italic.ttf");
   font-style: italic;
   font-weight: 400;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-MediumItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-MediumItalic.ttf");
   font-style: italic;
   font-weight: 500;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBoldItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-SemiBoldItalic.ttf");
   font-style: italic;
   font-weight: 600;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-BoldItalic.ttf");
   font-style: italic;
   font-weight: 700;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-ExtraBoldItalic.ttf");
   font-style: italic;
   font-weight: 800;
 }
 @font-face {
   font-family: "Fira Sans Condensed";
-  src: url("../assets/fonts/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.ttf");
+  src: url("/fonts/Fira_Sans_Condensed/FiraSansCondensed-BlackItalic.ttf");
   font-style: italic;
   font-weight: 900;
 }

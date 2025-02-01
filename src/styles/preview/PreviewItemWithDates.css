@@ -38,7 +38,7 @@
 .preview-item-with-dates .institution,
 .preview-item-with-dates .issuer {
   font-weight: 500;
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
   font-size: var(--preview-page-details-fontsize);
@@ -53,7 +53,7 @@
 }
 
 .preview-item-with-dates .address {
-  font-style: italic;
+  /* font-style: italic; */
   color: var(--preview-page-details-color);
   font-family: var(--preview-page-details-font);
   font-size: var(--preview-page-details-fontsize);
