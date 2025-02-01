@@ -98,9 +98,14 @@ async function getFontObject() {
 }
 
 // create the fonts object dynamically
-const fonts = await getFontObject();
+let fonts;
+getFontObject().then((res) => {
+  fonts = res;
+});
 
 // get the fonts array (recall that fonts is created dynamically)
-const getFonts = () => fonts;
+const getFonts = () => {
+  return fonts;
+};
 
 export default getFonts;

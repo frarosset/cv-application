@@ -47,6 +47,8 @@ function downloadPdf(filename, format, fontFaces, pageTbPaddingInteger) {
 
   const hasOverflow = source.scrollHeight > source.offsetHeight;
   const fonts = getFonts();
+  // fonts is created dynamically: if not loaded, do nothing
+  if (!fonts) return;
 
   const options = {
     background: "#fff",
