@@ -45,10 +45,12 @@ function downloadPdf(filename, format, fontFaces, pageTbPaddingInteger) {
   const sourceWidth = source.offsetWidth;
   const marginTBInPixels = Math.round((height * pageTbPaddingInteger) / 100);
 
+  const hasOverflow = source.scrollHeight > source.offsetHeight;
+
   const options = {
     background: "#fff",
     pagesplit: true,
-    margin: [marginTBInPixels, 0, marginTBInPixels, 0],
+    margin: [hasOverflow ? marginTBInPixels : 0, 0, marginTBInPixels, 0],
     x: 0,
     y: 0,
     autoPaging: "text",
