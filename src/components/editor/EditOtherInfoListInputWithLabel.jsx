@@ -1,15 +1,8 @@
-import { useState } from "react";
-import {
-  getItem,
-  deleteItem,
-  moveItemBy,
-  setValueForSetter,
-  addNewItem,
-} from "../helper/itemsArrayManagement.js";
 import InputWithLabel from "../base/InputWithLabel.jsx";
 import EditListSelectionButtons from "./EditListSelectionButtons.jsx";
 import EditItemPositionInList from "./EditItemPositionInList.jsx";
 import "../../styles/editor/EditOtherInfoListInputWithLabel.css";
+import useCurrentItemOfArray from "../../customHooks/useCurrentItemOfArray.js";
 
 function EditOtherInfoListInputWithLabel({
   inputProps,
@@ -17,44 +10,19 @@ function EditOtherInfoListInputWithLabel({
   setState,
   pathInState,
 }) {
-  const [currentItemId, setCurrentItemId] = useState(
-    otherInfo.allIds.length ? otherInfo.allIds[0] : null
+  const itemData = useCurrentItemOfArray(
+    otherInfo,
+    setState,
+    [...pathInState, "allIds"],
+    [...pathInState, "byId"]
   );
 
   const otherInfoHeadingProp = inputProps.otherInfo.heading;
   const otherInfoTextProp = inputProps.otherInfo.text;
-
-  const showForm = currentItemId != null;
-  let currentItem = getItem(otherInfo, ["byId", currentItemId]);
-  if (typeof currentItem !== "object") currentItem = {};
-  const info = currentItem;
-  const isEmptyItem = Object.keys(currentItem).length === 0;
-  const emptyItemClass = isEmptyItem ? "empty-item" : "";
-
-  const allIdsPath = [...pathInState, "allIds"];
-  const byIdPath = [...pathInState, "byId"];
-
-  const newItemCallback = () =>
-    addNewItem(setState, setCurrentItemId, {}, allIdsPath, byIdPath);
-  const deleteItemCallback = () =>
-    deleteItem(currentItemId, setState, setCurrentItemId, allIdsPath, byIdPath);
-  const moveItemBackCallback = () =>
-    moveItemBy(currentItemId, -1, setState, allIdsPath, byIdPath);
-  const moveItemForthCallback = () =>
-    moveItemBy(currentItemId, 1, setState, allIdsPath, byIdPath);
-
-  const setValueForCallback = (prop) =>
-    setValueForSetter(
-      currentItemId,
-      prop,
-      setState,
-      setCurrentItemId,
-      allIdsPath,
-      byIdPath
-    );
+  const info = itemData.currentItem;
 
   return (
-    <div className={`editor-other-info ${emptyItemClass}`}>
+    <div className={`editor-other-info ${itemData.emptyItemClass}`}>
       <div className={"editor-other-info-selection"}>
         <h4>Other info</h4>
         <EditListSelectionButtons
@@ -64,13 +32,13 @@ function EditOtherInfoListInputWithLabel({
             const text = otherInfo.byId[id].text;
             return `${heading ? heading + ": " : ""}${text ? text : ""}`;
           }}
-          currentItemId={currentItemId}
-          setCurrentItemId={setCurrentItemId}
+          currentItemId={itemData.currentItemId}
+          setCurrentItemId={itemData.setCurrentItemId}
           emptyListText={"(empty)"}
-          newItemCallback={newItemCallback}
+          newItemCallback={itemData.newItemCallback}
         />
       </div>
-      {showForm && (
+      {itemData.validItem && (
         <>
           <div className={"editor-other-info-heading"}>
             <InputWithLabel
@@ -80,18 +48,18 @@ function EditOtherInfoListInputWithLabel({
               value={info[inputProps[otherInfoHeadingProp].prop]}
               placeholder={inputProps[otherInfoHeadingProp].placeholder}
               setValue={(val) => {
-                setValueForCallback(inputProps[otherInfoHeadingProp].prop)(val);
+                itemData.setValueForCallback(
+                  inputProps[otherInfoHeadingProp].prop
+                )(val);
               }}
               type={inputProps[otherInfoHeadingProp].type}
               maxLength={inputProps[otherInfoHeadingProp].maxLength}
               required={inputProps[otherInfoHeadingProp].required}
             />
             <EditItemPositionInList
-              {...{
-                deleteItemCallback,
-                moveItemBackCallback,
-                moveItemForthCallback,
-              }}
+              deleteItemCallback={itemData.deleteItemCallback}
+              moveItemBackCallback={itemData.moveItemBackCallback}
+              moveItemForthCallback={itemData.moveItemForthCallback}
             />
           </div>
           <InputWithLabel
@@ -101,7 +69,9 @@ function EditOtherInfoListInputWithLabel({
             value={info[inputProps[otherInfoTextProp].prop]}
             placeholder={inputProps[otherInfoTextProp].placeholder}
             setValue={(val) => {
-              setValueForCallback(inputProps[otherInfoTextProp].prop)(val);
+              itemData.setValueForCallback(inputProps[otherInfoTextProp].prop)(
+                val
+              );
             }}
             type={inputProps[otherInfoTextProp].type}
             maxLength={inputProps[otherInfoTextProp].maxLength}

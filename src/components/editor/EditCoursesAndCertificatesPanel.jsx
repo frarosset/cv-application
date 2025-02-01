@@ -1,16 +1,9 @@
-import { useState } from "react";
 import EditListSelectionButtons from "./EditListSelectionButtons.jsx";
 import EditItemPositionInList from "./EditItemPositionInList.jsx";
-import {
-  getItem,
-  deleteItem,
-  moveItemBy,
-  setValueForSetter,
-  addNewItem,
-} from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
+import useCurrentItemOfArray from "../../customHooks/useCurrentItemOfArray.js";
 
 const orderedInputProps = [
   "name",
@@ -27,90 +20,40 @@ function EditCoursesAndCertificatesPanel({
   coursesAndCertificates,
   setCoursesAndCertificates,
 }) {
-  const [currentItemId, setCurrentItemId] = useState(
-    coursesAndCertificates.allIds.length
-      ? coursesAndCertificates.allIds[0]
-      : null
+  const itemData = useCurrentItemOfArray(
+    coursesAndCertificates,
+    setCoursesAndCertificates,
+    ["allIds"],
+    ["byId"]
   );
-
-  const showForm = currentItemId != null;
-  let currentItem = getItem(coursesAndCertificates, ["byId", currentItemId]);
-  if (typeof currentItem !== "object") currentItem = {};
-  const isEmptyItem = Object.keys(currentItem).length === 0;
-  const emptyItemClass = isEmptyItem && "empty-item";
-
-  const newItemCallback = () =>
-    addNewItem(
-      setCoursesAndCertificates,
-      setCurrentItemId,
-      {},
-      ["allIds"],
-      ["byId"]
-    );
-  const deleteItemCallback = () =>
-    deleteItem(
-      currentItemId,
-      setCoursesAndCertificates,
-      setCurrentItemId,
-      ["allIds"],
-      ["byId"]
-    );
-  const moveItemBackCallback = () =>
-    moveItemBy(
-      currentItemId,
-      -1,
-      setCoursesAndCertificates,
-      ["allIds"],
-      ["byId"]
-    );
-  const moveItemForthCallback = () =>
-    moveItemBy(
-      currentItemId,
-      1,
-      setCoursesAndCertificates,
-      ["allIds"],
-      ["byId"]
-    );
-
-  const setValueForCallback = (prop) =>
-    setValueForSetter(
-      currentItemId,
-      prop,
-      setCoursesAndCertificates,
-      setCurrentItemId,
-      ["allIds"],
-      ["byId"]
-    );
 
   return (
     <div
-      className={`edit-section-panel edit-coursesAndCertificates-panel ${emptyItemClass}`}
+      className={`edit-section-panel edit-coursesAndCertificates-panel ${itemData.emptyItemClass}`}
     >
       <h3>Edit Courses & Certificates</h3>
       <div>
         <EditListSelectionButtons
           list={coursesAndCertificates.allIds}
           getLabel={(id) => coursesAndCertificates.byId[id].name}
-          currentItemId={currentItemId}
-          setCurrentItemId={setCurrentItemId}
+          currentItemId={itemData.currentItemId}
+          setCurrentItemId={itemData.setCurrentItemId}
           emptyListText={"Insert new items"}
-          newItemCallback={newItemCallback}
+          newItemCallback={itemData.newItemCallback}
         />
 
-        {showForm && (
+        {itemData.validItem && (
           <>
             <EditItemPositionInList
-              {...{
-                deleteItemCallback,
-                moveItemBackCallback,
-                moveItemForthCallback,
-              }}
+              deleteItemCallback={itemData.deleteItemCallback}
+              moveItemBackCallback={itemData.moveItemBackCallback}
+              moveItemForthCallback={itemData.moveItemForthCallback}
             />
             <form>
               <ArrayOfInputWithLabel
                 {...{ orderedInputProps, inputProps }}
-                item={currentItem}
-                setValueFor={setValueForCallback}
+                item={itemData.currentItem}
+                setValueFor={itemData.setValueForCallback}
               />
             </form>
           </>

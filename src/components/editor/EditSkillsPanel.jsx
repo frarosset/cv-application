@@ -1,83 +1,48 @@
-import { useState } from "react";
 import EditListSelectionButtons from "./EditListSelectionButtons.jsx";
 import EditItemPositionInList from "./EditItemPositionInList.jsx";
-import {
-  getItem,
-  deleteItem,
-  moveItemBy,
-  setValueForSetter,
-  addNewItem,
-} from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
+import useCurrentItemOfArray from "../../customHooks/useCurrentItemOfArray.js";
 
 const orderedInputProps = ["heading", "text"];
 const inputProps = inputProperties.skills;
 
 function EditSkillsPanel({ skills, setSkills }) {
-  const [currentItemId, setCurrentItemId] = useState(
-    skills.allIds.length ? skills.allIds[0] : null
+  const itemData = useCurrentItemOfArray(
+    skills,
+    setSkills,
+    ["allIds"],
+    ["byId"]
   );
 
-  const showForm = currentItemId != null;
-  let currentItem = getItem(skills, ["byId", currentItemId]);
-  if (typeof currentItem !== "object") currentItem = {};
-  const isEmptyItem = Object.keys(currentItem).length === 0;
-  const emptyItemClass = isEmptyItem && "empty-item";
-
-  const newItemCallback = () =>
-    addNewItem(setSkills, setCurrentItemId, {}, ["allIds"], ["byId"]);
-  const deleteItemCallback = () =>
-    deleteItem(
-      currentItemId,
-      setSkills,
-      setCurrentItemId,
-      ["allIds"],
-      ["byId"]
-    );
-  const moveItemBackCallback = () =>
-    moveItemBy(currentItemId, -1, setSkills, ["allIds"], ["byId"]);
-  const moveItemForthCallback = () =>
-    moveItemBy(currentItemId, 1, setSkills, ["allIds"], ["byId"]);
-
-  const setValueForCallback = (prop) =>
-    setValueForSetter(
-      currentItemId,
-      prop,
-      setSkills,
-      setCurrentItemId,
-      ["allIds"],
-      ["byId"]
-    );
-
   return (
-    <div className={`edit-section-panel edit-skills-panel ${emptyItemClass}`}>
+    <div
+      className={`edit-section-panel edit-skills-panel ${itemData.emptyItemClass}`}
+    >
       <h3>Edit Skills</h3>
       <div>
         <EditListSelectionButtons
           list={skills.allIds}
           getLabel={(id) => skills.byId[id].heading}
-          currentItemId={currentItemId}
-          setCurrentItemId={setCurrentItemId}
+          currentItemId={itemData.currentItemId}
+          setCurrentItemId={itemData.setCurrentItemId}
           emptyListText={"Insert new items"}
-          newItemCallback={newItemCallback}
+          newItemCallback={itemData.newItemCallback}
         />
 
-        {showForm && (
+        {itemData.validItem && (
           <>
             <EditItemPositionInList
-              {...{
-                deleteItemCallback,
-                moveItemBackCallback,
-                moveItemForthCallback,
-              }}
+              deleteItemCallback={itemData.deleteItemCallback}
+              moveItemBackCallback={itemData.moveItemBackCallback}
+              moveItemForthCallback={itemData.moveItemForthCallback}
             />
             <form>
               <ArrayOfInputWithLabel
                 {...{ orderedInputProps, inputProps }}
-                item={currentItem}
-                setValueFor={setValueForCallback}
+                item={itemData.currentItem}
+                setValueFor={itemData.setValueForCallback}
               />
             </form>
           </>

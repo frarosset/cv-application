@@ -1,17 +1,10 @@
-import { useState } from "react";
 import EditListSelectionButtons from "./EditListSelectionButtons.jsx";
 import EditItemPositionInList from "./EditItemPositionInList.jsx";
-import {
-  getItem,
-  deleteItem,
-  moveItemBy,
-  setValueForSetter,
-  addNewItem,
-} from "../helper/itemsArrayManagement.js";
 import ArrayOfInputWithLabel from "../base/ArrayOfInputWithLabel.jsx";
 import EditOtherInfoListInputWithLabel from "./EditOtherInfoListInputWithLabel.jsx";
 import inputProperties from "../../data/inputProperties.json";
 import "../../styles/editor/EditSectionPanel.css";
+import useCurrentItemOfArray from "../../customHooks/useCurrentItemOfArray.js";
 
 const orderedInputProps = [
   "role",
@@ -27,64 +20,16 @@ function EditProfessionalExperiencePanel({
   professionalExperience,
   setProfessionalExperience,
 }) {
-  const [currentItemId, setCurrentItemId] = useState(
-    professionalExperience.allIds.length
-      ? professionalExperience.allIds[0]
-      : null
+  const itemData = useCurrentItemOfArray(
+    professionalExperience,
+    setProfessionalExperience,
+    ["allIds"],
+    ["byId"]
   );
-
-  const showForm = currentItemId != null;
-  let currentItem = getItem(professionalExperience, ["byId", currentItemId]);
-  if (typeof currentItem !== "object") currentItem = {};
-  const isEmptyItem = Object.keys(currentItem).length === 0;
-  const emptyItemClass = isEmptyItem && "empty-item";
-
-  const newItemCallback = () =>
-    addNewItem(
-      setProfessionalExperience,
-      setCurrentItemId,
-      {},
-      ["allIds"],
-      ["byId"]
-    );
-  const deleteItemCallback = () =>
-    deleteItem(
-      currentItemId,
-      setProfessionalExperience,
-      setCurrentItemId,
-      ["allIds"],
-      ["byId"]
-    );
-  const moveItemBackCallback = () =>
-    moveItemBy(
-      currentItemId,
-      -1,
-      setProfessionalExperience,
-      ["allIds"],
-      ["byId"]
-    );
-  const moveItemForthCallback = () =>
-    moveItemBy(
-      currentItemId,
-      1,
-      setProfessionalExperience,
-      ["allIds"],
-      ["byId"]
-    );
-
-  const setValueForCallback = (prop) =>
-    setValueForSetter(
-      currentItemId,
-      prop,
-      setProfessionalExperience,
-      setCurrentItemId,
-      ["allIds"],
-      ["byId"]
-    );
 
   return (
     <div
-      className={`edit-section-panel edit-professional-experience-panel ${emptyItemClass}`}
+      className={`edit-section-panel edit-professional-experience-panel ${itemData.emptyItemClass}`}
     >
       <h3>Edit Professional Experience</h3>
 
@@ -92,33 +37,31 @@ function EditProfessionalExperiencePanel({
         <EditListSelectionButtons
           list={professionalExperience.allIds}
           getLabel={(id) => professionalExperience.byId[id].role}
-          currentItemId={currentItemId}
-          setCurrentItemId={setCurrentItemId}
+          currentItemId={itemData.currentItemId}
+          setCurrentItemId={itemData.setCurrentItemId}
           emptyListText={"Insert new items"}
-          newItemCallback={newItemCallback}
+          newItemCallback={itemData.newItemCallback}
         />
 
-        {showForm && (
+        {itemData.validItem && (
           <>
             <EditItemPositionInList
-              {...{
-                deleteItemCallback,
-                moveItemBackCallback,
-                moveItemForthCallback,
-              }}
+              deleteItemCallback={itemData.deleteItemCallback}
+              moveItemBackCallback={itemData.moveItemBackCallback}
+              moveItemForthCallback={itemData.moveItemForthCallback}
             />
             <form>
               <ArrayOfInputWithLabel
                 {...{ orderedInputProps, inputProps }}
-                item={currentItem}
-                setValueFor={setValueForCallback}
+                item={itemData.currentItem}
+                setValueFor={itemData.setValueForCallback}
               />
-              {!isEmptyItem && (
+              {!itemData.isEmptyItem && (
                 <EditOtherInfoListInputWithLabel
                   inputProps={inputProps}
-                  otherInfo={currentItem.otherInfo}
+                  otherInfo={itemData.currentItem.otherInfo}
                   setState={setProfessionalExperience}
-                  pathInState={["byId", currentItemId, "otherInfo"]}
+                  pathInState={["byId", itemData.currentItemId, "otherInfo"]}
                 />
               )}
             </form>
