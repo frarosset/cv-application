@@ -34,6 +34,9 @@ const useDefineDataStates = () => {
     JSON.parse(localStorage.getItem("darkThemeSet")) || defaultDark
   );
 
+  const initialPanel = "personal-info";
+  const [currentPanel, setCurrentPanel] = useState(initialPanel);
+
   // Initialize effect to update values in Local Storage ----------------------
   useEffect(() => {
     localStorage.setItem("personalInfo", JSON.stringify(personalInfo));
@@ -99,6 +102,7 @@ const useDefineDataStates = () => {
     setLanguages(dataObj["languages"]);
     setCoursesAndCertificates(dataObj["coursesAndCertificates"]);
     setPersonalization(dataObj["personalization"]);
+    setCurrentPanel(initialPanel);
   };
 
   const setBlankData = () => {
@@ -113,9 +117,11 @@ const useDefineDataStates = () => {
     dataStateProps,
     dataSetStateProps,
     darkThemeSet,
+    currentPanel,
     setDarkThemeSet,
     setBlankData,
     setSampleData,
+    setCurrentPanel,
   };
 };
 

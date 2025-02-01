@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Button from "../base/Button.jsx";
 import EditPersonalInfoPanel from "./EditPersonalInfoPanel.jsx";
 import EditEducationPanel from "./EditEducationPanel.jsx";
@@ -20,7 +19,8 @@ const panelsInfo = [
 ];
 
 function EditPanel(props) {
-  const [currentPanel, setCurrentPanel] = useState("personal-info");
+  const currentPanel = props.currentPanel;
+  const setCurrentPanel = props.setCurrentPanel;
 
   return (
     <div className="edit-panel">

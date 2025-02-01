@@ -22,7 +22,13 @@ const isOverflowXPostCallback = (ref, hasOverflowX) => {
   ref.current.classList.toggle(hasOVerflowXCssClass, hasOverflowX);
 };
 
-function Main({ dataStateProps, dataSetStateProps, downloadOptions }) {
+function Main({
+  dataStateProps,
+  dataSetStateProps,
+  downloadOptions,
+  currentPanel,
+  setCurrentPanel,
+}) {
   /* *************************************************************************** */
   // A base layout style might be  specified. This is used to set a hasOVerflowXCssClass
   // css class whenever the base layout overflows horizontally, which can have a
@@ -50,7 +56,14 @@ function Main({ dataStateProps, dataSetStateProps, downloadOptions }) {
           : ""
       }
     >
-      <EditPanel {...{ ...dataStateProps, ...dataSetStateProps }} />
+      <EditPanel
+        {...{
+          ...dataStateProps,
+          ...dataSetStateProps,
+          currentPanel,
+          setCurrentPanel,
+        }}
+      />
       <PreviewPanel {...dataStateProps} />
       <div className="group-of-btns">
         {isOverflow && (

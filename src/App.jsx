@@ -9,9 +9,11 @@ function App() {
     dataStateProps,
     dataSetStateProps,
     darkThemeSet,
+    currentPanel,
     setDarkThemeSet,
     setBlankData,
     setSampleData,
+    setCurrentPanel,
   } = useDefineDataStates();
 
   /* set page title */
@@ -51,9 +53,18 @@ function App() {
             setBlankData,
             setSampleData,
             downloadOptions,
+            setCurrentPanel,
           }}
         />
-        <Main {...{ dataStateProps, dataSetStateProps, downloadOptions }} />
+        <Main
+          {...{
+            dataStateProps,
+            dataSetStateProps,
+            downloadOptions,
+            currentPanel,
+            setCurrentPanel,
+          }}
+        />
         <CreditFooter darkTheme={darkThemeSet} />
       </div>
     </>
