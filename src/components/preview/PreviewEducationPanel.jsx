@@ -1,5 +1,5 @@
 import PreviewListWithDates from "./PreviewListWithDates.jsx";
-import "../../styles/preview/previewPanelWithList.css";
+import "../../styles/preview/PreviewPanelWithList.css";
 
 const textProperties = [["institution", "address"], "degree"];
 
